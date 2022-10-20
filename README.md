@@ -4,7 +4,7 @@ Common setup and commands.
 ## System setup
 ```
 Install the following.
-- Ubuntu
+*Ubuntu
 * Sublime text
 * VS Code
   * Markdown All in One
