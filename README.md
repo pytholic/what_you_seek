@@ -17,7 +17,7 @@ conda env list  # list all envs
 conda env remove --name myenv  # remove an env
 conda env create -f env.yml  # create from yaml file
 
-conda env export -n <env name>>env.yml  # export env yaml
+conda env export -n <env name> > env.yml  # export env yaml
 
 
 conda list  # list all packages installed into the environment
@@ -39,7 +39,7 @@ pip install <package name>
 pip uninstall <package name>
 
 pip cache purge  # clean temp files
-pip freeze >requirements.txt
+pip freeze > requirements.txt
 pip install -r requirements.txt
 pip list --format=freeze > requirements.txt  # to fix @ absolute symbol issue
 pip list --format=freeze > requirements.txt  # removes "path" strings
