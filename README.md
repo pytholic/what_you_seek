@@ -1,4 +1,4 @@
-# setup_and_scripts
+# Description
 Common setup and commands.
 
 ## Conda commands
