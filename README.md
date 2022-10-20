@@ -1,6 +1,24 @@
 # Description
 Common setup and commands.
 
+## System setup
+```
+Install the following.
+* Ubuntu
+* Sublime text
+* VS Code
+  * Markdown All in One
+  * Jupyter
+  * python
+  * IntelliCode
+  * Remote - SSH
+  * Git Graph
+  * Pylance
+* SmarGit
+* Nvidia cuda toolkit
+* Anaconda
+```
+
 ## Conda commands
 ```sh
 conda install <package name>
@@ -44,3 +62,27 @@ pip install -r requirements.txt
 pip list --format=freeze > requirements.txt  # to fix @ absolute symbol issue
 pip list --format=freeze > requirements.txt  # removes "path" strings
 ```
+
+## Common pip and conda packages
+```
+pip install opencv-python
+pip install sklearn
+pip install matplotlib
+pip install notebook
+pip install tensorboard
+pip install pandas
+pip install pillow
+
+conda install -c open3d-admin open3d
+```
+
+## Common DL packages
+```
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+pip install pytorch-lightning
+
+conda install -c conda-forge tensorflow-gpu
+```
+
+## Common shell commands
+
