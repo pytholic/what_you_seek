@@ -2,7 +2,7 @@
 Common setup and commands.
 
 ## System setup
-```
+
 Install the following.
 * Ubuntu
 * Sublime text
@@ -17,7 +17,7 @@ Install the following.
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda
-```
+
 
 ## Conda commands
 ```sh
