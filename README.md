@@ -2,7 +2,7 @@
 Common setup and commands.
 
 ## Conda commands
-```console
+```sh
 conda install <package name>
 conda uninstall <package name>
 
@@ -34,7 +34,7 @@ conda env export --no-builds  # without strict version number(?)
 ```
 
 ## Pip commands
-```console
+```sh
 pip install <package name>
 pip uninstall <package name>
 
