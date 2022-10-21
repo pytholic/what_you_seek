@@ -1,4 +1,4 @@
-## Conda commands
+# Conda commands
 ```sh
 conda install <package name>
 conda uninstall <package name>
@@ -30,7 +30,7 @@ conda config --set auto_activate_base false  # deactivate base env from the term
 conda env export --no-builds  # without strict version number(?) 
 ```
 
-## Pip commands
+# Pip commands
 ```sh
 pip install <package name>
 pip uninstall <package name>
@@ -42,7 +42,7 @@ pip list --format=freeze > requirements.txt  # to fix @ absolute symbol issue
 pip list --format=freeze > requirements.txt  # removes "path" strings
 ```
 
-## Common pip and conda packages
+# Common pip and conda packages
 ```
 pip install opencv-python
 pip install sklearn
@@ -55,7 +55,7 @@ pip install pillow
 conda install -c open3d-admin open3d
 ```
 
-## Common DL packages
+# Common DL packages
 ```
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 pip install pytorch-lightning
@@ -63,4 +63,4 @@ pip install pytorch-lightning
 conda install -c conda-forge tensorflow-gpu
 ```
 
-## Common shell commands
+# Common shell commands
