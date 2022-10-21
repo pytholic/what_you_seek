@@ -1,7 +1,4 @@
-# Description
-Common setup and commands.
-
-## System setup
+# System setup
 
 Install the following.
 * Ubuntu
