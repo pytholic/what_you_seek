@@ -1,6 +1,6 @@
-## Fixes with cli
+# Fixes with cli
 
-### Display manager not working
+## Display manager not working
 Ubuntu got updated but some nvidia packages didn't. You will get blank screen with a cursor. One solution is to run previous `kernel` and it will work. You can edit `/etc/default/grub` and set `GRUB_HIDDEN_TIMEOUT=0`, `GRUB_TIMEOUT_STYLE=menu`. Then acces grub menu on boot by pressing any key.
 
 Otherwise try the following:
