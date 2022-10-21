@@ -14,3 +14,11 @@ Install the following.
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda
+* fzf
+```shell
+sudo apt-get install fzf
+
+Add to bash:
+nano ~/.bashrc
+. /usr/share/doc/fzf/examples/key-bindings.bash
+```
