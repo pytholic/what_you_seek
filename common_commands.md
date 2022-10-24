@@ -67,7 +67,10 @@ conda install -c conda-forge tensorflow-gpu
 ```shell
 df -h  # display drive storage info
 ```
-
+## Server commands
+```shell
+ssh <username>@<address>
+```
 **Add network commands
 **Add display manager commands
 **Add systemctl commands
