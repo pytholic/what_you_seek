@@ -14,7 +14,7 @@ Install the following.
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda
-* fzf
+* fzf (better reverse search)
 ```shell
 sudo apt-get install fzf
 
