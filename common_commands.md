@@ -66,18 +66,18 @@ conda install -c conda-forge tensorflow-gpu
 # Common shell commands
 ```shell
 df -h  # display drive storage info
-```
-## Server commands
-```shell
-ssh <username>@<address>  # connect to server
-```
+ps la  # list all processes
 
-## Unzip
-```shell
+# Unzip
 tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
 sudo apt install fastjar
 jar xvf videos.zip  # zip file
+
+```
+# Server commands
+```shell
+ssh <username>@<address>  # connect to server
 ```
 
 
