@@ -1,5 +1,8 @@
 # Conda commands
 ```sh
+conda config --set auto_activate_base false  # deactivate base env
+export CONDA_AUTO_ACTIVATE_BASE=false
+
 conda install <package name>
 conda uninstall <package name>
 
