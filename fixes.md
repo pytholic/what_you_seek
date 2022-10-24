@@ -12,3 +12,8 @@ sudo service gdm3 restart or sudo systemctl restart gdm3
 sudo apt --full-upgrade
 sudo apt-get --with-new-pkgs upgrade
 ```
+
+## Wget
+```shell
+wget --no-check-certificate <url>
+```
