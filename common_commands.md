@@ -71,6 +71,16 @@ df -h  # display drive storage info
 ```shell
 ssh <username>@<address>  # connect to server
 ```
+
+## Unzip
+```shell
+tar –xvzf documents.tar.gz  # tar file
+unzip <filename>  # zip file
+sudo apt install fastjar
+jar xvf videos.zip  # zip file
+```
+
+
 **Add network commands
 **Add display manager commands
 **Add systemctl commands
