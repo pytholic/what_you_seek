@@ -69,7 +69,7 @@ df -h  # display drive storage info
 ```
 ## Server commands
 ```shell
-ssh <username>@<address>
+ssh <username>@<address>  # connect to server
 ```
 **Add network commands
 **Add display manager commands
