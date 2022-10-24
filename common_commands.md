@@ -74,7 +74,11 @@ unzip <filename>  # zip file
 sudo apt install fastjar
 jar xvf videos.zip  # zip file
 
+# Folder permissions
+chmod 777 .
+chmod -R 777 .  # resursive
 ```
+
 # Server commands
 ```shell
 ssh <username>@<address>  # connect to server
