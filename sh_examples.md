@@ -1,4 +1,4 @@
-```
+```shell
 #!/bin/bash
 
 conda create -n deepv2d
@@ -14,7 +14,7 @@ pip install toposort
 pip install vtk
 ```
 
-```
+```shell
 #!/bin/bash
 
 mkdir -p data && cd data
