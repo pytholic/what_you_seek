@@ -80,6 +80,9 @@ jar xvf videos.zip  # zip file
 # Folder permissions
 chmod 777 .
 chmod -R 777 .  # resursive
+
+# Set GPU globally
+export CUDA_VISIBLE_DEVICES=1
 ```
 
 # Server commands
