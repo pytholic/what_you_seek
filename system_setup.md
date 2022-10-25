@@ -14,6 +14,9 @@ Install the following.
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda
+* Filezilla
+* Notion
+* Teamviewer
 * fzf (better reverse search)
 ```shell
 sudo apt-get install fzf
