@@ -3,13 +3,16 @@
 import cv2
 
 # Opens the Video file
-cap= cv2.VideoCapture('/home/pytholic/Desktop/Projects/uav_mapping/data/evo/MAX_0011/MAX_0011.MP4')
-out_dir = '/home/pytholic/Desktop/Projects/uav_mapping/data/evo/MAX_0011/images/'
+cap= cv2.VideoCapture('/home/pytholic/Desktop/Projects/uav_mapping/data/evo/MAX_0012/MAX_0012.MP4')
+length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+print( length )
+
+out_dir = '/home/pytholic/Desktop/Projects/uav_mapping/data/evo/MAX_0012/images/'
 idx=0
 while(cap.isOpened()):
     ret, frame = cap.read()
     idx += 1
-    if (idx % 10) == 0:
+    if (idx % 40) == 0:
         if ret == False:
             break
         # flip for iphone
