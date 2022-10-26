@@ -68,6 +68,9 @@ conda install -c conda-forge tensorflow-gpu
 
 # Common shell commands
 ```shell
+ctrl+shift+t  # new terminal tab
+ctrl+alt+t  # new terminal window
+
 df -h  # display drive storage info
 ps la  # list all processes
 
