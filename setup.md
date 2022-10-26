@@ -24,6 +24,24 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init zsh
 ```
 
+If you install it after the zsh shell then do the following in `.zshrc`
+```
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/pytholic/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/pytholic/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/pytholic/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/pytholic/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+```
+
 * Filezilla
 * Notion
 * Teamviewer
