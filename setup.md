@@ -31,7 +31,7 @@ rm -rf ~/miniconda3/miniconda.sh
 # Shell setup
 Change background to `black` and `fontsize` to 11.
 
-* fzf (better reverse search)
+## fzf (better reverse search)
 ```shell
 sudo apt-get install fzf
 
@@ -51,7 +51,7 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 ```
 
-* zsh
+## zsh
 ```shell
 # Installation
 sudo apt install -y zsh
@@ -59,7 +59,7 @@ chsh -s $(which zsh)  # set to default
 ```
 Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
 
-* power10k
+## power10k
 Link -> https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
 
 ```shell
