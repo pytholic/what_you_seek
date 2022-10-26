@@ -59,6 +59,15 @@ Enter password
 
 Now try connecting and it should work without password.
 
+```shell
+ssh-keygen
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+```
+
+You can add multiple.
+
+
 # Creating config file
 
 Better way is to snano ~/.ssh/configtore all the settings inside your `.ssh/config` file.
