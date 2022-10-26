@@ -67,7 +67,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 p10k configure
 
-nano ~/.p10k.zsh
+nano ~/.p10k.zsh  # edit config
+source ~/.p10k.zsh
 
 # Anaconda environment color
 typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
