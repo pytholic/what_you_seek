@@ -27,6 +27,10 @@ rm -rf ~/miniconda3/miniconda.sh
 * Filezilla
 * Notion
 * Teamviewer
+
+# Shell setup
+Change background to `black` and `fontsize` to 11.
+
 * fzf (better reverse search)
 ```shell
 sudo apt-get install fzf
@@ -53,11 +57,17 @@ source /usr/share/doc/fzf/examples/completion.zsh
 sudo apt install -y zsh
 chsh -s $(which zsh)  # set to default
 ```
+Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
+
 * power10k
+Link -> https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
+
 ```shell
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 p10k configure
 ```
 
-Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
+Also download fonts for it.
+
+
