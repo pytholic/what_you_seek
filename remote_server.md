@@ -71,12 +71,17 @@ Add the following lines and save.
 
 ```
 Host zeno
-HostName 10.160.51.36
+HostName 10.160.50.26
+User pytholic
+ForwardAgent yes
+
+Host plato
+HostName 10.160.50.25
 User pytholic
 ForwardAgent yes
 ```
 
-Then simply use `ssh zeno` to connect.
+Then simply use `ssh zeno` to connect. You can add multiple servers.
 
 Reference [link](https://acarril.github.io/posts/ssh-sripts-st3).
 
@@ -135,3 +140,8 @@ Alternatively, use notebook in vs code.
 Connect to your server using X11 forwarding: ssh -Y user@server or ssh -X user@server
 
 Then you can use opencv to display, but it is really slow.
+
+# Changing password
+```shell
+passwd
+```
