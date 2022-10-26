@@ -68,6 +68,10 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 p10k configure
 
 nano ~/.p10k.zsh
+
+# Anaconda environment color
+typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
+typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=12
 ```
 
 Also download fonts for it.
