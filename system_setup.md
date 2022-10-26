@@ -14,7 +14,7 @@ Install the following.
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda/Miniconda
-* 
+
 ```shell
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -35,3 +35,11 @@ Add to bash:
 nano ~/.bashrc
 . /usr/share/doc/fzf/examples/key-bindings.bash
 ```
+
+* zsh
+```shell
+sudo apt install -y zsh
+chsh -s $(which zsh)  # set to default
+```
+
+Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
