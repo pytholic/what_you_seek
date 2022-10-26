@@ -83,6 +83,8 @@ chmod -R 777 .  # resursive
 
 # Set GPU globally
 export CUDA_VISIBLE_DEVICES=1
+
+cp example.txt ~/Documents/file.txt  # copy file
 ```
 
 # Server commands
