@@ -71,6 +71,12 @@ conda install -c conda-forge tensorflow-gpu
 df -h  # display drive storage info
 ps la  # list all processes
 
+# Directories
+cd ..
+ls -a  # show hidden files too
+mkdir
+cp example.txt abc.txt  # copy file
+
 # Unzip
 tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
