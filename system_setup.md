@@ -31,9 +31,20 @@ rm -rf ~/miniconda3/miniconda.sh
 ```shell
 sudo apt-get install fzf
 
-Add to bash:
+############
+Add to bash
+############
 nano ~/.bashrc
 . /usr/share/doc/fzf/examples/key-bindings.bash
+
+######################
+Add to zshrc (for zsh)
+######################
+# Append this line to ~/.zshrc to enable fzf keybindings for Zsh:
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+#Append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
+source /usr/share/doc/fzf/examples/completion.zsh
 ```
 
 * zsh
