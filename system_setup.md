@@ -49,8 +49,15 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 * zsh
 ```shell
+# Installation
 sudo apt install -y zsh
 chsh -s $(which zsh)  # set to default
+```
+* power10k
+```shell
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+p10k configure
 ```
 
 Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
