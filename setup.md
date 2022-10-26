@@ -25,7 +25,7 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 
 If you install it after the zsh shell then do the following in `.zshrc`
-```
+```shell
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/pytholic/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
