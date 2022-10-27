@@ -116,4 +116,13 @@ typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=13
 
 Also download fonts for it.
 
+To make modification:
+```shell
+nano ~/.zshrc
+nano ~/.p10k.zsh
+
+source ~/.zshrc
+source ~/.p10k.zsh
+```
+
 
