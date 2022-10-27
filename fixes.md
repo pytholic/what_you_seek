@@ -17,3 +17,29 @@ sudo apt-get --with-new-pkgs upgrade
 ```shell
 wget --no-check-certificate <url>
 ```
+
+## Open3d headless
+```shell
+# http://www.open3d.org/docs/release/compilation.html
+# http://www.open3d.org/docs/latest/tutorial/Advanced/headless_rendering.html#possible-issues
+
+# Make sure to install open3d dependencies.
+
+git clone https://github.com/isl-org/Open3D
+util/install_deps_ubuntu.sh
+
+# Then build headless version
+sudo apt-get install libosmesa6-dev
+
+cd ~/Open3D/
+mkdir build && cd build
+
+cmake -DENABLE_HEADLESS_RENDERING=ON \
+                 -DBUILD_GUI=OFF \
+                 -DUSE_SYSTEM_GLEW=OFF \
+                 -DUSE_SYSTEM_GLFW=OFF \
+                 ..
+
+make -j$(nproc)
+make install-pip-package
+```
