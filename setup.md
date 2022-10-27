@@ -114,7 +114,7 @@ typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
 typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=13
 ```
 
-Also download fonts for it.
+Also download `Meslo` fonts for it (must to make it look better).
 
 To make modification:
 ```shell
