@@ -70,6 +70,8 @@ conda install -c conda-forge tensorflow-gpu
 ```shell
 ctrl+shift+t  # new terminal tab
 ctrl+alt+t  # new terminal window
+ctrl+l  # shift terminal text up
+clear  # clear text in terminal
 
 df -h  # display drive storage info
 ps la  # list all processes
