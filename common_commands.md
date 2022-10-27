@@ -31,6 +31,8 @@ conda install --file requirements.txt
 conda config --set auto_activate_base false  # deactivate base env from the terminal
 
 conda env export --no-builds  # without strict version number(?) 
+
+conda env create -f environment.yaml
 ```
 
 # Pip commands
