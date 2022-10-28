@@ -170,6 +170,8 @@ touch .gitignore
 git rm --cached FILENAME
 
 # SAVE CREDENTIALS
+https://git-scm.com/docs/git-credential-store
+
 git config credential.helper store
 git push http://example.com/repo.git
 Username: <type your username>
