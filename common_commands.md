@@ -129,8 +129,9 @@ git push origin main
 git pull --allow-unrelated-histories
 
 git remote remove origin
-
-# BRANCHING
+```
+## Branching
+```shell
 git branch <branch name>  # create branch
 git branch --list
 git checkout <branch name>   # change branch
@@ -138,8 +139,10 @@ git checkout <branch name>   # change branch
 git checkout -b <branch name>  # create and change branch
 
 git fetch origin or git fetch origin <branch:branch>
+```
 
-# SUBMODULES
+## Submodules
+```shell
 git submodule add	
 
 rm -rf projectfolder
@@ -153,13 +156,17 @@ git submodule init
 git submodule update 
 or
 git clone --recurse-submodules <url>
+```
 
-# LARGE FILES
+## Large files
+```shell
 git lfs install
 git lfs track "*.psd"
 git add .gitattributes
+```
 
-# GITIGNORE
+## Gitignore
+```shell
 https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 https://github.com/github/gitignore
 
@@ -168,8 +175,10 @@ touch .gitignore
 #If you want to ignore a file that is already checked in, you must untrack the file before you add a rule to ignore it. From your terminal, untrack the file.
 
 git rm --cached FILENAME
+```
 
-# SAVE CREDENTIALS
+## Save credentials
+```shell
 https://git-scm.com/docs/git-credential-store
 
 git config credential.helper store
@@ -180,6 +189,10 @@ Password: <type your password>
 [several days later]
 git push http://example.com/repo.git
 [your credentials are used automatically]
+```
 
-
+## Miscellaneous
+```shell
+git reflog  # see previous commits
+```
 
