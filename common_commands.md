@@ -111,3 +111,58 @@ ssh <username>@<address>  # connect to server
 **Add network commands
 **Add display manager commands
 **Add systemctl commands
+
+# Git commands
+```shell
+# STEPS
+git init
+git remote add origin <url>
+git status
+git add .
+git status
+git commit -m 'Initial index commit'
+git status
+git push origin main
+
+git pull --allow-unrelated-histories
+
+# BRANCHING
+git branch <branch name>  # create branch
+git branch --list
+git checkout <branch name>   # change branch
+
+git checkout -b <branch name>  # create and change branch
+
+git fetch origin or git fetch origin <branch:branch>
+
+# SUBMODULES
+git submodule add	
+
+rm -rf projectfolder
+git rm -r projectfolder
+
+https://stackoverflow.com/questions/12898278/issue-with-adding-common-code-as-git-submodule-already-exists-in-the-index/14815959
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+# Cloning
+git submodule init
+git submodule update 
+or
+git clone --recurse-submodules <url>
+
+# LARGE FILES
+git lfs install
+git lfs track "*.psd"
+git add .gitattributes
+
+# GITIGNORE
+https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+touch .gitignore
+
+#If you want to ignore a file that is already checked in, you must untrack the file before you add a rule to ignore it. From your terminal, untrack the file.
+
+git rm --cached FILENAME
+
+
+
