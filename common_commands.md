@@ -80,6 +80,20 @@ ps la  # list all processes
 
 $ mv file.txt document.txt  # rename
 
+
+# Bash script
+
+touch droid.sh
+nanp droid.sh
+
+conda init
+cd projects/uav_mapping/DROID-SLAM
+conda activate droidenv
+
+
+chmod +x droid.sh
+./droid.sh
+
 # Directories
 cd ..
 ls -a  # show hidden files too
@@ -88,6 +102,7 @@ cp example.txt abc.txt  # copy file
 
 rm -r <file name>  # remove recursively
 rm -r -f <file name>  # force removal, don't have to say 'y' for write protected
+
 # Unzip
 tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
