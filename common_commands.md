@@ -157,12 +157,12 @@ git add .gitattributes
 
 # GITIGNORE
 https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+https://github.com/github/gitignore
 
 touch .gitignore
 
 #If you want to ignore a file that is already checked in, you must untrack the file before you add a rule to ignore it. From your terminal, untrack the file.
 
 git rm --cached FILENAME
-
 
 
