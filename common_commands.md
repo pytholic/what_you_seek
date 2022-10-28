@@ -87,9 +87,12 @@ $ mv file.txt document.txt  # rename
 touch droid.sh
 nanp droid.sh
 
-conda init
-cd projects/uav_mapping/DROID-SLAM
+###############
+#!/bin/zsh
+source ~/miniconda3/etc/profile.d/conda.sh
+cd ~/projects/uav_mapping/DROID-SLAM
 conda activate droidenv
+##############
 
 chmod +x droid.sh
 ./droid.sh
