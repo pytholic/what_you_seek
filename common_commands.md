@@ -128,6 +128,8 @@ git push origin main
 
 git pull --allow-unrelated-histories
 
+git remote remove origin
+
 # BRANCHING
 git branch <branch name>  # create branch
 git branch --list
