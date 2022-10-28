@@ -169,4 +169,8 @@ touch .gitignore
 
 git rm --cached FILENAME
 
+# SAVE CREDENTIALS
+git config --global credential.helper store  # after first push
+
+
 
