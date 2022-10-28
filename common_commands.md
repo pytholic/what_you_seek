@@ -70,6 +70,7 @@ conda install -c conda-forge tensorflow-gpu
 
 # Common shell commands
 ```shell
+############################################
 ctrl+shift+t  # new terminal tab
 ctrl+alt+t  # new terminal window
 ctrl+l  # shift terminal text up
@@ -79,7 +80,7 @@ df -h  # display drive storage info
 ps la  # list all processes
 
 $ mv file.txt document.txt  # rename
-
+##############################################
 
 # Bash script
 
@@ -90,9 +91,12 @@ conda init
 cd projects/uav_mapping/DROID-SLAM
 conda activate droidenv
 
-
 chmod +x droid.sh
 ./droid.sh
+
+. ./droid.zsh  # if cd does not work or run in current shell
+
+##########################################################
 
 # Directories
 cd ..
@@ -103,11 +107,15 @@ cp example.txt abc.txt  # copy file
 rm -r <file name>  # remove recursively
 rm -r -f <file name>  # force removal, don't have to say 'y' for write protected
 
+######################################################
+
 # Unzip
 tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
 sudo apt install fastjar
 jar xvf videos.zip  # zip file
+
+######################################################
 
 # Folder permissions
 chmod 777 .
@@ -120,6 +128,8 @@ cp example.txt ~/Documents/file.txt  # copy file
 
 bindkey | grep fzf  # fzf key bindings
 ```
+
+######################################################
 
 # Server commands
 ```shell
