@@ -78,6 +78,8 @@ clear  # clear text in terminal
 df -h  # display drive storage info
 ps la  # list all processes
 
+$ mv file.txt document.txt  # rename
+
 # Directories
 cd ..
 ls -a  # show hidden files too
