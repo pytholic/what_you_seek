@@ -84,6 +84,8 @@ ls -a  # show hidden files too
 mkdir
 cp example.txt abc.txt  # copy file
 
+rm -r <file name>  # remove recursively
+rm -r -f <file name>  # force removal, don't have to say 'y' for write protected
 # Unzip
 tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
