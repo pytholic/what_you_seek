@@ -79,7 +79,12 @@ clear  # clear text in terminal
 df -h  # display drive storage info
 ps la  # list all processes
 
-$ mv file.txt document.txt  # rename
+mv file.txt document.txt  # rename
+
+mv <src> <dst>  # move
+
+dh -h  # show disk storages
+
 ##############################################
 
 # Bash script
