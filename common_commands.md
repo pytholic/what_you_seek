@@ -130,9 +130,18 @@ export CUDA_VISIBLE_DEVICES=1
 cp example.txt ~/Documents/file.txt  # copy file
 
 bindkey | grep fzf  # fzf key bindings
-```
 
 ######################################################
+
+# 
+ctrl+atl+dell  # system restart
+ctrl+alt+F4  # open tty4
+ctrl+alt+F1  # logout screen
+
+alt+sysrq+reksub  # Force reboot
+https://www.thegeekstuff.com/2008/12/safe-reboot-of-linux-using-magic-sysrq-key/
+
+```
 
 # Server commands
 ```shell
