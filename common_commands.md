@@ -75,6 +75,8 @@ ctrl+shift+t  # new terminal tab
 ctrl+alt+t  # new terminal window
 ctrl+l  # shift terminal text up
 clear  # clear text in terminal
+ctrl+u  # remove all text
+ctrl+k  # remove from cursor till end
 
 df -h  # display drive storage info
 ps la  # list all processes
