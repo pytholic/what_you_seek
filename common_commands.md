@@ -140,13 +140,27 @@ bindkey | grep fzf  # fzf key bindings
 
 ######################################################
 
-# 
+# System fix
 ctrl+atl+dell  # system restart
 ctrl+alt+F4  # open tty4
 ctrl+alt+F1  # logout screen
 
 alt+sysrq+reksub  # Force reboot
 https://www.thegeekstuff.com/2008/12/safe-reboot-of-linux-using-magic-sysrq-key/
+
+# Processes 
+ctrl+z  # suspend
+ctrl+d  # kill terminal
+ctrl+c  # kill process
+
+sudo kill -9 PID
+
+jobs  # shows suspended processes
+sudo kill %<id>  # kill job with id
+
+ps aux  # shows all processes
+ps aux | grep vim  # list all vim processes
+
 
 ```
 
