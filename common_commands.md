@@ -92,6 +92,10 @@ mv <src> <dst>  # move
 
 dh -h  # show disk storages
 
+# Show files and directories
+ls 
+ls -l
+
 ##############################################
 
 # Bash script
