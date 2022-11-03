@@ -33,6 +33,9 @@ conda config --set auto_activate_base false  # deactivate base env from the term
 conda env export --no-builds  # without strict version number(?) 
 
 conda env create -f environment.yaml
+
+conda search <package name>  # list all available package versions
+
 ```
 
 # Pip commands
@@ -45,6 +48,8 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 pip list --format=freeze > requirements.txt  # to fix @ absolute symbol issue
 pip list --format=freeze > requirements.txt  # removes "path" strings
+
+pip index versions <package name>  ## list all available package versions
 ```
 
 # Common pip and conda packages
