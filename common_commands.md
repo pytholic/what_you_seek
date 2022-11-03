@@ -199,6 +199,21 @@ git checkout <branch name>   # change branch
 git checkout -b <branch name>  # create and change branch
 
 git fetch origin or git fetch origin <branch:branch>
+
+# Cloning a repo with branches
+git clone <url>  # You will have main locally only, remote will be in track
+git fetch --all
+git branch -a  # show all branches
+git switch <branch name>  # switches to branch and creates it locally, switch to already existing branch
+git checkout <branch name>  # switches to branch and creates it locally, switch to already existing branch
+
+git check -b <branch name>  # creates and switches to a new local branch>
+
+git fetch  # gets info on branches but doesn't change local branches
+git pull  # fetches and merges
+git fetch --all, git pull --all  # do for all branches
+
+git branch -d <branch name>  # delete branch
 ```
 
 ## Submodules
