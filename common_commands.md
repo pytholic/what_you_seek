@@ -209,11 +209,15 @@ git checkout <branch name>  # switches to branch and creates it locally, switch 
 
 git check -b <branch name>  # creates and switches to a new local branch>
 
-git fetch  # gets info on branches but doesn't change local branches
+git fetch  # gets info on branches but doesn't change local branches, update branch info
 git pull  # fetches and merges
 git fetch --all, git pull --all  # do for all branches
 
 git branch -d <branch name>  # delete branch
+
+git fetch
+git switch
+git pull
 ```
 
 ## Submodules
