@@ -41,3 +41,15 @@ rm MH_03_medium.zip
 
 cd ..
 ```
+
+# My example
+```vm
+#!/bin/zsh
+source ~/miniconda3/etc/profile.d/conda.sh
+
+cd ~/projects/uav_mapping/DROID-SLAM
+
+conda activate droidenv
+```
+
+Run `source ./droid.zsh` or `. ./droid.zsh`.
