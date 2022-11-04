@@ -284,3 +284,7 @@ git push http://example.com/repo.git
 git reflog  # see previous commits
 ```
 
+# FFMPEG
+```sh
+ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
+```
