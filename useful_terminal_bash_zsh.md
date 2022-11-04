@@ -1,6 +1,6 @@
 https://medium.com/techtofreedom/5-ways-to-write-loops-in-bash-b20d162c466e
 
-# Examples
+# Loop examples
 
 ```sh
 for i in 1 2 3 4 5
@@ -19,3 +19,14 @@ do
 done
 ```
 
+# Variables
+```sh
+file=abc
+$file  # use value
+${file}  # to make modifications
+
+# Example
+file=tmp
+echo "$file/abc"
+tmpabc
+```
