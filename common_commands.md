@@ -99,6 +99,11 @@ du <folder name> -h
 ls 
 ls -l
 
+# Schedueles shutdown
+sudo shutdown -P 20:00  # at 20:00
+sudo shutdown -P +30  # after 30mins
+sudo shutdown -P now
+
 ##############################################
 
 # Bash script
