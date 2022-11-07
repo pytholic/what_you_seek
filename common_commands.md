@@ -90,7 +90,10 @@ mv file.txt document.txt  # rename
 
 mv <src> <dst>  # move
 
-dh -h  # show disk storages
+dh -h  # show disk storages in GB
+du . -h  # show subdirectories size in GB
+du <folder name> -h
+
 
 # Show files and directories
 ls 
