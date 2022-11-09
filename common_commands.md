@@ -182,10 +182,19 @@ ps aux | grep vim  # list all vim processes
 
 ##################################################
 
-# log files
+# Log files
 sudo ls /var/log/syslog
 cat /var/log/syslog
 grep <something> /var/log/syslog
+
+
+##################################################
+
+# Change permissions
+chmod 777 <path to folder>
+chmod -R 777 <path to folder>
+
+
 ```
 
 # Server commands
