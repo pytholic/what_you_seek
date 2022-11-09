@@ -98,6 +98,7 @@ du <folder name> -h
 # Show files and directories
 ls 
 ls -l
+ls -a  # show hidden files
 
 # Schedueles shutdown
 sudo shutdown -P 20:00  # at 20:00
