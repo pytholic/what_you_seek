@@ -62,11 +62,19 @@ Now try connecting and it should work without password.
 ```shell
 ssh-keygen
 
-ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host  # send to server
 ```
 
 You can add multiple.
 
+If server has permission issues, do
+```sh
+chmod 700 <folder name>
+chmod 7000 ~/.ssh
+cd .ssh
+chmod 700 auhtorized_keys
+
+```
 
 # Creating config file
 
