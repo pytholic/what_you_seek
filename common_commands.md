@@ -165,6 +165,8 @@ ctrl+alt+F1  # logout screen
 alt+sysrq+reksub  # Force reboot
 https://www.thegeekstuff.com/2008/12/safe-reboot-of-linux-using-magic-sysrq-key/
 
+####################################################
+
 # Processes 
 ctrl+z  # suspend
 ctrl+d  # kill terminal
@@ -178,7 +180,12 @@ sudo kill %<id>  # kill job with id
 ps aux  # shows all processes
 ps aux | grep vim  # list all vim processes
 
+##################################################
 
+# log files
+sudo ls /var/log/syslog
+cat /var/log/syslog
+grep <something> /var/log/syslog
 ```
 
 # Server commands
