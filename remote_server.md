@@ -70,9 +70,8 @@ You can add multiple.
 If server has permission issues, do
 ```sh
 chmod 700 <folder name>
-chmod 7000 ~/.ssh
-cd .ssh
-chmod 700 auhtorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
 
 ```
 
