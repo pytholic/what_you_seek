@@ -252,6 +252,8 @@ git branch -d <branch name>  # delete branch
 git fetch
 git switch
 git pull
+
+git pull origin other-branch  # pull a branch
 ```
 
 ## Submodules
