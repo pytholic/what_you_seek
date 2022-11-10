@@ -197,6 +197,12 @@ grep <something> /var/log/syslog
 chmod 777 <path to folder>
 chmod -R 777 <path to folder>
 
+# Monitoring
+watch free -m  # watch system free memory 
+watch -n 1 nvidia-smi  # watch nvidia-smi every second
+watch -n 5 ls <directoryu> | wc-l
+
+########################################################
 
 ```
 
