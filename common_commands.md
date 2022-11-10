@@ -204,6 +204,16 @@ watch -n 5 "ls <directoryu> | wc-l"  # mind the quotes
 
 ########################################################
 
+# Loops
+for i in `seq 1 10`; do echo $i; done 
+
+if [[ $3 =~ ^(-s|--server_ip) ]]
+then
+    server_ip="$4"
+fi
+
+
+
 ```
 
 # Server commands
