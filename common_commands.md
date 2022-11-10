@@ -100,7 +100,9 @@ ls
 ls -l
 ls -a  # show hidden files
 
-# Schedueles shutdown
+ls directory | wc -l  # count number of files inside a directory
+
+# Schedueled shutdown
 sudo shutdown -P 20:00  # at 20:00
 sudo shutdown -P +30  # after 30mins
 sudo shutdown -P now
