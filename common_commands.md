@@ -300,6 +300,7 @@ git rm --cached FILENAME
 git checkout <commit number>  # rollback to previous commit
 git log  # view all commits
 git reflog  # veiw commits
+git log --graph
 
 ```
 
