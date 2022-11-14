@@ -43,6 +43,7 @@ cd ..
 ```
 
 # My examples
+## Example 1
 ```vm
 #!/bin/zsh
 source ~/miniconda3/etc/profile.d/conda.sh
@@ -54,6 +55,7 @@ conda activate droidenv
 
 Run `source ./droid.zsh` or `. ./droid.zsh`.
 
+## Example 2
 ```sh
 #!/bin/bash
 
@@ -66,7 +68,7 @@ then
 fi
 echo "Project path is $project_path"
 echo "Copying file..."
-scp -r ./tmp pytholic@10.160.50.25:"$project_path/"
+scp -r ./tmp $user@10.160.50.25:"$project_path/"
 echo "Copy process finished..."
 
 
@@ -84,7 +86,7 @@ mkdir $project_path/tmp/output; echo "Running droid-slam..."; python3 demo.py --
 
 # Fetch results
 mkdir ./results
-scp "pytholic@$server_ip:$project_path/tmp/output/*" ./results
+scp "$user@$server_ip:$project_path/tmp/output/*" ./results
 
 # Remove tmp folder from server
 ssh "$server_ip" rm -r $project_path/tmp
@@ -92,4 +94,9 @@ ssh "$server_ip" rm -r $project_path/tmp
 # Visualize and remove outlier
 conda activate open3d
 python3 vis.py; python3 outlier_removal.py
+```
+
+Command to run:
+```
+. ./run.sh --project_path /home/pytholic/projects/uav_mapping/UAVmapper --user pytholic --server_ip plato --env droidenv --cam gopro
 ```
