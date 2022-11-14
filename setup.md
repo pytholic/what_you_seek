@@ -11,6 +11,8 @@ Install the following.
   * Remote - SSH
   * Git Graph
   * Pylance
+  * Pylint
+  * autopep8/black
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda/Miniconda
