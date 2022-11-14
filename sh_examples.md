@@ -81,7 +81,7 @@ scp -r ./tmp $user@$server_ip:$project_path/
 echo "Copy process finished..."
 
 # Extracting frames and running droid-slam
-ssh $user@$server_ip ". ~/.zshrc; cd $project_path; conda activate droidenv; echo "Starting frame extraction..."; python3 ./utils/extract_frames_ffmpeg.py -d $cam; echo "Frame extraction completed...";
+ssh $user@$server_ip ". ~/.zshrc; cd $project_path; conda activate $env; echo "Starting frame extraction..."; python3 ./utils/extract_frames_ffmpeg.py -d $cam; echo "Frame extraction completed...";
 mkdir $project_path/tmp/output; echo "Running droid-slam..."; python3 demo.py --imagedir=$project_path/tmp/frames --calib=./calib/$cam.txt --reconstruction_path=$project_path/tmp/output; echo "Droid-slam completed...""
 
 # Fetch results
