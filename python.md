@@ -25,3 +25,29 @@ def foo(x, y):
 >>> foo(**d)
 1 2
 ```
+
+## Functools
+If a function takes a function with fixed arguments but you have a function with variable arguments, use `functools.partial()`.
+Ref -> https://docs.python.org/3/library/functools.html
+```python
+def filter(vis, denorm_pcd, norm_pcd, cls):
+	print("beep")
+	for i, color in enumerate(denorm_pcd.colors):
+		if cls == '1':
+			res = is_close(list(color), COLORS["mouse"][::-1])
+			if res == True:
+				print(res)
+				norm_pcd.colors[i] = [0,0,0]
+		elif cls == '2':
+			res = is_close(list(color), COLORS["keyboard"][::-1])
+			print(res)
+			if res == True:
+				norm_pcd.colors[i] = [0,0,0]
+
+	vis.update_geometry(norm_pcd)
+	vis.update_renderer()
+	vis.poll_events()
+	vis.run()
+    
+vis.register_key_callback(ord("O"), partial(filter, denorm_pcd=denorm_pcd, norm_pcd=norm_pcd, cls='1'))
+```
