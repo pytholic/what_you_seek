@@ -323,6 +323,10 @@ git log --graph
 
 ```
 
+## Merge vs. Rebase
+**Merge** keeps seprate history for `branch` and `main` just says "branch merged ..." in the commit. When we delete `branch`` all commit history is also lost.
+**Rebase** takes commit from a `branch` and places them on top of `main` and we get a linear commit history.
+
 ## Save credentials
 ```shell
 https://git-scm.com/docs/git-credential-store
