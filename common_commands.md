@@ -273,6 +273,9 @@ git switch
 git pull
 
 git pull origin other-branch  # pull a branch
+
+git push -d <remote_name> <branchname>  # delete remtoe branch
+git branch -d <branchname>  # delete local branch
 ```
 
 ## Submodules
