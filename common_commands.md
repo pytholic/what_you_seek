@@ -357,4 +357,7 @@ git reflog  # see previous commits
 # FFMPEG
 ```sh
 ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
+
+for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
+
 ```
