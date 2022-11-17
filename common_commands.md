@@ -102,6 +102,10 @@ ls -a  # show hidden files
 
 ls directory | wc -l  # count number of files inside a directory
 
+Ctrl+F10 E  # open terminal in current dir
+
+########################################################
+
 # Schedueled shutdown
 sudo shutdown -P 20:00  # at 20:00
 sudo shutdown -P +30  # after 30mins
