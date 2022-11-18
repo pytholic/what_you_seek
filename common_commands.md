@@ -361,3 +361,11 @@ ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
 for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 
 ```
+
+# Docker
+```sh
+docker build
+docker run
+docker ps -a  # list all containers
+docker container ls -a  # show all containers
+```
