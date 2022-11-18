@@ -374,4 +374,6 @@ docker container rm [ID]
 
 docker system prune  # remove all unused containers
 
+docker images  # view all images
+
 ```
