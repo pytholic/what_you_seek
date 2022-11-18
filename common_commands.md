@@ -368,4 +368,10 @@ docker build
 docker run
 docker ps -a  # list all containers
 docker container ls -a  # show all containers
+
+docker container stop [ID]
+docker container rm [ID]
+
+docker system prune  # remove all unused containers
+
 ```
