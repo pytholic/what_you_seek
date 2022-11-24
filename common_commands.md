@@ -280,6 +280,13 @@ git pull origin other-branch  # pull a branch
 
 git push -d <remote_name> <branchname>  # delete remtoe branch
 git branch -d <branchname>  # delete local branch
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
 ```
 
 ## Submodules
