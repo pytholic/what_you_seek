@@ -127,4 +127,26 @@ source ~/.zshrc
 source ~/.p10k.zsh
 ```
 
+## zsh-autocomplete
+Link -> https://github.com/marlonrichert/zsh-autocomplete
+
+Clone the repo:
+```
+% cd ~/Git  # ...or wherever you keep your Git repos/Zsh plugins
+% git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
+```
+
+Add at or near the top of your .zshrc file (before any calls to compdef):
+```
+source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+```
+
+Remove any calls to `compinit` from your .zshrc file.
+
+If you're using Ubuntu, add to your .zshenv file:
+```
+skip_global_compinit=1
+```
+
+Then restart your shell.
 
