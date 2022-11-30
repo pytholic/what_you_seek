@@ -51,3 +51,15 @@ def filter(vis, denorm_pcd, norm_pcd, cls):
     
 vis.register_key_callback(ord("O"), partial(filter, denorm_pcd=denorm_pcd, norm_pcd=norm_pcd, cls='1'))
 ```
+## Global variable
+If you want to change value of Global variable/list etc. inside a function, you need to use `global` keyword.
+```python3
+ZOOM = 1
+...
+def zoom_out(vis):
+    global ZOOM
+    view_ctl = vis.get_view_control()
+    ZOOM += 0.03
+    view_ctl.set_zoom(ZOOM)
+    return False
+```
