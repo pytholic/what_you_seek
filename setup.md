@@ -13,7 +13,7 @@ Install the following.
   * Pylance
   * Pylint
   * autopep8/black
-  *```
+  ```
   # Opening terminal in current foler
   Go to Preferences->Keyboard Shortcuts->Click open in JSON
   Paste:
@@ -24,7 +24,8 @@ Install the following.
         "cwd": "${fileDirname}"
     }
 }
-  ```
+```
+
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda/Miniconda
