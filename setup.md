@@ -23,7 +23,7 @@ Install the following.
     "args": {
         "cwd": "${fileDirname}"
     }
-    }
+  }
 ```
 
 * SmarGit
