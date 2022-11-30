@@ -14,7 +14,7 @@ Install the following.
   * Pylint
   * autopep8/black
   ```
-  # Opening terminal in current foler
+  # Opening terminal in current folder
   Go to Preferences->Keyboard Shortcuts->Click open in JSON
   Paste:
   {
@@ -23,7 +23,7 @@ Install the following.
     "args": {
         "cwd": "${fileDirname}"
     }
-}
+    }
 ```
 
 * SmarGit
