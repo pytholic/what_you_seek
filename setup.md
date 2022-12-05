@@ -14,7 +14,8 @@ Install the following.
   * Pylance
   * Pylint
   * autopep8/black
-  ```
+
+```
   # Opening terminal in current folder
   Go to Preferences->Keyboard Shortcuts->Click open in JSON
   Paste:
