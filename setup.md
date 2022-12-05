@@ -2,6 +2,7 @@
 
 Install the following.
 * Ubuntu
+* Chrome
 * Sublime text
 * VS Code
   * Markdown All in One
