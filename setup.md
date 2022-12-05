@@ -116,6 +116,8 @@ sudo apt install -y zsh
 chsh -s $(which zsh)  # set to default
 which $SHELL
 ```
+Log out and log in again.
+
 Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
 
 ## power10k
