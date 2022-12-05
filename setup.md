@@ -39,6 +39,8 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
+
+conda config --set auto_activate_base false
 ```
 
 If you install it after the zsh shell then do the following in `.zshrc`
