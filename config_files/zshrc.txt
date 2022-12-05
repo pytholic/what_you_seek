@@ -9,12 +9,13 @@ fi
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/packages/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/packages/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export QT_QPA_PLATFORM=offscreen
+#export QT_QPA_PLATFORM=offscreen
 
 # Command history setup
 HISTFILE=~/.zsh_history
