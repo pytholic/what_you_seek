@@ -231,6 +231,11 @@ ssh <username>@<address>  # connect to server
 **Add systemctl commands
 
 # Git commands
+```
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+
 ```shell
 # STEPS
 git init
