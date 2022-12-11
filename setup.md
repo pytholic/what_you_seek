@@ -4,6 +4,7 @@ Install the following.
 * Ubuntu
 * Chrome
 * Sublime text
+* Docker-desktop
 * VS Code
   * Markdown All in One
   * flate theme
