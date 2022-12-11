@@ -6,11 +6,13 @@ Install the following.
 * Sublime text
 * VS Code
   * Markdown All in One
+  * flate theme
   * Jupyter
   * python
   * IntelliCode
   * Remote - SSH
   * Git Graph
+  * git history
   * Pylance
   * Pylint
   * autopep8/black
