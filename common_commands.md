@@ -388,4 +388,6 @@ docker system prune  # remove all unused containers
 
 docker images  # view all images
 
+docker image list
+docker image inspect <IMAGE ID>
 ```
