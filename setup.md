@@ -29,8 +29,19 @@ echo \
   
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.15.0-amd64.deb
+# Remove sudo need
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
+sudo chown root:docker /var/run/docker.sock
+sudo chown -R root:docker /var/run/docker
+
+sudo reboot
+
+docker run hello-world
+
+# For desktop
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.15.0-amd64.deb
 sudo apt install ./docker-desktop-*-amd64.deb
 ```
 
