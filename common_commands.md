@@ -162,7 +162,7 @@ cp example.txt ~/Documents/file.txt  # copy file
 
 bindkey | grep fzf  # fzf key bindings
 
-######################################################
+############################https://stackoverflow.com/questions/22907231/how-to-copy-files-from-host-to-docker-container##########################
 
 # System fix
 ctrl+atl+dell  # system restart
@@ -390,4 +390,11 @@ docker images  # view all images
 
 docker image list
 docker image inspect <IMAGE ID>
+
+docker cp foo.txt container_id:/foo.txt  # copy file from host to container
+docker cp container_id:/foo.txt foo.txt  # copt from container
+
+docker cp src/. container_id:/target  # multiple files
+docker cp container_id:/src/. target
+
 ```
