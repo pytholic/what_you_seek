@@ -397,4 +397,6 @@ docker cp container_id:/foo.txt foo.txt  # copt from container
 docker cp src/. container_id:/target  # multiple files
 docker cp container_id:/src/. target
 
+docker exec <container> rm -rf <YourFile>  # removing folder inside container
+
 ```
