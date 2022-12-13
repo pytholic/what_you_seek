@@ -99,6 +99,7 @@ du <folder name> -h
 ls 
 ls -l
 ls -a  # show hidden files
+ls -lh  # list file with permissions and size
 
 ls directory | wc -l  # count number of files inside a directory
 
