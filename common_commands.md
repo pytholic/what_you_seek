@@ -399,4 +399,5 @@ docker cp container_id:/src/. target
 
 docker exec <container> rm -rf <YourFile>  # removing folder inside container
 
+docker stats  # details about container CPU, memory etc.
 ```
