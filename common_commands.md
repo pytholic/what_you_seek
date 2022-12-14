@@ -381,6 +381,7 @@ docker build
 docker run
 docker ps -a  # list all containers
 docker container ls -a  # show all containers
+docker container ps -a
 
 docker container stop [ID]
 docker container rm [ID]
@@ -388,7 +389,7 @@ docker container rm [ID]
 docker system prune  # remove all unused containers
 
 docker images  # view all images
-docker images --all
+docker images -a  # views images with intermediate image layers -> not very usefull
 
 docker image list
 docker image inspect <IMAGE ID>
