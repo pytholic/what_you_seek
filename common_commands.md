@@ -403,4 +403,13 @@ docker cp container_id:/src/. target
 docker exec <container> rm -rf <YourFile>  # removing folder inside container
 
 docker stats  # details about container CPU, memory etc.
+
+### Push an image ###
+docker login
+docker tag <image id> <image name>:tag
+
+# Create repo online, if not then it will create new one automatically.
+
+docker push <image name>:tag
+
 ```
