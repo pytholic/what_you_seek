@@ -337,6 +337,7 @@ git checkout <commit number>  # rollback to previous commit
 git log  # view all commits
 git reflog  # veiw commits
 git log --graph
+git reset HEAD~1  # revert last commit which is not pushed yetgit reset HEAD~1
 
 ```
 
