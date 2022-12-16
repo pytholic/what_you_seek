@@ -404,12 +404,31 @@ docker exec <container> rm -rf <YourFile>  # removing folder inside container
 
 docker stats  # details about container CPU, memory etc.
 
-### Push an image ###
+```
+
+## Push an image
+```
 docker login
 docker tag <image id> <image name>:tag
 
 # Create repo online, if not then it will create new one automatically.
 
 docker push <image name>:tag
+```
+
+## Execute command inside docker
+You can either run with `ssh` or `docker exec`.
+
+### SSH
+```
+ssh -p 3751 work@0.0.0.0 "ls; pwd;"
+```
+
+### Docker exec
+```
+docker exec -it tandem ls
+docker exec -i tandem /bin/bash -c "ls; pwd;"  # multiple commands
+```
+
 
 ```
