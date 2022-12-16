@@ -429,6 +429,3 @@ ssh -p 3751 work@0.0.0.0 "ls; pwd;"
 docker exec -it tandem ls
 docker exec -i tandem /bin/bash -c "ls; pwd;"  # multiple commands
 ```
-
-
-```
