@@ -405,6 +405,7 @@ docker exec <container> rm -rf <YourFile>  # removing folder inside container
 
 docker stats  # details about container CPU, memory etc.
 
+docker start -ai <name>  # detailed output msgs
 ```
 
 ## Push an image
