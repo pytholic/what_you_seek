@@ -380,6 +380,7 @@ for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 ```sh
 docker build
 docker run
+docker run --name <container name> -it <image>  # name is passed at the end after all the options
 docker ps -a  # list all containers
 docker container ls -a  # show all containers
 docker container ps -a
