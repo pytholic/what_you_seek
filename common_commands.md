@@ -407,6 +407,26 @@ docker exec <container> rm -rf <YourFile>  # removing folder inside container
 docker stats  # details about container CPU, memory etc.
 
 docker start -ai <name>  # detailed output msgs
+
+docker build -t pytholic/tandem -f <filename> .  # build image
+```
+
+## Build container example
+```
+docker run \
+  --name tandem \
+  --ipc=host \
+  --gpus all \
+  --privileged \
+  -p 3751:22 \
+  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \  # unix socker to port display from ontainer to host, not for remote ssh
+  -v $HOME/.Xauthority:$docker/.Xauthority \  # authority access for remote containers, for remote ssh
+  -v $HOME/work:/home/work/projects \
+  -v /mnt/Data/Datasets/dm-vio:/mnt/Data/Datasets/dm-vio \
+  -e XAUTHORITY=$home_folder/.Xauthority \
+  -e DISPLAY=$DISPLAY \
+  -e QT_X11_NO_MITSHM=1 \
+  -it pytholic/tandem
 ```
 
 ## Push an image
