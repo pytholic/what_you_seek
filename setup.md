@@ -57,6 +57,8 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * Pylance
   * Pylint
   * autopep8/black
+  * C++/C
+  * C++/C pack
 
 ```
   # Opening terminal in current folder
