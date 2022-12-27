@@ -217,7 +217,11 @@ then
     server_ip="$4"
 fi
 
+########################################################
 
+# GCC
+dpkg --list | grep compiler  # list installed gcc versions
+CC=/usr/bin/gcc-9 CXX=/usr/bin/g++9 CUDAHOSTCXX=/usr/bin/g++-9 cmake ..   # using diff gcc
 
 ```
 
