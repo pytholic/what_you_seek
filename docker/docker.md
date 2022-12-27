@@ -81,3 +81,5 @@ docker exec -i tandem /bin/bash -c "ls; pwd;"  # multiple commands
 https://www.howtogeek.com/devops/how-to-use-an-nvidia-gpu-with-docker-containers/
 
 Use `nvidia/cuda` in dockerfile or pull `nvcr.io` images.
+
+You also need [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
