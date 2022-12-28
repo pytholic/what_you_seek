@@ -33,6 +33,10 @@ docker stats  # details about container CPU, memory etc.
 docker start -ai <name>  # detailed output msgs
 
 docker build -t pytholic/tandem -f <filename> .  # build image
+
+docker rm <container>
+docker rmi <image>
+docker rm -f <Container>  # force flag
 ```
 
 ## Build container example
