@@ -30,7 +30,8 @@ docker exec <container> rm -rf <YourFile>  # removing folder inside container
 
 docker stats  # details about container CPU, memory etc.
 
-docker start -ai <name>  # detailed output msgs
+docker start <name>  # start a container
+docker start -ai <name>  # if x11 container does not start
 
 docker build -t pytholic/tandem -f <filename> .  # build image
 
