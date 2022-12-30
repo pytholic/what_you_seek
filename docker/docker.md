@@ -44,6 +44,8 @@ docker rm -f <Container>  # force flag
 ## X11
 
 ```
+# Test
+apt-get install x11-apps
 xeyes  # to see if x11 forwarding is working
 ```
 
