@@ -47,6 +47,9 @@ docker rm -f <Container>  # force flag
 # Test
 apt-get install x11-apps
 xeyes  # to see if x11 forwarding is working
+
+apt-get install mesa-utils
+glxinfo  # check if display is working fine for rendering
 ```
 
 
