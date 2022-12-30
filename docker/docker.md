@@ -39,6 +39,10 @@ docker rm <container>
 docker rmi <image>
 docker rm -f <Container>  # force flag
 
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+docker rename CONTAINER NEW_NAME
+
+
 ```
 
 ## X11
