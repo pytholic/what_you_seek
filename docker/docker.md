@@ -46,6 +46,9 @@ docker rename CONTAINER NEW_NAME
 ```
 
 ## X11
+```
+apt-get update
+```
 
 ```
 # Test
