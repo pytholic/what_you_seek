@@ -83,6 +83,9 @@ docker tag <image id> <image name>:tag
 # Create repo online, if not then it will create new one automatically.
 
 docker push <image name>:tag
+
+# Example
+docker push pytholic/voldor:latest
 ```
 
 ## Execute command inside docker
