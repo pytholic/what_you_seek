@@ -38,9 +38,17 @@ docker build -t pytholic/tandem -f <filename> .  # build image
 docker rm <container>
 docker rmi <image>
 docker rm -f <Container>  # force flag
+
 ```
 
-## Build container example
+## X11
+
+```
+xeyes  # to see if x11 forwarding is working
+```
+
+
+### Build container example
 ```
 docker run \
   --name tandem \
@@ -48,7 +56,7 @@ docker run \
   --gpus all \
   --privileged \
   -p 3751:22 \
-  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \  # unix socker to port display from ontainer to host, not for remote ssh
+  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \  # unix socket to port display from container to host, not for remote ssh
   -v $HOME/.Xauthority:$docker/.Xauthority \  # authority access for remote containers, for remote ssh
   -v $HOME/work:/home/work/projects \
   -v /mnt/Data/Datasets/dm-vio:/mnt/Data/Datasets/dm-vio \
