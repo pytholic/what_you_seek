@@ -4,14 +4,10 @@ Install the following.
 * Ubuntu
 * Chrome
 * Sublime text
-* Docker-desktop
+* Docker
 
 ```
-sudo apt remove docker-desktop
-
-rm -r $HOME/.docker/desktop
-sudo rm /usr/local/bin/com.docker.cli
-sudo apt purge docker-desktop
+sudo apt-get remove docker docker-engine docker.io containerd runc
 
 sudo apt-get update
 sudo apt-get install \
