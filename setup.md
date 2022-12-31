@@ -47,7 +47,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
 
 * VS Code
   * Markdown All in One
-  * flate theme
+  * github themes
   * Jupyter
   * python
   * IntelliCode
