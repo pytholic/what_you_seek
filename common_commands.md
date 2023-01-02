@@ -142,6 +142,8 @@ cp example.txt abc.txt  # copy file
 rm -r <file name>  # remove recursively
 rm -r -f <file name>  # force removal, don't have to say 'y' for write protected
 
+ls "$PWD/images/"*.*  >> ./filenames.txt  # absolute filenames to txt
+
 ######################################################
 
 # Unzip
