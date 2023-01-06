@@ -105,6 +105,11 @@ docker exec -it tandem ls
 docker exec -i tandem /bin/bash -c "ls; pwd;"  # multiple commands
 ```
 
+### Connect to running container
+```
+docker exec -it <container name> /bin/bash
+```
+
 ## GPU support
 https://www.howtogeek.com/devops/how-to-use-an-nvidia-gpu-with-docker-containers/
 
