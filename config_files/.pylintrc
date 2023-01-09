@@ -1,0 +1,7 @@
+```
+"""
+Add in projects 
+to fix pylint errors
+"""
+extension-pkg-whitelist=cv2.*
+```
