@@ -4,6 +4,9 @@ Install the following.
 * Ubuntu
 * Chrome
 * Sublime text
+    * Install github dark theme for UI
+    * Install One dark theme for editor
+    * Set color scheme [config](https://github.com/pytholic/what_you_seek/blob/main/config_files/sublime-color-scheme.json) by **Preferences -> Customize color scheme**.
 * Docker
 
 ```
