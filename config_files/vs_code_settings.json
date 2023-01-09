@@ -1,0 +1,37 @@
+{
+    "workbench.colorCustomizations": {
+        // Main editot
+        "editor.background": "#101010",
+        "editor.selectionBackground": "#303030",
+        // Sidebar
+        "sideBar.background": "#171717",
+        "sideBarTitle.foreground": "#ffb347", // pastel orange
+        "sideBar.border": "#78A2CC", // pastel blue,
+        // Scrollbar
+        "scrollbarSlider.activeBackground": "#ffb347",
+        // Titlebar
+        "titleBar.activeBackground": "#151515",
+        // Tabs
+        "tab.activeBackground": "#101010",
+        "tab.inactiveBackground": "#303030",
+        "tab.activeForeground": "#ffb347",
+        "tab.inactiveForeground": "#c6c6c6",
+        // Activity bar
+        "activityBar.background": "#101010",
+        "activityBar.activeBackground": "#303030",
+        "activityBar.inactiveForeground": "#808080",
+        "activityBar.foreground": "#ffb347",
+        "activityBar.border": "#78A2CC",
+        // Status bar
+        "statusBar.background": "#151515",
+        "statusBar.debuggingBackground": "#263238",
+        "statusBar.noFolderBackground": "#171717",
+        "statusBar.border": "#78A2CC"
+    },
+    "window.titleBarStyle": "custom",
+    "editor.fontSize": 15,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.preferredDarkColorTheme": "Atom One Dark"
+}
