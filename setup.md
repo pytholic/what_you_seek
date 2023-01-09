@@ -55,6 +55,9 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * autopep8/black
   * C++/C
   * C++/C pack
+  * Dev containers
+  * Theme: Atom one dark
+    * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
 
 ```
   # Opening terminal in current folder
