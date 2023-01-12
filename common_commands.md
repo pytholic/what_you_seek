@@ -94,6 +94,8 @@ dh -h  # show disk storages in GB
 du . -h  # show subdirectories size in GB
 du <folder name> -h
 
+cat filename.ext  # display file contents
+head -5 filename.ext  # display first 5 lines of the file
 
 # Show files and directories
 ls 
