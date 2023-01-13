@@ -397,7 +397,6 @@ sudo apt install tmux
 
 ## Pane shortcuts
 ```shell
-
 Prefix + %  # split-window -h (split horizontally)
 Prefix + "	# split-window -v (split vertically)
 Prefix + {	# Move the current pane left
@@ -414,7 +413,6 @@ Prefix + Spacebar	# Toggle between pane layouts
 Prefix + o 	# Switch to next pane
 
 exit  # closes current pane
-
 ```
 
 ## Winodow shortcuts
