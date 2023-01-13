@@ -383,3 +383,55 @@ ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
 for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 
 ```
+
+# TMUX
+```shell
+sudo apt install tmux
+```
+
+`Prefix = Ctrl + b`
+
+```shell
+
+```
+
+## Pane shortcuts
+```shell
+
+Prefix + %  # split-window -h (split horizontally)
+Prefix + "	# split-window -v (split vertically)
+Prefix + {	# Move the current pane left
+Prefix + {	# Move the current pane right
+Prefix + (↑ ↓ ← →)	# Switch to pane to the direction
+Prefix + q	# Show pane numbers
+Prefix + 0 … 9	# Switch/select pane by number
+Prefix + z	# Toggle pane zoom
+Prefix + !	# Convert pane into a window
+Prefix  Ctrl + (↑ ↓)	# Resize current pane height (after Prefix, hold down the Ctrl key while tapping the up or down key)
+Prefix  Ctrl + (← →)	# Resize current pane width (after Prefix, hold down the Ctrl key while tapping the right or left key)
+Prefix + x	# Close current pane
+Prefix + Spacebar	# Toggle between pane layouts
+Prefix + o 	# Switch to next pane
+
+exit  # closes current pane
+
+```
+
+## Winodow shortcuts
+```shell
+Prefix + c  # create new window
+Prefix + <window name>  # switch window
+Prefix + ,  # Rename a window
+exit  # closes the window
+```
+
+## Session commands
+Preserves state and processes. You can resume from where you stopped. Process is not terminated, it runs in the background.
+```shell
+Prefix + d  # detach current session
+tmux ls  # shows running sessions
+tmux attach -t <session name>  # attaches session
+tmux rename-session -t <current name> <new name>  # rename a session
+tmux new -s <session name>  # create session with specific name
+tmux kill-session -t <session name>  # kill a session
+```
