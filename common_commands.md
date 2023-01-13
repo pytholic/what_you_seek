@@ -319,6 +319,8 @@ git submodule update
 or
 git clone --recurse-submodules <url>
 ```
+You need to commit submodule chaneghs separately.
+If you do not want to push submodule, then just commit it and only push the main branch.
 
 ## Large files
 ```shell
