@@ -33,5 +33,17 @@
     "python.formatting.provider": "black",
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Atom One Dark",
-    "workbench.preferredDarkColorTheme": "Atom One Dark"
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+      "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+      "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
