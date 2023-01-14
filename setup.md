@@ -166,6 +166,14 @@ Log out and log in again.
 
 Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
 
+### Fix python issue
+`zsh` recognizes `python3` but not `python`. Do the following:
+```shell
+whereis python  # e.g. /usr/bin/python3
+echo "alias python=/usr/bin/python3" >> ~/.zshrc
+
+```
+
 ## power10k
 Link -> https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
 
