@@ -1,7 +1,13 @@
 # System setup
 
 Install the following.
-* Ubuntu
+* Ubuntu/macOS
+* Git configure
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+git config credential.helper store
+```
 * Chrome
 * Sublime text
     * UI Theme -> ADAPTIVE
@@ -50,13 +56,11 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * python
   * IntelliCode
   * Remote - SSH
-  * Git Graph
   * git history
   * Pylance
   * Pylint
   * autopep8/black
   * C++/C
-  * C++/C pack
   * Dev containers
   * Theme: Atom one dark
     * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
@@ -130,7 +134,6 @@ unset __conda_setup
 
 ```
 
-* Filezilla
 * Notion
 * Teamviewer
 
