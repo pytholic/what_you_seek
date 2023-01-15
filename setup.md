@@ -229,3 +229,6 @@ skip_global_compinit=1
 
 Then restart your shell.
 
+## Mac additional
+* Download color profile from -> https://github.com/lysyi3m/macos-terminal-themes
+* Use and set `Brogrammer` as default
