@@ -232,3 +232,5 @@ Then restart your shell.
 ## Mac additional
 * Download color profile from -> https://github.com/lysyi3m/macos-terminal-themes
 * Use and set `Brogrammer` as default
+* In p10k.zsh -> `typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=13`
+
