@@ -2,7 +2,7 @@
 
 ## Common commands
 ```sh
-docker build
+docker build -t pytholic/tandem -f dockerfile .
 docker run
 docker run --name <container name> -it <image>  # name is passed at the end after all the options
 docker ps -a  # list all containers
