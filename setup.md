@@ -64,6 +64,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * autopep8/black
   * C++/C
   * Dev containers
+  * Docker
   * Theme: Atom one dark
     * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
  * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
