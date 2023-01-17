@@ -50,6 +50,9 @@ pip list --format=freeze > requirements.txt  # to fix @ absolute symbol issue
 pip list --format=freeze > requirements.txt  # removes "path" strings
 
 pip index versions <package name>  ## list all available package versions
+
+pip install --upgrade --force-reinstall <package>
+
 ```
 
 # Common pip and conda packages
