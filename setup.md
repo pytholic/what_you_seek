@@ -6,7 +6,7 @@ Install the following.
 ```sh
 git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
-git config credential.helper store
+git config credential.helper store or use ssh0key method instead
 ```
 * Chrome
 * Sublime text
