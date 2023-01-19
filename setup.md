@@ -56,6 +56,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * github themes
   * Jupyter
   * python
+  * Python Indent
   * IntelliCode
   * Remote - SSH
   * git history
