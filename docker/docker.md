@@ -44,6 +44,8 @@ docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 docker rename CONTAINER NEW_NAME
 
 docker rmi REPOSITORY:TAG  # untag images
+
+docker inspect  # To view an image’s labels
 ```
 
 ## X11
