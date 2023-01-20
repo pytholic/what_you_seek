@@ -422,7 +422,7 @@ Prefix + o 	# Switch to next pane
 exit  # closes current pane
 ```
 
-## Winodow shortcuts
+## Window shortcuts
 ```shell
 Prefix + c  # create new window
 Prefix + <window name>  # switch window
@@ -439,4 +439,14 @@ tmux attach -t <session name>  # attaches session
 tmux rename-session -t <current name> <new name>  # rename a session
 tmux new -s <session name>  # create session with specific name
 tmux kill-session -t <session name>  # kill a session
+```
+
+# Mac Shortcuts
+```
+ctrl + right/left. # switch between desktops
+cmd + ctrl + q # lockscreen
+cmd + q. # close application
+cmd + w  # new window
+cmd + t  # new tab
+cmd + { or }. # tile windows, custom set
 ```
