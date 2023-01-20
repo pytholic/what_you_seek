@@ -452,10 +452,17 @@ cmd + { or } # tile windows, custom set
 cmd + up # go back in finder
 cmd + down # go inside the folder
 cmd + right # go forward in browser 
-cmd + lest # go back in browser 
+cmd + left # go back in browser 
 cmd + v # paste
 cmd + option + v # move or cut paste 
 cmd + c # copy
 cmt + Tab # swicth between apps
 cmd + m # minimizes all windows
+cmd + ctrl + f # fullscreen mode
+cmd + shift + n # creates new folder
+cmd + ctrl + q # locks the screen
+cmd + 1,2,3 # switch between tabs
+cmd + shift + 4 # allows you to take screenshot
+cmd + shift + delete # empties trash
+fn + up/down # scrolls page
 ```
