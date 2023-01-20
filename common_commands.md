@@ -443,10 +443,19 @@ tmux kill-session -t <session name>  # kill a session
 
 # Mac Shortcuts
 ```
-ctrl + right/left. # switch between desktops
+ctrl + right/left # switch between desktops
 cmd + ctrl + q # lockscreen
-cmd + q. # close application
-cmd + w  # new window
-cmd + t  # new tab
-cmd + { or }. # tile windows, custom set
+cmd + q # close application
+cmd + w # new window
+cmd + t # new tab
+cmd + { or } # tile windows, custom set
+cmd + up # go back in finder
+cmd + down # go inside the folder
+cmd + right # go forward in browser 
+cmd + lest # go back in browser 
+cmd + v # paste
+cmd + option + v # move or cut paste 
+cmd + c # copy
+cmt + Tab # swicth between apps
+cmd + m # minimizes all windows
 ```
