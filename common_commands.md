@@ -466,4 +466,5 @@ cmd + shift + 4 # allows you to take screenshot
 cmd + shift + delete # empties trash
 fn + up/down # scrolls page
 cmd + shift + . # toggle hidden files
+cmd + shift + f # opens emoticonss
 ```
