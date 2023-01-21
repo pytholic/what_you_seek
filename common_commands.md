@@ -456,7 +456,7 @@ cmd + left # go back in browser
 cmd + v # paste
 cmd + option + v # move or cut paste 
 cmd + c # copy
-cmt + Tab # swicth between apps
+cmt + Tab # switch between apps
 cmd + m # minimizes all windows
 cmd + ctrl + f # fullscreen mode
 cmd + shift + n # creates new folder
@@ -466,7 +466,7 @@ cmd + shift + 4 # allows you to take screenshot
 cmd + shift + delete # empties trash
 fn + up/down # scrolls page
 cmd + shift + . # toggle hidden files
-cmd + shift + f # opens emoticonss
+cmd + ctrl + space # opens emoticonss
 click(startpoint), shift+click(endpoint) # selecting longer texts
 ```
 
