@@ -470,6 +470,19 @@ cmd + ctrl + space # opens emoticonss
 click(startpoint), shift+click(endpoint) # selecting longer texts
 ```
 
+## Mac terminal
+```
+cmd + c # copy
+cmd + v # paste
+ctrl + l # clear
+open -a "Sublime Text" # open application
+open -a "Sublime Text" index.html # opening specific file
+mc index.html test.html # rename
+rm <filename> # remove file
+rm -r <directory> # remove directory
+say <text> # voice text
+
+```
 # VS Code shortcuts
 ```
 cmd + l # select current line
