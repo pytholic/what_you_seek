@@ -469,3 +469,10 @@ cmd + shift + . # toggle hidden files
 cmd + shift + f # opens emoticonss
 click(startpoint), shift+click(endpoint) # selecting longer texts
 ```
+
+# VS Code shortcuts
+```
+cmd + l # select current line
+shift + up, down # select multiple lines
+alt/option + click # add multiple cursors
+```
