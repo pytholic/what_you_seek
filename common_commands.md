@@ -467,4 +467,5 @@ cmd + shift + delete # empties trash
 fn + up/down # scrolls page
 cmd + shift + . # toggle hidden files
 cmd + shift + f # opens emoticonss
+click(startpoint), shift+click(endpoint) # selecting longer texts
 ```
