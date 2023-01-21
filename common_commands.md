@@ -483,9 +483,13 @@ rm -r <directory> # remove directory
 say <text> # voice text
 
 ```
-# VS Code shortcuts
+# VS Code shortcuts (MacOS)
 ```
 cmd + l # select current line
 shift + up, down # select multiple lines
 alt/option + click # add multiple cursors
+cmd + right # move cursor to the end of line
+cmd + left # move cursor to beginning of line
+cmd + up # move cursor to beginning of file
+cmd + down # move cursor to end of file
 ```
