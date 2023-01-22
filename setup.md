@@ -10,8 +10,8 @@ git config credential.helper store or use ssh0key method instead
 ```
 * Chrome
 * Sublime text
-    * UI Theme -> ADAPTIVE
-    * Color Scheme -> MONOKAI
+    * UI Theme -> Default Dark
+    * Color Scheme -> Mariana
 * Docker
 
 ```
