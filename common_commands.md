@@ -492,4 +492,6 @@ cmd + right # move cursor to the end of line
 cmd + left # move cursor to beginning of line
 cmd + up # move cursor to beginning of file
 cmd + down # move cursor to end of file
+cmd + double click # open file in split tab
+double click # open in new tab
 ```
