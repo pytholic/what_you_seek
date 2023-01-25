@@ -483,7 +483,9 @@ mc index.html test.html # rename
 rm <filename> # remove file
 rm -r <directory> # remove directory
 say <text> # voice text
-
+cmd + right # move cursor to the end of line
+cmd + left # move cursor to beginning of line
+option + left/right # jump one word back/forward
 ```
 # VS Code shortcuts (MacOS)
 ```
