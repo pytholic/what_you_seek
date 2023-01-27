@@ -85,6 +85,9 @@ ctrl+l  # shift terminal text up
 clear  # clear text in terminal
 ctrl+u  # remove all text
 ctrl+k  # remove from cursor till end
+ctrl + a  # move to the beginning of line
+ctrl + e  # move to the end of line
+alt _ right/left  # move one word
 
 df -h  # display drive storage info
 ps la  # list all processes
