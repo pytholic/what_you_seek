@@ -503,4 +503,8 @@ cmd + double click # open file in split tab
 double click # open in new tab
 cmd + z # undo
 cmd + shift + z # redo
+cmd + shift + . # search objects on page
+cmd + p + @ # search on page
+alt + up/down # move line up down
+ctrl + x # cut line
 ```
