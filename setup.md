@@ -52,6 +52,9 @@ sudo apt install ./docker-desktop-*-amd64.deb
 * VS Code
   * Add to PATH on MacOS
       Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
+  * Auto Save -> onFocusChange
+  * Word Wrap -> On
+  * vscode-icons
   * Markdown All in One
   * github themes
   * Jupyter
