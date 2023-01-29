@@ -50,31 +50,36 @@ sudo apt install ./docker-desktop-*-amd64.deb
 ```
 
 * VS Code
-  * Add to PATH on MacOS
-      Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
-  * Auto Save -> onFocusChange
-  * Word Wrap -> On
-  * Live server
+  * Setup
+      * Add to PATH on MacOS
+         * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
+      * Auto Save -> onFocusChange
+      * Word Wrap -> On
+      * Theme: Atom one dark
+         * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
+  * Extensions
+  * Web dev
+      * Live server
+      * Auto rename tag
+      * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
   * vscode-icons
   * Markdown All in One
   * github themes
   * Jupyter
-  * python
-  * Python Indent
+  * Python
+      * python
+      * Python Indent
+      * Pylance
+      * Pylint
+      * Black formatter
   * IntelliCode
   * Remote - SSH
   * git history
   * Pylance
   * Pylint
-  * autopep8/black
   * C++/C
   * Dev containers
   * Docker
-  * Theme: Atom one dark
-    * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
- * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
- * Black formatter python
-
 ```
   # Opening terminal in current folder
   Go to Preferences->Keyboard Shortcuts->Click open in JSON
