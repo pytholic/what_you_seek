@@ -61,6 +61,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * Web dev
       * Live server
       * Auto rename tag
+      * Auto close tag
       * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
   * vscode-icons
   * Markdown All in One
