@@ -54,6 +54,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
       Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
   * Auto Save -> onFocusChange
   * Word Wrap -> On
+  * Live server
   * vscode-icons
   * Markdown All in One
   * github themes
