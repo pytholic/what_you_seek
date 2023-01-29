@@ -451,7 +451,7 @@ tmux kill-session -t <session name>  # kill a session
 ctrl + right/left # switch between desktops
 cmd + ctrl + q # lockscreen
 cmd + q # close application
-cmd + w # new window
+cmd + w # new window, close browser window
 cmd + t # new tab
 cmd + { or } # tile windows, custom set
 cmd + up # go back in finder
