@@ -475,6 +475,8 @@ cmd + ctrl + space # opens emoticonss
 click(startpoint), shift+click(endpoint) # selecting longer texts
 ctrl + Tab # switch browser tabs
 cmd + Tab # switch apps
+cmd + ctrl + f # full screen, no tabs
+cmd + shift + f # fullsreen with tabs
 ```
 
 ## Mac terminal
