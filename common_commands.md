@@ -473,6 +473,8 @@ fn + up/down # scrolls page
 cmd + shift + . # toggle hidden files
 cmd + ctrl + space # opens emoticonss
 click(startpoint), shift+click(endpoint) # selecting longer texts
+ctrl + Tab # switch browser tabs
+cmd + Tab # switch apps
 ```
 
 ## Mac terminal
