@@ -113,6 +113,9 @@ ls directory | wc -l  # count number of files inside a directory
 
 Ctrl+F10 E  # open terminal in current dir
 
+ctrl + A  # move cursor to the beginning of line
+ctrl + E  # move cursor to the end of line
+
 ########################################################
 
 # Schedueled shutdown
