@@ -46,6 +46,7 @@ docker rename CONTAINER NEW_NAME
 docker rmi REPOSITORY:TAG  # untag images
 
 docker inspect  # To view an image’s labels
+docker save --output <output name>.tar <image>
 ```
 
 ## X11
