@@ -518,4 +518,6 @@ cmd + D # select cursor word
 cmd + super + L # select all occurence and enable multiple cursors
 cmd + B # hide side bar
 ! + Tab # create html template
+cmd + P # search files
+cmd + shift + p # command pallete
 ```
