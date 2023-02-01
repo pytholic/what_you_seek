@@ -520,4 +520,5 @@ cmd + B # hide side bar
 ! + Tab # create html template
 cmd + P # search files
 cmd + shift + p # command pallete
+opt + left/right # jump to prev/next work
 ```
