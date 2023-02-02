@@ -117,6 +117,13 @@ ctrl + A  # move cursor to the beginning of line
 ctrl + E  # move cursor to the end of line
 alt + f  # jump to beginning of next word
 alt + b  # jump to beginning of prev word
+
+ctrl+u  # Remove all before
+ctrl+k  # Remove all after
+ctrl+r  # Reverse search
+ctrl+shift+c  # Copy
+ctrl+shift+c  # Paste
+
 ########################################################
 
 # Schedueled shutdown
