@@ -529,3 +529,6 @@ cmd + P # search files
 cmd + shift + p # command pallete
 opt + left/right # jump to beginning/end of word
 ```
+
+# Podman commands
+Refer to official [link](https://docs.podman.io/en/latest/Commands.html)
