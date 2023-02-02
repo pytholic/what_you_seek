@@ -34,10 +34,12 @@
   "workbench.colorTheme": "Atom One Dark",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -45,12 +47,41 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, MesloLGS NF",
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', MesloLGS NF",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.formatOnSave": true,
   // put this in your settings object
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
+    "source.organizeImports": true
   },
-  "terminal.external.osxExec": "warp.app"
+  "terminal.external.osxExec": "warp.app",
+  "workbench.iconTheme": "vscode-icons",
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "HTML",
+    "HTML5"
+  ],
+  "editor.linkedEditing": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "vsicons.dontShowNewVersionMessage": true
 }
