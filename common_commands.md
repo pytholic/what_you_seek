@@ -76,7 +76,7 @@ pip install pytorch-lightning
 conda install -c conda-forge tensorflow-gpu
 ```
 
-# Common shell commands
+# Common shell commands (ubuntu/unix)
 ```shell
 ############################################
 ctrl+shift+t  # new terminal tab
@@ -115,7 +115,8 @@ Ctrl+F10 E  # open terminal in current dir
 
 ctrl + A  # move cursor to the beginning of line
 ctrl + E  # move cursor to the end of line
-
+alt + f  # jump to beginning of next word
+alt + b  # jump to beginning of prev word
 ########################################################
 
 # Schedueled shutdown
