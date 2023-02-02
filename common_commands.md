@@ -407,10 +407,6 @@ sudo apt install tmux
 
 `Prefix = Ctrl + b`
 
-```shell
-
-```
-
 ## Pane shortcuts
 ```shell
 Prefix + %  # split-window -h (split horizontally)
@@ -449,6 +445,9 @@ tmux rename-session -t <current name> <new name>  # rename a session
 tmux new -s <session name>  # create session with specific name
 tmux kill-session -t <session name>  # kill a session
 ```
+
+# Ubuntu shortcuts
+Refer to the [link](https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en)
 
 # Mac Shortcuts
 ```
