@@ -521,7 +521,7 @@ cmd + shift + . # search objects on page
 cmd + p + @ # search on page
 alt + up/down # move line up down
 ctrl + x # cut line
-cmd + D # select cursor word
+cmd + D # select cursor word, pressing again select nex toccurence with another cursor
 cmd + super + L # select all occurence and enable multiple cursors
 cmd + B # hide side bar
 ! + Tab # create html template
