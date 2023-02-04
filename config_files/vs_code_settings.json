@@ -31,7 +31,6 @@
   "window.titleBarStyle": "custom",
   "editor.fontSize": 15,
   "python.formatting.provider": "black",
-  "workbench.colorTheme": "Atom One Dark",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -83,5 +82,30 @@
   ],
   "editor.linkedEditing": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+
+  // TODO Highlight
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+      "text": "VIDEO",
+      "color": "#333",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "text": "FIXME",
+      "color": "#333",
+      "backgroundColor": "#e67e22"
+    },
+    {
+      "text": "BUG",
+      "color": "#333",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": "TODO",
+      "color": "#333",
+      "backgroundColor": "#2ecc71"
+    },
+  ]
 }
