@@ -55,7 +55,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
          * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
       * Auto Save -> onFocusChange
       * Word Wrap -> On
-      * Theme: Atom one dark
+      * Theme: Atom one dark / Default dark
          * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
   * Extensions
   * Web dev
@@ -81,6 +81,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
   * C++/C
   * Dev containers
   * Docker
+  * TODO Highlight
 ```
   # Opening terminal in current folder
   Go to Preferences->Keyboard Shortcuts->Click open in JSON
