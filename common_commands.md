@@ -528,6 +528,7 @@ cmd + B # hide side bar
 cmd + P # search files
 cmd + shift + p # command pallete
 opt + left/right # jump to beginning/end of word
+type ! + shift+1/Tab # write base html snippet
 ```
 
 # Podman commands
