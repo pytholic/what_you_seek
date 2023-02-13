@@ -124,6 +124,7 @@ ctrl+r  # Reverse search
 ctrl+shift+c  # Copy
 ctrl+shift+c  # Paste
 
+xdg-open <path>  # open folder using terminal
 ########################################################
 
 # Schedueled shutdown
