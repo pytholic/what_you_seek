@@ -169,6 +169,8 @@ Else set it to default from `gnome-shell` preferences -> [link](https://askubunt
 ```
 brew install --cask iterm2
 ```
+Go to `Settings>Profile>Keys>Key mappins>Preset` and set it to "Natural Text Editing" in settings.
+
 ## Git
 ```
 brew install git
