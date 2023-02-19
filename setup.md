@@ -153,27 +153,6 @@ unset __conda_setup
 * Teamviewer
 
 # Shell setup
-Change background to `black` and `fontsize` to 11.
-
-## fzf (better reverse search)
-```shell
-sudo apt-get install fzf
-
-############
-Add to bash
-############
-nano ~/.bashrc
-. /usr/share/doc/fzf/examples/key-bindings.bash
-
-######################
-Add to zshrc (for zsh)
-######################
-# Append this line to ~/.zshrc to enable fzf keybindings for Zsh:
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-
-#Append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
-source /usr/share/doc/fzf/examples/completion.zsh
-```
 
 ## zsh
 ```shell
@@ -186,31 +165,26 @@ Log out and log in again.
 
 Else set it to default from `gnome-shell` preferences -> [link](https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal)
 
-### Fix python issue
-`zsh` recognizes `python3` but not `python`. Do the following:
-```shell
-whereis python  # e.g. /usr/bin/python3
-echo "alias python=/usr/bin/python3" >> ~/.zshrc
-
+## iTerm
 ```
-
-## power10k
-Link -> https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
-
-```shell
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-p10k configure
-
-nano ~/.p10k.zsh  # edit config
-source ~/.p10k.zsh
-
-# Anaconda environment color
-typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
-typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=13
+brew install --cask iterm2
 ```
-
-Also download `Meslo` fonts for it (must to make it look better).
+## Git
+```
+brew install git
+```
+## Powerlevel10k
+```
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+Now that it's installed, open the "~/.zshrc" file with your preferred editor and change the value of "ZSH_THEME" as shown below:
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+To reflect this change on your terminal, restart it or run this command:
+```
+source ~/.zshrc
+```
 
 To make modification:
 ```shell
@@ -221,31 +195,55 @@ source ~/.zshrc
 source ~/.p10k.zsh
 ```
 
-## zsh-autocomplete
-Link -> https://github.com/marlonrichert/zsh-autocomplete
+## Meslo Font
+Also download `Meslo` fonts from p10k repo (must to make it look better).
 
-Clone the repo:
+Add to vscode `settings.json`:
 ```
-% cd ~/Git  # ...or wherever you keep your Git repos/Zsh plugins
-% git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
-```
-
-Add at or near the top of your .zshrc file (before any calls to compdef):
-```
-source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+"terminal.integrated.fontFamily": "MesloLGS NF"
 ```
 
-Remove any calls to `compinit` from your .zshrc file.
-
-If you're using Ubuntu, add to your .zshenv file:
+## Configure p10k
 ```
-skip_global_compinit=1
+p10k configure
 ```
 
-Then restart your shell.
+## Change iterm2 theme and font
+Link -> https://iterm2colorschemes.com/
+```
+curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Mariana.itermcolors --output ~/Downloads/Mariana.itermcolors
+```
+Go to settings in iterm2 and import color theme. Also increase font size.
 
-## Mac additional
-* Download color profile from -> https://github.com/lysyi3m/macos-terminal-themes
-* Use and set `Brogrammer` as default
-* In p10k.zsh -> `typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=13`
+## Install zsh plugins
+Install zsh-autosuggestions:
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Install zsh-syntax-highlighting:
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+Install fzf:
+```
+sudo apt get install fzf
+
+#Append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
+source /usr/share/doc/fzf/examples/completion.zsh
+```
+
+Open the "~/.zshrc" file in your desired editor and modify the plugins line to what you see below.
+```
+source ~/.zshrc
+```
+
+## Fix python issue
+`zsh` recognizes `python3` but not `python`. Do the following:
+```shell
+whereis python  # e.g. /usr/bin/python3
+echo "alias python=/usr/bin/python3" >> ~/.zshrc
+
+```
 
