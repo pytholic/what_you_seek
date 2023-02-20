@@ -221,7 +221,9 @@ Link -> https://iterm2colorschemes.com/
 curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Mariana.itermcolors --output ~/Downloads/Mariana.itermcolors
 ```
 Go to settings in iterm2 and import color theme. Also increase font size.
+or Gogh color schemes
 ## Change gnome-terminal theme
+Gogh color scheme.
 CHeck out -> https://github.com/Gogh-Co/Gogh#-install
 
 ## Install zsh plugins
