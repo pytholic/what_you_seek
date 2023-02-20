@@ -171,6 +171,11 @@ brew install --cask iterm2
 ```
 Go to `Settings>Profile>Keys>Key mappins>Preset` and set it to "Natural Text Editing" in settings.
 
+## Install oh my zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Git
 ```
 brew install git
