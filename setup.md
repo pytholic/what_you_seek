@@ -238,14 +238,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 Install fzf:
 ```
 sudo apt get install fzf
-
-#Append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
-source /usr/share/doc/fzf/examples/completion.zsh
 ```
 
 Open the "~/.zshrc" file in your desired editor and modify the plugins line to what you see below.
 ```
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting web-search)
 ```
 
 Then
