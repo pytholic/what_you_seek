@@ -519,6 +519,7 @@ double click # open in new tab
 cmd + z # undo
 cmd + shift + z # redo
 cmd + shift + . # search objects on page
+cmd + shift + o # search objects on page
 cmd + p + @ # search on page
 alt + up/down # move line up down
 ctrl + x # cut line
