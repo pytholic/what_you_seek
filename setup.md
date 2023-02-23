@@ -57,6 +57,8 @@ sudo apt install ./docker-desktop-*-amd64.deb
       * Word Wrap -> On
       * Theme: Mariana
          * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
+      * Terminal themes
+         * https://glitchbone.github.io/vscode-base16-term/#/
   * Extensions
   * Web dev
       * Live server
