@@ -1,6 +1,6 @@
 {
   "workbench.colorCustomizations": {
-    // Main editot
+    // Main editor
     "editor.background": "#101010",
     "editor.selectionBackground": "#303030",
     // Sidebar
@@ -29,26 +29,31 @@
     "statusBar.border": "#78A2CC",
 
     // Terminal
-    "terminal.background":"#222222",
-    "terminal.foreground":"#E0E0E0",
-    "terminalCursor.background":"#E0E0E0",
-    "terminalCursor.foreground":"#E0E0E0",
-    "terminal.ansiBlack":"#000000",
-    "terminal.ansiBlue":"#6FB3D2",
-    "terminal.ansiBrightBlack":"#B0B0B0",
-    "terminal.ansiBrightBlue":"#6FB3D2",
-    "terminal.ansiBrightCyan":"#76C7B7",
-    "terminal.ansiBrightGreen":"#A1C659",
-    "terminal.ansiBrightMagenta":"#D381C3",
-    "terminal.ansiBrightRed":"#FB0120",
-    "terminal.ansiBrightWhite":"#FFFFFF",
-    "terminal.ansiBrightYellow":"#FDA331",
-    "terminal.ansiCyan":"#76C7B7",
-    "terminal.ansiGreen":"#A1C659",
-    "terminal.ansiMagenta":"#D381C3",
-    "terminal.ansiRed":"#FB0120",
-    "terminal.ansiWhite":"#E0E0E0",
-    "terminal.ansiYellow":"#FDA331"
+    "terminal.background": "#222222",
+    "terminal.foreground": "#E0E0E0",
+    "terminalCursor.background": "#E0E0E0",
+    "terminalCursor.foreground": "#E0E0E0",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#6FB3D2",
+    "terminal.ansiBrightBlack": "#B0B0B0",
+    "terminal.ansiBrightBlue": "#6FB3D2",
+    "terminal.ansiBrightCyan": "#76C7B7",
+    "terminal.ansiBrightGreen": "#A1C659",
+    "terminal.ansiBrightMagenta": "#D381C3",
+    "terminal.ansiBrightRed": "#FB0120",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.ansiBrightYellow": "#FDA331",
+    "terminal.ansiCyan": "#76C7B7",
+    "terminal.ansiGreen": "#A1C659",
+    "terminal.ansiMagenta": "#D381C3",
+    "terminal.ansiRed": "#FB0120",
+    "terminal.ansiWhite": "#E0E0E0",
+    "terminal.ansiYellow": "#FDA331",
+
+    "editorBracketHighlight.foreground1": "#ffffffca",
+    "editorBracketHighlight.foreground2": "#ffffff",
+    "editorBracketHighlight.foreground3": "#ffffff",
+    "editorBracketHighlight.foreground4": "#ffffff",
   },
   "window.titleBarStyle": "custom",
   "editor.fontSize": 15,
@@ -63,13 +68,15 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
+    "editor.tabSize": 2
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "editor.fontFamily": "'Fira Code', 'MesloLGS NF',  'Droid Sans Mono', 'monospace'",
   "security.workspace.trust.untrustedFiles": "open",
@@ -133,10 +140,10 @@
       "backgroundColor": "#2ecc71"
     }
   ],
-  "workbench.colorTheme": "Mariana Pro (Cool)",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "redhat.telemetry.enabled": false,
   "liveServer.settings.CustomBrowser": "firefox",
   "editor.insertSpaces": false,
+  "workbench.colorTheme": "Nord Wave"
 }
