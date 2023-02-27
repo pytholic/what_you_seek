@@ -532,6 +532,7 @@ cmd + shift + p # command pallete
 opt + left/right # jump to beginning/end of word
 type ! + shift+1/Tab # write base html snippet
 cmd + super + k # delete enitire row
+options + shift + down # copies line to row below
 ```
 
 # Podman commands
