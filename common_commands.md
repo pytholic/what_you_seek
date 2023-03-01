@@ -535,6 +535,11 @@ cmd + super + k # delete enitire row
 options + shift + down # copies line to row below
 shift + alt + arrow # selecting blocks
 cmd + shift + e # switch between explorer and code window
+
+cmd + \ # split terminal
+cmd + opt + arrow # switch terminal
+cmd + backspace # kill terminal
+
 ```
 
 # Podman commands
