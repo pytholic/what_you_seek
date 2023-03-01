@@ -534,6 +534,7 @@ type ! + shift+1/Tab # write base html snippet
 cmd + super + k # delete enitire row
 options + shift + down # copies line to row below
 shift + alt + arrow # selecting blocks
+cmd + shift + e # switch between explorer and code window
 ```
 
 # Podman commands
