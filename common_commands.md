@@ -537,7 +537,8 @@ options + shift + down # copies line to row below
 shift + alt + arrow # selecting blocks
 cmd + shift + e # switch between explorer and code window
 
-cmd + \ # split terminal
+cmd + \ # split terminal, split window
+ctrl + w # close splitted window
 cmd + opt + arrow # switch terminal
 cmd + backspace # kill terminal
 
