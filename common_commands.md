@@ -539,6 +539,7 @@ cmd + shift + e # switch between explorer and code window
 
 cmd + \ # split terminal, split window
 ctrl + w # close splitted window
+ctrl + d # close splitted terminal
 cmd + opt + arrow # switch terminal
 cmd + backspace # kill terminal
 
