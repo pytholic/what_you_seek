@@ -153,6 +153,16 @@ unset __conda_setup
 
 * Notion
 * Teamviewer
+* nvim
+   * NeoSolarized theme
+   * yarn, nvm, npm (nvm install node)
+   * vim-plug
+   * coc-nvim
+   * nvim-tree
+   * vim-prettier
+   * telescope
+   * Autopairs
+* tmux
 
 # Shell setup
 
