@@ -452,6 +452,7 @@ tmux attach -t <session name>  # attaches session
 tmux rename-session -t <current name> <new name>  # rename a session
 tmux new -s <session name>  # create session with specific name
 tmux kill-session -t <session name>  # kill a session
+shift + drag # copy to system clipboard
 ```
 
 # Ubuntu shortcuts
