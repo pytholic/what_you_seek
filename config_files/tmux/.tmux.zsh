@@ -12,6 +12,8 @@ alias tn='tmux new-session'
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
+alias tr='tmux rename-window'
+
 tsplit() {
 	if [ $1 -lt 4 ]; then
 		return;
