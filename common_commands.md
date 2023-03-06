@@ -558,8 +558,8 @@ w # move word forward
 b # move word backwards
 shift + 4 # move end of line
 shift + 6 move beginning of line
-shift + [ # jump down next empty space
-shift + ] # jump up next empty space
+shift + [ # jump up next empty space
+shift + ] # jump down next empty space
 ctrl + f # move to next page
 ctrl + b # move to prev page
 gg # top of file
