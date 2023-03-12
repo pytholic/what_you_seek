@@ -398,7 +398,12 @@ git push http://example.com/repo.git
 ## Miscellaneous
 ```shell
 git reflog  # see previous commits
+git log --graph
 ```
+
+## Ignore changes
+git reset # remove add and staged changes
+git revert <commit id> # go to prev commit
 
 # FFMPEG
 ```sh
