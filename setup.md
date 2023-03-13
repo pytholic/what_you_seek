@@ -192,7 +192,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 brew install git
 ```
-## Powerlevel10k
+
+## Theme
+### Powerlevel10k (Option 1)
 ```
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
@@ -214,7 +216,7 @@ source ~/.zshrc
 source ~/.p10k.zsh
 ```
 
-## Meslo Font
+#### Meslo Font
 Also download `Meslo` fonts from p10k repo (must to make it look better).
 
 Add to vscode `settings.json`:
@@ -222,10 +224,21 @@ Add to vscode `settings.json`:
 "terminal.integrated.fontFamily": "MesloLGS NF"
 ```
 
-## Configure p10k
+#### Configure p10k
 ```
 p10k configure
 ```
+
+### Spaceship-prompt
+https://spaceship-prompt.sh/
+https://github.com/spaceship-prompt/spaceship-prompt
+
+Set `ZSH_THEME="spaceship"` in your `.zshrc`.
+
+### Nerd fonts
+https://github.com/ryanoasis/nerd-fonts#option-3-install-script
+
+###
 
 ## Change iterm2 theme and font
 Link -> https://iterm2colorschemes.com/
@@ -237,6 +250,8 @@ or Gogh color schemes
 ## Change gnome-terminal theme
 Gogh color scheme.
 CHeck out -> https://github.com/Gogh-Co/Gogh#-install
+
+I am using Ayu Mirage.
 
 ## Install zsh plugins
 Install zsh-autosuggestions:
