@@ -216,7 +216,7 @@ source ~/.zshrc
 source ~/.p10k.zsh
 ```
 
-#### Meslo Font
+#### Meslo Font (or use Nerd Fonts)
 Also download `Meslo` fonts from p10k repo (must to make it look better).
 
 Add to vscode `settings.json`:
