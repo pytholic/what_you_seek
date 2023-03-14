@@ -11,6 +11,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Colortheme "
 Plug 'cocopon/iceberg.vim'
 Plug 'overcache/NeoSolarized'
+Plug 'morhetz/gruvbox'
 " Autocompletion "
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Folder structure "
@@ -31,7 +32,8 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 call plug#end()
 
 " colorscheme iceberg
-colorscheme NeoSolarized
+" colorscheme NeoSolarized
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=none
 
 
