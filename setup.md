@@ -100,6 +100,8 @@ sudo apt install ./docker-desktop-*-amd64.deb
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda/Miniconda
+* Tree
+*  `sudo apt install tree`
 
 ```shell
 mkdir -p ~/miniconda3
