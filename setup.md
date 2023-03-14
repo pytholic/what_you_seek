@@ -296,7 +296,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * Virtualbox
 
 # Neovim
-Follow the [gist](https://gist.github.com/pytholic/a12facfe28ac8f9bc34ac659f82c83d1)
+Follow the [gist](https://gist.github.com/pytholic/a12facfe28ac8f9bc34ac659f82c83d1)<br>
 Can also use `vim-plug` and :PlugInstall with this [vim.init](https://github.com/pytholic/what_you_seek/blob/main/config_files/vim.init)
 
 ## Theme
