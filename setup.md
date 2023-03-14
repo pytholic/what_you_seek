@@ -154,7 +154,7 @@ unset __conda_setup
 * Notion
 * Teamviewer
 * nvim
-   * NeoSolarized theme
+   * NeoSolarized theme or gruvbox
    * yarn, nvm, npm (nvm install node)
    * vim-plug
    * coc-nvim
@@ -255,7 +255,7 @@ or Gogh color schemes
 Gogh color scheme.
 CHeck out -> https://github.com/Gogh-Co/Gogh#-install
 
-I use Ayu Mirage or Atom.
+I use Ayu Mirage, Dracula or Atom from Gogh themes.
 
 ## Install zsh plugins
 Install zsh-autosuggestions:
