@@ -417,13 +417,17 @@ for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 ```shell
 sudo apt install tmux
 ```
+Using this [config](https://github.com/gpakosz/.tmux).
 
 `Prefix = Ctrl + b or Ctrl + a`
 
 ## Pane shortcuts
-```shell
-Prefix + %  # split-window -h (split horizontally)
-Prefix + "	# split-window -v (split vertically)
+```
+tmux ls # list all session
+tmux new-session 
+tmux kill-session 0 # kill session 0
+Prefix + -  # split-window -h (split horizontally)
+Prefix + _	# split-window -v (split vertically)
 Prefix + {	# Move the current pane left
 Prefix + {	# Move the current pane right
 Prefix + (↑ ↓ ← →)	# Switch to pane to the direction
@@ -439,6 +443,7 @@ Prefix + o 	# Switch to next pane
 exit  # closes current pane
 Prefix + : # enter command mode
 swap-window -t 0 # swap current window with window 0, reorder
+tmux kill-session
 ```
 
 ## Window shortcuts
