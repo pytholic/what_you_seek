@@ -418,7 +418,7 @@ for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 sudo apt install tmux
 ```
 
-`Prefix = Ctrl + b`
+`Prefix = Ctrl + b or Ctrl + a`
 
 ## Pane shortcuts
 ```shell
@@ -436,8 +436,9 @@ Prefix  Ctrl + (← →)	# Resize current pane width (after Prefix, hold down th
 Prefix + x	# Close current pane
 Prefix + Spacebar	# Toggle between pane layouts
 Prefix + o 	# Switch to next pane
-
 exit  # closes current pane
+Prefix + : # enter command mode
+swap-window -t 0 # swap current window with window 0, reorder
 ```
 
 ## Window shortcuts
