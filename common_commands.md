@@ -444,6 +444,7 @@ exit  # closes current pane
 Prefix + : # enter command mode
 swap-window -t 0 # swap current window with window 0, reorder
 tmux kill-session
+Prefix + d # detach session
 ```
 
 ## Window shortcuts
