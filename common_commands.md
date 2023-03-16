@@ -163,7 +163,7 @@ rm -r <file name>  # remove recursively
 rm -r -f <file name>  # force removal, don't have to say 'y' for write protected
 
 ls "$PWD/images/"*.*  >> ./filenames.txt  # absolute filenames to txt
-
+du -h --max-depth=1 . # check size of each folder 
 ######################################################
 
 # Unzip
