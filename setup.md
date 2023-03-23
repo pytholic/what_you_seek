@@ -61,6 +61,7 @@ sudo apt install ./docker-desktop-*-amd64.deb
          * https://glitchbone.github.io/vscode-base16-term/#/
   * Extensions
   * Web dev
+  * Vspacecode
       * Live server
       * Auto rename tag
       * Auto close tag
