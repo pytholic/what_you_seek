@@ -35,7 +35,7 @@
     "terminalCursor.foreground": "#E0E0E0",
     "terminal.ansiBlack": "#000000",
     "terminal.ansiBlue": "#6FB3D2",
-    "terminal.ansiBrightBlack": "#B0B0B0",
+    "terminal.ansiBrightBlack": "#3e3e3e",
     "terminal.ansiBrightBlue": "#6FB3D2",
     "terminal.ansiBrightCyan": "#76C7B7",
     "terminal.ansiBrightGreen": "#A1C659",
@@ -53,7 +53,7 @@
     "editorBracketHighlight.foreground1": "#ffffffca",
     "editorBracketHighlight.foreground2": "#ffffff",
     "editorBracketHighlight.foreground3": "#ffffff",
-    "editorBracketHighlight.foreground4": "#ffffff",
+    "editorBracketHighlight.foreground4": "#ffffff"
   },
   "window.titleBarStyle": "custom",
   "editor.fontSize": 15,
@@ -63,14 +63,18 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.tabSize": 4,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 4
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
@@ -144,6 +148,13 @@
   "git.confirmSync": false,
   "redhat.telemetry.enabled": false,
   "liveServer.settings.CustomBrowser": "firefox",
-  "editor.insertSpaces": false,
-  "workbench.colorTheme": "Nord Wave"
+  "editor.insertSpaces": true,
+  "workbench.colorTheme": "Mariana Pro (Cool)",
+  // Quotes and braces
+  "editor.autoClosingOvertype": "never",
+  "settingsSync.ignoredExtensions": [],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "ms-python.black-formatter"
 }
