@@ -556,6 +556,8 @@ ctrl + w # close splitted window
 ctrl + d # close splitted terminal
 cmd + opt + arrow # switch terminal
 cmd + backspace # kill terminal
+    
+cmd + opt + left/right # switch between windows
 
 ```
 
