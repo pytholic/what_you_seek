@@ -47,6 +47,8 @@ docker rmi REPOSITORY:TAG  # untag images
 
 docker inspect  # To view an image’s labels
 docker save --output <output name>.tar <image>
+
+docker exec -it <container name> /bin/bash # attach shell to a running container 
 ```
 
 ## X11
