@@ -200,6 +200,8 @@ brew install git
 Install tmux and config.
 https://github.com/gpakosz/.tmux
 
+Install `xclip` for system clipboard.
+
 ## Theme
 ### Powerlevel10k (Option 1)
 ```
