@@ -396,25 +396,26 @@ git push http://example.com/repo.git
 ```
 
 ## Miscellaneous
-```shell
+```
 git reflog  # see previous commits
 git log --graph
 ```
 
 ## Ignore changes
+```
 git reset # remove add and staged changes
 git revert <commit id> # go to prev commit
+```
 
 # FFMPEG
-```sh
+
+```
 ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
-
 for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
-
 ```
 
 # TMUX
-```shell
+```
 sudo apt install tmux
 ```
 Using this [config](https://github.com/gpakosz/.tmux).
@@ -558,6 +559,7 @@ cmd + opt + arrow # switch terminal
 cmd + backspace # kill terminal
     
 cmd + opt + left/right # switch between windows
+ctrl + g # go to line
 
 ```
 
