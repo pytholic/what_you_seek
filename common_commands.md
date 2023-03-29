@@ -424,9 +424,10 @@ Using this [config](https://github.com/gpakosz/.tmux).
 
 ## Pane shortcuts
 ```
+tk 0 # kill all panes except 0
 tmux ls # list all session
 tmux new-session 
-tmux kill-session 0 # kill session 0
+tmux kill-session -t 0 # kill session 0
 Prefix + -  # split-window -h (split horizontally)
 Prefix + _	# split-window -v (split vertically)
 Prefix + {	# Move the current pane left
