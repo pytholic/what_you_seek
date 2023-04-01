@@ -563,6 +563,9 @@ cmd + opt + left/right # switch between windows
 ctrl + g # go to line
 ctrl + r # show recent folders
 
+ctrl + ~ # focus on terminal
+ctrl + 2 # focus on editor
+
 ```
 
 # Podman commands
