@@ -564,7 +564,7 @@ ctrl + g # go to line
 ctrl + r # show recent folders
 
 ctrl + ~ # focus on terminal
-ctrl + 2 # focus on editor
+ctrl + 1,2 # focus on editor
 
 ```
 
