@@ -566,6 +566,8 @@ ctrl + r # show recent folders
 ctrl + ~ # focus on terminal
 ctrl + 1,2 # focus on editor
 
+ctrl + fn + up/down arrow # scroll window
+
 ```
 
 # Podman commands
