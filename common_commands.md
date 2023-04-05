@@ -505,6 +505,8 @@ ctrl + Tab # switch browser tabs
 cmd + Tab # switch apps
 cmd + ctrl + f # full screen, no tabs
 cmd + shift + f # fullsreen with tabs
+ctrl + tab # swicth between tabs
+cmd + delete # delete file
 ```
 
 ## Mac terminal
