@@ -570,6 +570,8 @@ ctrl + 1,2 # focus on editor
 
 ctrl + fn + up/down arrow # scroll window
 
+ctrl + cmd + shift + arrow # expand seelction
+
 ```
 
 # Podman commands
