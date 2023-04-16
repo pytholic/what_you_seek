@@ -166,6 +166,7 @@ unset __conda_setup
    * telescope
    * Autopairs
 * tmux
+* Rectangle window manager
 
 # Shell setup
 
