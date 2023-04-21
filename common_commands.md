@@ -422,6 +422,19 @@ Using this [config](https://github.com/gpakosz/.tmux).
 
 `Prefix = Ctrl + b or Ctrl + a`
 
+## Commands
+```
+tmux new -s my_session # cerate new session with name
+tmux detach
+tmux attach -t <session-name>
+prefix + - # split vertically
+prefix + _ # split horizontally
+tmus ls # list all sessions
+tmux kill-session -t <session-name>
+tmux rename-session <new name>
+```
+
+
 ## Pane shortcuts
 ```
 tk 0 # kill all panes except 0
