@@ -78,6 +78,9 @@ conda install -c conda-forge tensorflow-gpu
 
 # Common shell commands (ubuntu/unix)
 ```shell
+
+cat /etc/issue # distribution version
+
 ############################################
 ctrl+shift+t  # new terminal tab
 ctrl+alt+t  # new terminal window
