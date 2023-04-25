@@ -54,8 +54,24 @@ docker run -it --detach <name>  # run in the background
 docker attach <id>  # attach to running process
 
 docker kill <container>
-
 docker inspect <container>
+docker pause <container> 
+docker unpause <container>
+
+docker ps -q. # outputs contaienr ids
+docker kill $(docker ps -q)  # kill all running containers
+
+docker hisotry <image>. # all the change
+
+docker info # info about host computer
+
+docker logs <container>
+
+docker container prune. # remove all stopepd containers)
+docker image prune
+
+docker search python. # lists some python contaienrs from the hub
+
 
 ```
 
