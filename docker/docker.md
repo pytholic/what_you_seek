@@ -49,6 +49,12 @@ docker inspect  # To view an image’s labels
 docker save --output <output name>.tar <image>
 
 docker exec -it <container name> /bin/bash # attach shell to a running container 
+
+docker run -it --detach <name>  # run in the background
+docker attach <id>  # attach to running process
+
+docker kill <container>
+
 ```
 
 ## X11
