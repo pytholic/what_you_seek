@@ -72,6 +72,8 @@ docker image prune
 
 docker search python. # lists some python contaienrs from the hub
 
+docker build .
+docker build -t test . # build with name
 
 ```
 
