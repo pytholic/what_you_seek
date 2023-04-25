@@ -55,6 +55,8 @@ docker attach <id>  # attach to running process
 
 docker kill <container>
 
+docker inspect <container>
+
 ```
 
 ## X11
