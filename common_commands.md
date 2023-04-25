@@ -499,7 +499,7 @@ ctrl + right/left # switch between desktops
 cmd + ctrl + q # lockscreen
 cmd + q # close application
 cmd + w # new window, close browser window
-cmd + t # new tab
+cmd + t # new ta b
 cmd + { or } # tile windows, custom set
 cmd + up # go back in finder
 cmd + down # go inside the folder
