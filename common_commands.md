@@ -437,6 +437,7 @@ prefix + _ # split horizontally
 tmus ls # list all sessions
 tmux kill-session -t <session-name>
 tmux rename-session <new name>
+tmux rename-window <new name>
 ```
 
 
