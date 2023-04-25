@@ -591,6 +591,8 @@ ctrl + fn + up/down arrow # scroll window
 
 ctrl + cmd + shift + arrow # expand seelction
 
+cmd + b # show/hdie sidebar
+
 ```
 
 # Podman commands
