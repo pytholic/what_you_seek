@@ -174,6 +174,8 @@ tar –xvzf documents.tar.gz  # tar file
 unzip <filename>  # zip file
 sudo apt install fastjar
 jar xvf videos.zip  # zip file
+tar -xf file_name.tar -C /target/directory
+tar -xf file_name.tar --directory /target/directory
 
 ######################################################
 
