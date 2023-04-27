@@ -526,6 +526,8 @@ cmd + ctrl + f # full screen, no tabs
 cmd + shift + f # fullsreen with tabs
 ctrl + tab # swicth between tabs
 cmd + delete # delete file
+ctrl + shift + F4 # swutch between split screen
+ctrl + 1,2,3,4 # switch desktops
 ```
 
 ## Mac terminal
