@@ -11,7 +11,7 @@ git config credential.helper store or use ssh0key method instead
 ```
 * Chrome
 * Docker
-
+* htop
 * VS Code
   * Setup
       * Add to PATH on MacOS
