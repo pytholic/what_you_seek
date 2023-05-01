@@ -2,52 +2,15 @@
 
 Install the following.
 * Ubuntu/macOS
-* Git configure
+* Git
 ```sh
+brew install git
 git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 git config credential.helper store or use ssh0key method instead
 ```
 * Chrome
-* Sublime text
-    * UI Theme -> Default Dark
-    * Color Scheme -> Mariana
 * Docker
-
-```
-sudo apt-get remove docker docker-engine docker.io containerd runc
-
-sudo apt-get update
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-    
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
-# Remove sudo need
-sudo groupadd docker
-sudo usermod -aG docker $USER
-
-sudo chown root:docker /var/run/docker.sock
-sudo chown -R root:docker /var/run/docker
-
-sudo reboot
-
-docker run hello-world
-
-# For desktop
-wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.15.0-amd64.deb
-sudo apt install ./docker-desktop-*-amd64.deb
-```
 
 * VS Code
   * Setup
@@ -101,9 +64,6 @@ sudo apt install ./docker-desktop-*-amd64.deb
 * SmarGit
 * Nvidia cuda toolkit
 * Anaconda/Miniconda
-* Tree
-*  `sudo apt install tree`
-
 ```shell
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -114,57 +74,11 @@ rm -rf ~/miniconda3/miniconda.sh
 
 conda config --set auto_activate_base false
 ```
-
-If you install it after the zsh shell then do the following in `.zshrc`
-```shell
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/pytholic/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/pytholic/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/pytholic/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/pytholic/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-```
-
-For `.bashrc`
-```shell
-# added by Anaconda3 5.3.1 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/pytholic/anaconda3/bin/conda'>
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/pytholic/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/pytholic/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/pytholic/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-```
+* Tree -> `sudo apt install tree`
 
 * Notion
 * Teamviewer
 * nvim
-   * NeoSolarized theme or gruvbox
-   * yarn, nvm, npm (nvm install node)
-   * vim-plug
-   * coc-nvim
-   * nvim-tree
-   * vim-prettier
-   * telescope
-   * Autopairs
 * tmux
 * Rectangle window manager
 
@@ -192,6 +106,21 @@ Go to `Settings>Profile>Keys>Key mappins>Preset` and set it to "Natural Text Edi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+## Install powerlevel10k
+```
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+Now that it's installed, open the "~/.zshrc" file with your preferred editor and change the value of "ZSH_THEME" as shown below:
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+Also download `Meslo` fonts from p10k repo (must to make it look better).
+
+Add to vscode `settings.json`:
+```
+"terminal.integrated.fontFamily": "MesloLGS NF"
+```
+
 ## Git
 ```
 brew install git
@@ -203,52 +132,6 @@ https://github.com/gpakosz/.tmux
 
 Install `xclip` for system clipboard.
 
-## Theme
-### Powerlevel10k (Option 1)
-```
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-```
-Now that it's installed, open the "~/.zshrc" file with your preferred editor and change the value of "ZSH_THEME" as shown below:
-```
-ZSH_THEME="powerlevel10k/powerlevel10k"
-```
-To reflect this change on your terminal, restart it or run this command:
-```
-source ~/.zshrc
-```
-
-To make modification:
-```shell
-nano ~/.zshrc
-nano ~/.p10k.zsh
-
-source ~/.zshrc
-source ~/.p10k.zsh
-```
-
-#### Meslo Font (or use Nerd Fonts)
-Also download `Meslo` fonts from p10k repo (must to make it look better).
-
-Add to vscode `settings.json`:
-```
-"terminal.integrated.fontFamily": "MesloLGS NF"
-```
-
-#### Configure p10k
-```
-p10k configure
-```
-
-### Spaceship-prompt
-https://spaceship-prompt.sh/
-https://github.com/spaceship-prompt/spaceship-prompt
-
-Set `ZSH_THEME="spaceship"` in your `.zshrc`.
-
-### Nerd fonts
-https://github.com/ryanoasis/nerd-fonts#option-3-install-script
-
-###
 
 ## Change iterm2 theme and font
 Link -> https://iterm2colorschemes.com/
@@ -257,6 +140,7 @@ curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/sch
 ```
 Go to settings in iterm2 and import color theme. Also increase font size.
 or Gogh color schemes
+
 ## Change gnome-terminal theme
 Gogh color scheme.
 CHeck out -> https://github.com/Gogh-Co/Gogh#-install
@@ -302,8 +186,4 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * Virtualbox
 
 # Neovim
-Follow the [gist](https://gist.github.com/pytholic/a12facfe28ac8f9bc34ac659f82c83d1)<br>
-Can also use `vim-plug` and :PlugInstall with this [vim.init](https://github.com/pytholic/what_you_seek/blob/main/config_files/vim.init)
-
-## Theme
-https://github.com/morhetz/gruvbox/wiki/Installation#general
+Copy files to `.config/nvim`, then do `:PackerSync`.
