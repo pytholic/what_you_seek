@@ -186,4 +186,5 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * Virtualbox
 
 # Neovim
+Install `Packer`.
 Copy files to `.config/nvim`, then do `:PackerSync`.
