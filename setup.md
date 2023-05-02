@@ -165,6 +165,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 Install fzf:
 ```
 sudo apt get install fzf
+brew install fzf
 ```
 
 Open the "~/.zshrc" file in your desired editor and modify the plugins line to what you see below.
