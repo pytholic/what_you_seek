@@ -2,6 +2,7 @@
 
 Install the following.
 * Ubuntu/macOS
+* Homebrew install
 * Git
 ```sh
 brew install git
@@ -87,7 +88,7 @@ conda config --set auto_activate_base false
 ## zsh
 ```shell
 # Installation
-sudo apt install -y zsh
+sudo apt install -y zsh or brew install zsh
 chsh -s $(which zsh)  # set to default
 which $SHELL
 ```
