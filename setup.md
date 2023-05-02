@@ -188,5 +188,5 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 ```
 
 # Neovim
-Install `Packer`.
+Install `Neovim` and `Packer`.
 Copy files to `.config/nvim`, then do `:PackerSync`.
