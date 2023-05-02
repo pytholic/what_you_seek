@@ -122,6 +122,13 @@ Add to vscode `settings.json`:
 "terminal.integrated.fontFamily": "MesloLGS NF"
 ```
 
+## Download nerf fonts
+https://github.com/ryanoasis/nerd-fonts
+Set font size to 15.
+
+## Set terminal colors
+https://github.com/pytholic/what_you_seek/blob/main/config_files/terminal_colors.itermcolors
+
 ## Git
 ```
 brew install git
