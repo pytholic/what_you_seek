@@ -2,14 +2,7 @@
 
 Install the following.
 * Ubuntu/macOS
-* Homebrew install
-* Git
-```sh
-brew install git
-git config --global user.name "Your Name"
-git config --global user.email "youremail@yourdomain.com"
-git config credential.helper store or use ssh0key method instead
-```
+* Install homebrew
 * Chrome
 * Docker
 * htop
@@ -62,8 +55,6 @@ git config credential.helper store or use ssh0key method instead
   }
 ```
 
-* SmarGit
-* Nvidia cuda toolkit
 * Anaconda/Miniconda
 ```shell
 mkdir -p ~/miniconda3
@@ -75,13 +66,15 @@ rm -rf ~/miniconda3/miniconda.sh
 
 conda config --set auto_activate_base false
 ```
-* Tree -> `sudo apt install tree`
 
+* Tree -> `sudo apt install tree`
 * Notion
 * Teamviewer
 * nvim
 * tmux
 * Rectangle window manager
+# Virtual machine
+* Virtualbox
 
 # Shell setup
 
@@ -130,8 +123,11 @@ Set font size to 15.
 https://github.com/pytholic/what_you_seek/blob/main/config_files/terminal_colors.itermcolors
 
 ## Git
-```
+```sh
 brew install git
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+git config credential.helper store or use ssh0key method instead
 ```
 
 ## tmux
@@ -189,9 +185,6 @@ whereis python  # e.g. /usr/bin/python3
 echo "alias python=/usr/bin/python3" >> ~/.zshrc
 
 ```
-
-# Virtual machine
-* Virtualbox
 
 # Neovim
 Install `Packer`.
