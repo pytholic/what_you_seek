@@ -147,14 +147,8 @@ conda config --set auto_activate_base false
 Do `brew install md5sha1sum` if got `md5sum: command not found` error.
 
 * lazygit
-
-Set diff behavior -> https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
-```
-git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never --side-by-side
-```
+Install `delta` -> https://github.com/dandavison/delta
+Copy custom config.
 
 # VS Code (if needed)
 * Setup
