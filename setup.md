@@ -197,6 +197,9 @@ Paste:
 }
 ```
 
+# Switch between multiple displays
+https://medium.com/thevelops-tech-blog/how-to-switch-focus-between-screens-in-macos-21c6f02883a6
+
 
 
 
