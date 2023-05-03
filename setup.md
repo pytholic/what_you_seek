@@ -1,81 +1,8 @@
-# System setup
-
 Install the following.
-* Ubuntu/macOS
 * Install homebrew
-* Chrome
-* Docker
-* htop
-* VS Code
-  * Setup
-      * Add to PATH on MacOS
-         * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
-      * Auto Save -> onFocusChange
-      * Word Wrap -> On
-      * Theme: Mariana
-         * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
-      * Terminal themes
-         * https://glitchbone.github.io/vscode-base16-term/#/
-  * Extensions
-  * Web dev
-  * Vspacecode
-      * Live server
-      * Auto rename tag
-      * Auto close tag
-      * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-  * vscode-icons
-  * Markdown All in One
-  * github themes
-  * Jupyter
-  * Python
-      * python
-      * Python Indent
-      * Pylance
-      * Pylint
-      * Black formatter
-  * IntelliCode
-  * Remote - SSH
-  * git history
-  * Pylance
-  * Pylint
-  * C++/C
-  * Dev containers
-  * Docker
-  * TODO Highlight
-```
-  # Opening terminal in current folder
-  Go to Preferences->Keyboard Shortcuts->Click open in JSON
-  Paste:
-  {
-    "key": "alt+t",
-    "command": "workbench.action.terminal.newWithCwd",
-    "args": {
-        "cwd": "${fileDirname}"
-    }
-  }
-```
+* Install Chrome
 
-* Anaconda/Miniconda
-```shell
-mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-~/miniconda3/bin/conda init bash
-~/miniconda3/bin/conda init zsh
-
-conda config --set auto_activate_base false
-```
-
-* Tree -> `sudo apt install tree`
-* Notion
-* Teamviewer
-* nvim
-* Rectangle window manager
-# Virtual machine
-* Virtualbox
-
-# Shell setup
+# Shell Setup
 
 ## zsh
 ```shell
@@ -121,41 +48,8 @@ Set font size to 15.
 ## Set terminal colors
 https://github.com/pytholic/what_you_seek/blob/main/config_files/terminal_colors.itermcolors
 
-## Git
-```sh
-brew install git
-git config --global user.name "Your Name"
-git config --global user.email "youremail@yourdomain.com"
-git config credential.helper store or use ssh0key method instead
-```
+We can also use `Gogh Themes`.
 
-## tmux
-Install tmux and config.
-https://github.com/gpakosz/.tmux
-
-Install clipboard support.
-https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-
-Enable mouse mode.
-```
-prefix + m
-```
-
-Copy personal config files.
-
-## Change iterm2 theme and font
-Link -> https://iterm2colorschemes.com/
-```
-curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Mariana.itermcolors --output ~/Downloads/Mariana.itermcolors
-```
-Go to settings in iterm2 and import color theme. Also increase font size.
-or Gogh color schemes
-
-## Change gnome-terminal theme
-Gogh color scheme.
-CHeck out -> https://github.com/Gogh-Co/Gogh#-install
-
-I use Ayu Mirage, Dracula or Atom from Gogh themes.
 
 ## Install zsh plugins
 Install zsh-autosuggestions:
@@ -185,6 +79,38 @@ Then
 source ~/.zshrc
 ```
 
+## tmux
+Install tmux and config.
+https://github.com/gpakosz/.tmux
+
+Install clipboard support.
+https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+
+Enable mouse mode.
+```
+prefix + m
+```
+
+Copy personal confix files.
+https://github.com/pytholic/what_you_seek/tree/main/config_files/tmux
+
+Add to `~/.zshrc`.
+```
+source ~/.tmux.zsh
+```
+
+## Neovim
+Install `Neovim` and `Packer`.
+```
+echo "alias vim='nvim'" >> ~/.zshrc
+echo "alias vi='nvim'" >> ~/.zshrc
+echo "alias oldvim='\vim'" >> ~/.zshrc
+```
+Copy files to `.config/nvim`, then do `:PackerSync`.
+
+
+
+
 ## Fix python issue
 `zsh` recognizes `python3` but not `python`. Do the following:
 ```shell
@@ -193,11 +119,82 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 
 ```
 
-# Neovim
-Install `Neovim` and `Packer`.
+# Install rest of the apps
+* Tree `brew install tree`
+* Htop `brew install htop`
+* Docker Desktop
+* Notion
+* Rectangle window manager
+* Virtualbox (if needed)
+* Git
+```sh
+brew install git
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+git config credential.helper store or use ssh0key method instead
 ```
-echo "alias vim='nvim'" >> ~/.zshrc
-echo "alias vi='nvim'" >> ~/.zshrc
-echo "alias oldvim='\vim'" >> ~/.zshrc
+* Anaconda/Miniconda
+```shell
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+
+conda config --set auto_activate_base false
 ```
-Copy files to `.config/nvim`, then do `:PackerSync`.
+
+# VS Code (if needed)
+* Setup
+    * Add to PATH on MacOS
+       * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
+    * Auto Save -> onFocusChange
+    * Word Wrap -> On
+    * Theme: Mariana
+       * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
+    * Terminal themes
+       * https://glitchbone.github.io/vscode-base16-term/#/
+* Extensions
+* Web dev
+* Vspacecode
+    * Live server
+    * Auto rename tag
+    * Auto close tag
+    * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+* vscode-icons
+* Markdown All in One
+* github themes
+* Jupyter
+* Python
+    * python
+    * Python Indent
+    * Pylance
+    * Pylint
+    * Black formatter
+* IntelliCode
+* Remote - SSH
+* git history
+* Pylance
+* Pylint
+* C++/C
+* Dev containers
+* Docker
+* TODO Highlight
+```
+# Opening terminal in current folder
+Go to Preferences->Keyboard Shortcuts->Click open in JSON
+Paste:
+{
+  "key": "alt+t",
+  "command": "workbench.action.terminal.newWithCwd",
+  "args": {
+      "cwd": "${fileDirname}"
+  }
+}
+```
+
+
+
+
+
