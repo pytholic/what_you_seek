@@ -144,6 +144,7 @@ rm -rf ~/miniconda3/miniconda.sh
 
 conda config --set auto_activate_base false
 ```
+* lazygit
 
 # VS Code (if needed)
 * Setup
