@@ -71,7 +71,6 @@ conda config --set auto_activate_base false
 * Notion
 * Teamviewer
 * nvim
-* tmux
 * Rectangle window manager
 # Virtual machine
 * Virtualbox
@@ -134,8 +133,15 @@ git config credential.helper store or use ssh0key method instead
 Install tmux and config.
 https://github.com/gpakosz/.tmux
 
-Install `xclip` for system clipboard.
+Install clipboard support.
+https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 
+Enable mouse mode.
+```
+prefix + m
+```
+
+Copy personal config files.
 
 ## Change iterm2 theme and font
 Link -> https://iterm2colorschemes.com/
