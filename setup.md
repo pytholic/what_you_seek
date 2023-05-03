@@ -148,6 +148,8 @@ Do `brew install md5sha1sum` if got `md5sum: command not found` error.
 
 * lazygit
 
+Set diff behavior -> https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
+
 # VS Code (if needed)
 * Setup
     * Add to PATH on MacOS
