@@ -144,6 +144,8 @@ rm -rf ~/miniconda3/miniconda.sh
 
 conda config --set auto_activate_base false
 ```
+Do `brew install md5sha1sum` if got `md5sum: command not found` error.
+
 * lazygit
 
 # VS Code (if needed)
