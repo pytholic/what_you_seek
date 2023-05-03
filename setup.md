@@ -41,7 +41,7 @@ Add to vscode `settings.json`:
 "terminal.integrated.fontFamily": "MesloLGS NF"
 ```
 
-## Download nerf fonts
+## Download nerd fonts
 https://github.com/ryanoasis/nerd-fonts
 Set font size to 15.
 
