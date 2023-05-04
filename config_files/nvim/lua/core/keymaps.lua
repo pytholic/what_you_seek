@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "=", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "-", ":m '<-2<CR>gv=gv")
@@ -42,8 +41,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- nvim tree --
 vim.keymap.set("n", "<leader>t", "<cmd>:NvimTreeToggle<CR>", { silent = true })
 vim.keymap.set("n", "<leader>n", "<cmd>:NvimTreeFindFileToggle<CR>", { silent = true })
-
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Remap Tab and Shift-Tab for indenting and unindenting
 vim.api.nvim_set_keymap("v", "<Tab>", ">gv", { noremap = true, silent = true })
