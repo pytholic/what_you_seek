@@ -28,7 +28,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- grep remap --
-vim.api.nvim_set_keymap("n", "<leader>vg", [[:vimgrep /input/ %:p]], { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>vg", [[:vimgrep /input/ %:p<Left><Left><Left><Left><Left>]], { noremap = true })
 
 vim.keymap.set("n", ".", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", ",", "<cmd>cprev<CR>zz")
