@@ -109,6 +109,22 @@ echo "alias oldvim='\vim'" >> ~/.zshrc
 Copy files to `.config/nvim`, then do `:PackerSync`.
 
 If language servers don't wotk, install manually with `:Mason`.
+```
+Mason list
+black
+clangd
+cmake-language-server
+eslint-lsp
+flake8
+isort
+jedi-language-server
+lua-language-server
+dockerfile-language-server
+prettier
+pylint
+stylua
+typscript-language-server
+```
 
 
 ## Fix python issue
