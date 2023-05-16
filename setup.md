@@ -131,6 +131,8 @@ stylua
 typscript-language-server
 ```
 
+## LunarVim
+Install and put config inside `~/.confix/lvim`
 
 ## Fix python issue
 `zsh` recognizes `python3` but not `python`. Do the following:
