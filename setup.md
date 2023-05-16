@@ -41,9 +41,14 @@ Add to vscode `settings.json`:
 "terminal.integrated.fontFamily": "MesloLGS NF"
 ```
 
-## Download nerd fonts
+## Download nerd and comic code fonts
+https://dtinth.github.io/comic-mono-font/
 https://github.com/ryanoasis/nerd-fonts
-Set font size to 15.
+
+Primary font -> Comic Code
+Non-ASCII -> Nerd font
+
+Set font size to 16.
 
 ## Set terminal colors
 https://github.com/pytholic/what_you_seek/blob/main/config_files/terminal_colors.itermcolors
