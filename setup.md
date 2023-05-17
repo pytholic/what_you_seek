@@ -134,6 +134,9 @@ typscript-language-server
 ## LunarVim
 Install and put config inside `~/.confix/lvim`
 
+add lvim to path
+`export PATH="$HOME/.local/bin/:$PATH"`
+
 ## Fix python issue
 `zsh` recognizes `python3` but not `python`. Do the following:
 ```shell
