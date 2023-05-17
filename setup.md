@@ -132,7 +132,7 @@ typscript-language-server
 ```
 
 ## LunarVim
-Install and put config inside `~/.confix/lvim`
+Install and put config inside `~/.confix/lvim`. if it doesn't work then make files and folder one-by-one. It will automatically install support.
 
 add lvim to path
 `export PATH="$HOME/.local/bin/:$PATH"`
