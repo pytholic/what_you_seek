@@ -106,11 +106,89 @@ ctrl + cmd + shift + arrow # expand seelction
 cmd + b # show/hdie sidebar
 
 ```
+---
+
+# TMUX
+```
+sudo apt install tmux
+```
+Using this [config](https://github.com/gpakosz/.tmux).
+
+`Prefix = Ctrl + b or Ctrl + a`
+
+## Commands
+```
+tmux new -s my_session # cerate new session with name
+tmux detach
+tmux attach -t <session-name>
+prefix + - # split vertically
+prefix + _ # split horizontally
+tmus ls # list all sessions
+tmux kill-session -t <session-name>
+tmux rename-session <new name>
+tmux rename-window <new name>
+```
+
+
+## Pane shortcuts
+```
+tk 0 # kill all panes except 0
+tmux ls # list all session
+tmux new-session 
+tmux kill-session -t 0 # kill session 0
+Prefix + -  # split-window -h (split horizontally)
+Prefix + _	# split-window -v (split vertically)
+Prefix + {	# Move the current pane left
+Prefix + {	# Move the current pane right
+Prefix + (↑ ↓ ← →)	# Switch to pane to the direction
+Prefix + q	# Show pane numbers
+Prefix + 0 … 9	# Switch/select pane by number
+Prefix + z	# Toggle pane zoom
+Prefix + !	# Convert pane into a window
+Prefix  Ctrl + (↑ ↓)	# Resize current pane height (after Prefix, hold down the Ctrl key while tapping the up or down key)
+Prefix  Ctrl + (← →)	# Resize current pane width (after Prefix, hold down the Ctrl key while tapping the right or left key)
+Prefix + x	# Close current pane
+Prefix + Spacebar	# Toggle between pane layouts
+Prefix + o 	# Switch to next pane
+exit  # closes current pane
+Prefix + : # enter command mode
+swap-window -t 0 # swap current window with window 0, reorder
+tmux kill-session
+Prefix + d # detach session
+```
+
+## Window shortcuts
+```shell
+Prefix + c  # create new window
+Prefix + <window name>  # switch window
+Prefix + ,  # Rename a window
+exit  # closes the window
+```
+
+## Session commands
+Prefix -> ctrl+a
+Preserves state and processes. You can resume from where you stopped. Process is not terminated, it runs in the background.
+```shell
+Prefix + d  # detach current session
+tmux ls  # shows running sessions
+tmux attach -t <session name>  # attaches session
+tmux rename-session -t <current name> <new name>  # rename a session
+tmux new -s <session name>  # create session with specific name
+tmux kill-session -t <session name>  # kill a session
+shift + drag # copy to system clipboard
+prefix + c # new window
+```
+---
+
+# Ubuntu shortcuts
+Refer to the [link](https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en)
+---
 
 # Podman commands
 Alternative for Docker.
 
 Refer to official [link](https://docs.podman.io/en/latest/Commands.html)
+---
 
 # Vim/Nvim
 Common keymaps are defined below.
@@ -168,6 +246,7 @@ v # visual select mode
 V # visual line select mode
 ctrl + v # block visual mode
 ```
+---
 
 
 # Conda commands
@@ -209,6 +288,7 @@ conda env create -f environment.yaml
 conda search <package name>  # list all available package versions
 
 ```
+---
 
 # Pip commands
 ```sh
@@ -247,6 +327,7 @@ pip install pytorch-lightning
 
 conda install -c conda-forge tensorflow-gpu
 ```
+---
 
 # Common shell commands (ubuntu/unix)
 ```shell
@@ -423,6 +504,7 @@ dpkg --list | grep compiler  # list installed gcc versions
 CC=/usr/bin/gcc-9 CXX=/usr/bin/g++9 CUDAHOSTCXX=/usr/bin/g++-9 cmake ..   # using diff gcc
 
 ```
+---
 
 # Server commands
 ```shell
@@ -433,6 +515,7 @@ ssh <username>@<address>  # connect to server
 **Add network commands
 **Add display manager commands
 **Add systemctl commands
+---
 
 # Git commands
 ```
@@ -583,6 +666,7 @@ git log --graph
 git reset # remove add and staged changes
 git revert <commit id> # go to prev commit
 ```
+---
 
 # FFMPEG
 
@@ -591,77 +675,5 @@ ffmpeg -i abc.mp4 image%06d.jpg  # extract all frames
 for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done  # convert all videos
 ```
 
-# TMUX
-```
-sudo apt install tmux
-```
-Using this [config](https://github.com/gpakosz/.tmux).
 
-`Prefix = Ctrl + b or Ctrl + a`
-
-## Commands
-```
-tmux new -s my_session # cerate new session with name
-tmux detach
-tmux attach -t <session-name>
-prefix + - # split vertically
-prefix + _ # split horizontally
-tmus ls # list all sessions
-tmux kill-session -t <session-name>
-tmux rename-session <new name>
-tmux rename-window <new name>
-```
-
-
-## Pane shortcuts
-```
-tk 0 # kill all panes except 0
-tmux ls # list all session
-tmux new-session 
-tmux kill-session -t 0 # kill session 0
-Prefix + -  # split-window -h (split horizontally)
-Prefix + _	# split-window -v (split vertically)
-Prefix + {	# Move the current pane left
-Prefix + {	# Move the current pane right
-Prefix + (↑ ↓ ← →)	# Switch to pane to the direction
-Prefix + q	# Show pane numbers
-Prefix + 0 … 9	# Switch/select pane by number
-Prefix + z	# Toggle pane zoom
-Prefix + !	# Convert pane into a window
-Prefix  Ctrl + (↑ ↓)	# Resize current pane height (after Prefix, hold down the Ctrl key while tapping the up or down key)
-Prefix  Ctrl + (← →)	# Resize current pane width (after Prefix, hold down the Ctrl key while tapping the right or left key)
-Prefix + x	# Close current pane
-Prefix + Spacebar	# Toggle between pane layouts
-Prefix + o 	# Switch to next pane
-exit  # closes current pane
-Prefix + : # enter command mode
-swap-window -t 0 # swap current window with window 0, reorder
-tmux kill-session
-Prefix + d # detach session
-```
-
-## Window shortcuts
-```shell
-Prefix + c  # create new window
-Prefix + <window name>  # switch window
-Prefix + ,  # Rename a window
-exit  # closes the window
-```
-
-## Session commands
-Prefix -> ctrl+a
-Preserves state and processes. You can resume from where you stopped. Process is not terminated, it runs in the background.
-```shell
-Prefix + d  # detach current session
-tmux ls  # shows running sessions
-tmux attach -t <session name>  # attaches session
-tmux rename-session -t <current name> <new name>  # rename a session
-tmux new -s <session name>  # create session with specific name
-tmux kill-session -t <session name>  # kill a session
-shift + drag # copy to system clipboard
-prefix + c # new window
-```
-
-# Ubuntu shortcuts
-Refer to the [link](https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en)
 
