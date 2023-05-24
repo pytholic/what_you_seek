@@ -535,9 +535,12 @@ ctrl + 1,2,3,4 # switch desktops
 cmd + c # copy
 cmd + v # paste
 ctrl + l # clear
+ctrl + u # delete till end
+ctrl + k # delete till beginning
+ctrl + w # delete last word
 open -a "Sublime Text" # open application
 open -a "Sublime Text" index.html # opening specific file
-mc index.html test.html # rename
+mv index.html test.html # rename
 rm <filename> # remove file
 rm -r <directory> # remove directory
 say <text> # voice text
@@ -545,6 +548,7 @@ cmd + right # move cursor to the end of line
 cmd + left # move cursor to beginning of line
 option + left/right # jump one word back/forward
 ```
+
 # VS Code shortcuts (MacOS)
 ```
 cmd + l # select current line
