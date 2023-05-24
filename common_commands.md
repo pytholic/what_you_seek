@@ -1,3 +1,175 @@
+# Mac Shortcuts
+```
+ctrl + right/left # switch between desktops
+cmd + ctrl + q # lockscreen
+cmd + q # close application
+cmd + w # new window, close browser window
+cmd + t # new ta b
+cmd + { or } # tile windows, custom set
+cmd + up # go back in finder
+cmd + down # go inside the folder
+cmd + right # go forward in browser 
+cmd + left # go back in browser 
+cmd + v # paste
+cmd + option + v # move or cut paste 
+cmd + c # copy
+cmt + Tab # switch between apps
+cmd + m # minimizes all windows
+cmd + ctrl + f # fullscreen mode
+cmd + shift + n # creates new folder
+cmd + ctrl + q # locks the screen
+cmd + 1,2,3 # switch between tabs
+cmd + shift + 4 # allows you to take screenshot
+cmd + shift + delete # empties trash
+fn + up/down # scrolls page
+cmd + shift + . # toggle hidden files
+cmd + ctrl + space # opens emoticonss
+click(startpoint), shift+click(endpoint) # selecting longer texts
+ctrl + Tab # switch browser tabs
+cmd + Tab # switch apps
+cmd + ctrl + f # full screen, no tabs
+cmd + shift + f # fullsreen with tabs
+ctrl + tab # swicth between tabs
+cmd + delete # delete file
+ctrl + shift + F4 # swutch between split screen
+ctrl + 1,2,3,4 # switch desktops
+```
+
+## Mac terminal
+```
+cmd + c # copy
+cmd + v # paste
+ctrl + l # clear
+ctrl + u # delete till end
+ctrl + k # delete till beginning
+ctrl + w # delete last word
+open -a "Sublime Text" # open application
+open -a "Sublime Text" index.html # opening specific file
+mv index.html test.html # rename
+rm <filename> # remove file
+rm -r <directory> # remove directory
+say <text> # voice text
+cmd + right # move cursor to the end of line
+cmd + left # move cursor to beginning of line
+option + left/right # jump one word back/forward
+```
+---
+
+# VS Code shortcuts (MacOS)
+```
+cmd + l # select current line
+shift + up, down # select multiple lines
+alt/option + click # add multiple cursors
+cmd + right # move cursor to the end of line
+cmd + left # move cursor to beginning of line
+cmd + up # move cursor to beginning of file
+cmd + down # move cursor to end of file
+cmd + double click # open file in split tab
+double click # open in new tab
+cmd + z # undo
+cmd + shift + z # redo
+cmd + shift + . # search objects on page
+cmd + shift + o # search objects on page
+cmd + p + @ # search on page
+alt + up/down # move line up down
+ctrl + x # cut line
+cmd + D # select cursor word, pressing again select nex toccurence with another cursor
+cmd + super + L # select all occurence and enable multiple cursors
+cmd + B # hide side bar
+! + Tab # create html template
+cmd + P # search files
+cmd + shift + p # command pallete
+opt + left/right # jump to beginning/end of word
+! + shift+1/Tab # write base html snippet
+cmd + super + k # delete enitire row
+options + shift + down # copies line to row below
+shift + alt + arrow # selecting blocks
+cmd + shift + e # switch between explorer and code window
+
+cmd + \ # split terminal, split window
+ctrl + w # close splitted window
+ctrl + d # close splitted terminal
+cmd + opt + arrow # switch terminal
+cmd + backspace # kill terminal
+    
+cmd + opt + left/right # switch between windows
+ctrl + g # go to line
+ctrl + r # show recent folders
+
+ctrl + ~ # focus on terminal
+ctrl + 1,2 # focus on editor
+
+ctrl + fn + up/down arrow # scroll window
+
+ctrl + cmd + shift + arrow # expand seelction
+
+cmd + b # show/hdie sidebar
+
+```
+
+# Podman commands
+Alternative for Docker.
+
+Refer to official [link](https://docs.podman.io/en/latest/Commands.html)
+
+# Vim/Nvim
+Common keymaps are defined below.
+Custom can be found in my config at [keymaps.lua](https://github.com/pytholic/pytholic-lvim/blob/main/lua/user/keymaps.lua)
+
+## Navigation
+```
+w # move word forward
+b # move word backwards
+shift + 4 # move end of line
+shift + 6 move beginning of line
+{ # jump up next whiteline
+} # jump down next white line
+ctrl + f # move to next page
+ctrl + b # move to prev page
+gg or [[ # top of file
+G or ]] # end of file
+ctrl + d # scroll half oage down
+ctrl + u # scroll half hage up
+shift + up # scroll one page up
+shift + down # scroll one page down
+<number> + k/up # jump number of lines upward
+<number> + j/down # jump number of line downward
+```
+
+## Insert
+```
+i # insert to left
+a # insert to write
+o # insert next line
+I # insert at the beginning of line
+A # insert at the end of line
+O # move current line down and enter insert mode
+```
+
+## Splits
+```
+:split # horizontal split 
+:vsplit # vertical split
+<ctrl + w> + h/left # switch to left split
+<ctrl + w> + h/right # switch to right split
+<ctrl + w> + j/left # switch to down split
+<ctrl + w> + k/right # switch to up split
+```
+
+## copy-paste
+```
+yy # yank/copy current line
+yw # copy till end of word
+yb # copy till beginner of word
+p # paste on next spot
+P # paste on current position
+
+v # visual select mode
+V # visual line select mode
+ctrl + v # block visual mode
+```
+
+
 # Conda commands
 ```sh
 conda config --set auto_activate_base false  # deactivate base env
@@ -493,172 +665,3 @@ prefix + c # new window
 # Ubuntu shortcuts
 Refer to the [link](https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en)
 
-# Mac Shortcuts
-```
-ctrl + right/left # switch between desktops
-cmd + ctrl + q # lockscreen
-cmd + q # close application
-cmd + w # new window, close browser window
-cmd + t # new ta b
-cmd + { or } # tile windows, custom set
-cmd + up # go back in finder
-cmd + down # go inside the folder
-cmd + right # go forward in browser 
-cmd + left # go back in browser 
-cmd + v # paste
-cmd + option + v # move or cut paste 
-cmd + c # copy
-cmt + Tab # switch between apps
-cmd + m # minimizes all windows
-cmd + ctrl + f # fullscreen mode
-cmd + shift + n # creates new folder
-cmd + ctrl + q # locks the screen
-cmd + 1,2,3 # switch between tabs
-cmd + shift + 4 # allows you to take screenshot
-cmd + shift + delete # empties trash
-fn + up/down # scrolls page
-cmd + shift + . # toggle hidden files
-cmd + ctrl + space # opens emoticonss
-click(startpoint), shift+click(endpoint) # selecting longer texts
-ctrl + Tab # switch browser tabs
-cmd + Tab # switch apps
-cmd + ctrl + f # full screen, no tabs
-cmd + shift + f # fullsreen with tabs
-ctrl + tab # swicth between tabs
-cmd + delete # delete file
-ctrl + shift + F4 # swutch between split screen
-ctrl + 1,2,3,4 # switch desktops
-```
-
-## Mac terminal
-```
-cmd + c # copy
-cmd + v # paste
-ctrl + l # clear
-ctrl + u # delete till end
-ctrl + k # delete till beginning
-ctrl + w # delete last word
-open -a "Sublime Text" # open application
-open -a "Sublime Text" index.html # opening specific file
-mv index.html test.html # rename
-rm <filename> # remove file
-rm -r <directory> # remove directory
-say <text> # voice text
-cmd + right # move cursor to the end of line
-cmd + left # move cursor to beginning of line
-option + left/right # jump one word back/forward
-```
-
-# VS Code shortcuts (MacOS)
-```
-cmd + l # select current line
-shift + up, down # select multiple lines
-alt/option + click # add multiple cursors
-cmd + right # move cursor to the end of line
-cmd + left # move cursor to beginning of line
-cmd + up # move cursor to beginning of file
-cmd + down # move cursor to end of file
-cmd + double click # open file in split tab
-double click # open in new tab
-cmd + z # undo
-cmd + shift + z # redo
-cmd + shift + . # search objects on page
-cmd + shift + o # search objects on page
-cmd + p + @ # search on page
-alt + up/down # move line up down
-ctrl + x # cut line
-cmd + D # select cursor word, pressing again select nex toccurence with another cursor
-cmd + super + L # select all occurence and enable multiple cursors
-cmd + B # hide side bar
-! + Tab # create html template
-cmd + P # search files
-cmd + shift + p # command pallete
-opt + left/right # jump to beginning/end of word
-! + shift+1/Tab # write base html snippet
-cmd + super + k # delete enitire row
-options + shift + down # copies line to row below
-shift + alt + arrow # selecting blocks
-cmd + shift + e # switch between explorer and code window
-
-cmd + \ # split terminal, split window
-ctrl + w # close splitted window
-ctrl + d # close splitted terminal
-cmd + opt + arrow # switch terminal
-cmd + backspace # kill terminal
-    
-cmd + opt + left/right # switch between windows
-ctrl + g # go to line
-ctrl + r # show recent folders
-
-ctrl + ~ # focus on terminal
-ctrl + 1,2 # focus on editor
-
-ctrl + fn + up/down arrow # scroll window
-
-ctrl + cmd + shift + arrow # expand seelction
-
-cmd + b # show/hdie sidebar
-
-```
-
-# Podman commands
-Alternative for Docker.
-
-Refer to official [link](https://docs.podman.io/en/latest/Commands.html)
-
-# Vim/Nvim
-Common keymaps are defined below.
-Custom can be found in my config at [keymaps.lua](https://github.com/pytholic/pytholic-lvim/blob/main/lua/user/keymaps.lua)
-
-## Navigation
-```
-w # move word forward
-b # move word backwards
-shift + 4 # move end of line
-shift + 6 move beginning of line
-{ # jump up next whiteline
-} # jump down next white line
-ctrl + f # move to next page
-ctrl + b # move to prev page
-gg or [[ # top of file
-G or ]] # end of file
-ctrl + d # scroll half oage down
-ctrl + u # scroll half hage up
-shift + up # scroll one page up
-shift + down # scroll one page down
-<number> + k/up # jump number of lines upward
-<number> + j/down # jump number of line downward
-```
-
-## Insert
-```
-i # insert to left
-a # insert to write
-o # insert next line
-I # insert at the beginning of line
-A # insert at the end of line
-O # move current line down and enter insert mode
-```
-
-## Splits
-```
-:split # horizontal split 
-:vsplit # vertical split
-<ctrl + w> + h/left # switch to left split
-<ctrl + w> + h/right # switch to right split
-<ctrl + w> + j/left # switch to down split
-<ctrl + w> + k/right # switch to up split
-```
-
-## copy-paste
-```
-yy # yank/copy current line
-yw # copy till end of word
-yb # copy till beginner of word
-p # paste on next spot
-P # paste on current position
-
-v # visual select mode
-V # visual line select mode
-ctrl + v # block visual mode
-```
