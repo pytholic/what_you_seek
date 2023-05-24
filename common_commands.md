@@ -570,7 +570,7 @@ cmd + B # hide side bar
 cmd + P # search files
 cmd + shift + p # command pallete
 opt + left/right # jump to beginning/end of word
-type ! + shift+1/Tab # write base html snippet
+! + shift+1/Tab # write base html snippet
 cmd + super + k # delete enitire row
 options + shift + down # copies line to row below
 shift + alt + arrow # selecting blocks
@@ -598,9 +598,13 @@ cmd + b # show/hdie sidebar
 ```
 
 # Podman commands
+Alternative for Docker.
+
 Refer to official [link](https://docs.podman.io/en/latest/Commands.html)
 
-# Vim
+# Vim/Nvim
+Common keymaps are defined below.
+Custom can be found in my config at [keymaps.lua](https://github.com/pytholic/pytholic-lvim/blob/main/lua/user/keymaps.lua)
 
 ## Navigation
 ```
@@ -608,11 +612,49 @@ w # move word forward
 b # move word backwards
 shift + 4 # move end of line
 shift + 6 move beginning of line
-shift + [ # jump up next empty space
-shift + ] # jump down next empty space
+{ # jump up next whiteline
+} # jump down next white line
 ctrl + f # move to next page
 ctrl + b # move to prev page
-gg # top of file
-shift + g # end of file
+gg or [[ # top of file
+G or ]] # end of file
+ctrl + d # scroll half oage down
+ctrl + u # scroll half hage up
+shift + up # scroll one page up
+shift + down # scroll one page down
+<number> + k/up # jump number of lines upward
+<number> + j/down # jump number of line downward
+```
 
+## Insert
+```
+i # insert to left
+a # insert to write
+o # insert next line
+I # insert at the beginning of line
+A # insert at the end of line
+O # move current line down and enter insert mode
+```
+
+## Splits
+```
+:split # horizontal split 
+:vsplit # vertical split
+<ctrl + w> + h/left # switch to left split
+<ctrl + w> + h/right # switch to right split
+<ctrl + w> + j/left # switch to down split
+<ctrl + w> + k/right # switch to up split
+```
+
+## copy-paste
+```
+yy # yank/copy current line
+yw # copy till end of word
+yb # copy till beginner of word
+p # paste on next spot
+P # paste on current position
+
+v # visual select mode
+V # visual line select mode
+ctrl + v # block visual mode
 ```
