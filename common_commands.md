@@ -212,6 +212,8 @@ shift + up # scroll one page up
 shift + down # scroll one page down
 <number> + k/up # jump number of lines upward
 <number> + j/down # jump number of line downward
+ctrl + o # go to prev file / action
+ctrl + i # go to next file / action
 ```
 
 ## Insert
