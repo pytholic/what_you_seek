@@ -227,8 +227,15 @@ Paste:
 }
 ```
 
-# Switch between multiple displays
+# Change focus between multiple displays
 https://medium.com/thevelops-tech-blog/how-to-switch-focus-between-screens-in-macos-21c6f02883a6
+
+# JSON processor
+Colorful shell output of json.
+```
+brew install jq
+file.json | jq
+```
 
 
 
