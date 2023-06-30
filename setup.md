@@ -216,6 +216,7 @@ Copy custom config.
 * Dev containers
 * Docker
 * TODO Highlight
+* Path Intellisense
 ```
 # Opening terminal in current folder
 Go to Preferences->Keyboard Shortcuts->Click open in JSON
