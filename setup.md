@@ -211,6 +211,7 @@ Copy custom config.
 * Pylance
 * Pylint
 * C++/C
+* CMake
 * Dev containers
 * Docker
 * TODO Highlight
