@@ -3,6 +3,8 @@
     // Main editor
     "editor.background": "#101010",
     "editor.selectionBackground": "#303030",
+    "editorLineNumber.foreground": "#505050",
+    "editorLineNumber.activeForeground": "#e3e3e3",
     // Sidebar
     "sideBar.background": "#171717",
     "sideBarTitle.foreground": "#ffb347", // pastel orange
