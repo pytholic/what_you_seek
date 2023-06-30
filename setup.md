@@ -208,6 +208,7 @@ Copy custom config.
 * IntelliCode
 * Remote - SSH
 * git history
+* git graph
 * Pylance
 * Pylint
 * C++/C
