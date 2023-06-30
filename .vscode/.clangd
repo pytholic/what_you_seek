@@ -1,0 +1,10 @@
+CompileFlags:
+  Add:
+    - -I/usr/local/include/opencv4
+    - -I/usr/local/opt/ncnn/include/ncnn
+    - -I/usr/local/opt/vulkan-headers/include
+    - "-fexperimental-library"
+    - "-Wno-c++98-compat"
+    - "-Weverything"
+    - "-std=c++20"
+    - "-stdlib=libc++"
