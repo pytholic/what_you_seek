@@ -1,0 +1,26 @@
+{
+    "cmake.configureOnOpen": false,
+    "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+    "terminal.integrated.fontSize": 16,
+    "editor.fontSize": 16,
+    "cmake.automaticReconfigure": false,
+    "cmake.configureOnEdit": false,
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "black-formatter.args": [
+        "--line-length",
+        "80"
+    ],
+    "python.linting.flake8Enabled": true,
+    "workbench.colorTheme": "Nord"
+}
