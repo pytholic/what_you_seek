@@ -182,12 +182,8 @@ Copy custom config.
 * Setup
     * Add to PATH on MacOS
        * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
-    * Auto Save -> onFocusChange
     * Word Wrap -> On
-    * Theme: Mariana
-       * Then apply this [settings.json](https://github.com/pytholic/what_you_seek/blob/main/config_files/vs_code_settings.json)
-    * Terminal themes
-       * https://glitchbone.github.io/vscode-base16-term/#/
+    * Theme: Nord
 * Extensions
 * Web dev
 * Vspacecode
@@ -229,6 +225,9 @@ Paste:
   }
 }
 ```
+## VSCode fonts
+Size -> 16
+Add `Comic Mono, Hack Nerd Font Mono` to font family.
 
 # Change focus between multiple displays
 https://medium.com/thevelops-tech-blog/how-to-switch-focus-between-screens-in-macos-21c6f02883a6
