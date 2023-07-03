@@ -227,6 +227,7 @@ Paste:
 ```
 ## VSCode fonts
 Size -> 16
+
 Add `Comic Mono, Hack Nerd Font Mono` to font family.
 
 # Change focus between multiple displays
