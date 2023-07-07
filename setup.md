@@ -216,6 +216,7 @@ Copy custom config.
 * TODO Highlight
 * Path Intellisense
 * Project Manager
+* Better Comments
 ```
 # Opening terminal in current folder
 Go to Preferences->Keyboard Shortcuts->Click open in JSON
