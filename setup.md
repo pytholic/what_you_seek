@@ -201,9 +201,11 @@ Copy custom config.
     * Pylance
     * Pylint
     * Black formatter
+    * Ruff
 * IntelliCode
 * Remote - SSH
 * git history
+* git lens
 * git graph
 * Pylance
 * Pylint
@@ -213,6 +215,7 @@ Copy custom config.
 * Docker
 * TODO Highlight
 * Path Intellisense
+* Project Manager
 ```
 # Opening terminal in current folder
 Go to Preferences->Keyboard Shortcuts->Click open in JSON
