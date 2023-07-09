@@ -217,6 +217,7 @@ Copy custom config.
 * Path Intellisense
 * Project Manager
 * Better Comments
+* Code Spell Checker
 ```
 # Opening terminal in current folder
 Go to Preferences->Keyboard Shortcuts->Click open in JSON
