@@ -214,7 +214,7 @@ Copy custom config.
 * Dev containers
 * Docker
 * TODO Highlight
-* Path Intellisense
+* Path Autocomplete
 * Project Manager
 * Better Comments
 * Code Spell Checker
