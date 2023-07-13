@@ -218,6 +218,7 @@ Copy custom config.
 * Project Manager
 * Better Comments
 * Code Spell Checker
+* Pythorch Snippets
 ```
 # Opening terminal in current folder
 Go to Preferences->Keyboard Shortcuts->Click open in JSON
