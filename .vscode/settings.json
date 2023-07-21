@@ -1,26 +1,96 @@
 {
-    "cmake.configureOnOpen": false,
-    "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
-    "terminal.integrated.fontSize": 16,
-    "editor.fontSize": 16,
-    "cmake.automaticReconfigure": false,
-    "cmake.configureOnEdit": false,
-    "C_Cpp.intelliSenseEngine": "default",
-    "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
-    "editor.autoClosingBrackets": "always",
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+  "cmake.configureOnOpen": false,
+  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 16,
+  "cmake.automaticReconfigure": false,
+  "cmake.configureOnEdit": false,
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+
+  "black-formatter.args": ["--line-length", "80"],
+  "python.linting.flake8Enabled": false,
+  "workbench.colorTheme": "Nord",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Better comments
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "black-formatter.args": [
-        "--line-length",
-        "80"
-    ],
-    "python.linting.flake8Enabled": true,
-    "workbench.colorTheme": "Nord"
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
+  ],
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.allowChords": false,
+  "workbench.preferredDarkColorTheme": "Nord",
+
+  // Language specific config
+  "[python]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.lineNumbers": "relative"
 }
