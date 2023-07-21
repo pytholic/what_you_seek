@@ -544,6 +544,8 @@ git pull --allow-unrelated-histories
 
 git remote remove origin
 
+git remote update origin --prune # update remtoe repos
+
 ```
 ## Branching
 ```shell
