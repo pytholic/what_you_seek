@@ -95,30 +95,4 @@
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
-
-
-  // TODO highlight
-  "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": [
-    {
-      "text": "TODO:",
-      "color": "white",
-      "backgroundColor": "orange",
-  },
-  {
-    "text": "BUG:",
-    "color": "white",
-    "backgroundColor": "#e74c3c"
-  },
-  {
-    "text": "FEATURE:",
-    "color": "white",
-    "backgroundColor": "#7393B3"
-  },
-  {
-    "text": "INFO:",
-    "color": "white",
-    "backgroundColor": "green"
-  },
-],
 }
