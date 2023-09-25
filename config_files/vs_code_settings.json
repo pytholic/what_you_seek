@@ -1,162 +1,124 @@
 {
-  "workbench.colorCustomizations": {
-    // Main editor
-    "editor.background": "#101010",
-    "editor.selectionBackground": "#303030",
-    "editorLineNumber.foreground": "#505050",
-    "editorLineNumber.activeForeground": "#e3e3e3",
-    // Sidebar
-    "sideBar.background": "#171717",
-    "sideBarTitle.foreground": "#ffb347", // pastel orange
-    "sideBar.border": "#78A2CC", // pastel blue,
-    // Scrollbar
-    "scrollbarSlider.activeBackground": "#ffb347",
-    // Titlebar
-    "titleBar.activeBackground": "#151515",
-    // Tabs
-    "tab.activeBackground": "#101010",
-    "tab.inactiveBackground": "#303030",
-    "tab.activeForeground": "#ffb347",
-    "tab.inactiveForeground": "#c6c6c6",
-    // Activity bar
-    "activityBar.background": "#101010",
-    "activityBar.activeBackground": "#303030",
-    "activityBar.inactiveForeground": "#808080",
-    "activityBar.foreground": "#ffb347",
-    "activityBar.border": "#78A2CC",
-    // Status bar
-    "statusBar.background": "#151515",
-    "statusBar.debuggingBackground": "#263238",
-    "statusBar.noFolderBackground": "#171717",
-    "statusBar.border": "#78A2CC",
-
-    // Terminal
-    "terminal.background": "#222222",
-    "terminal.foreground": "#E0E0E0",
-    "terminalCursor.background": "#E0E0E0",
-    "terminalCursor.foreground": "#E0E0E0",
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiBlue": "#6FB3D2",
-    "terminal.ansiBrightBlack": "#3e3e3e",
-    "terminal.ansiBrightBlue": "#6FB3D2",
-    "terminal.ansiBrightCyan": "#76C7B7",
-    "terminal.ansiBrightGreen": "#A1C659",
-    "terminal.ansiBrightMagenta": "#D381C3",
-    "terminal.ansiBrightRed": "#FB0120",
-    "terminal.ansiBrightWhite": "#FFFFFF",
-    "terminal.ansiBrightYellow": "#FDA331",
-    "terminal.ansiCyan": "#76C7B7",
-    "terminal.ansiGreen": "#A1C659",
-    "terminal.ansiMagenta": "#D381C3",
-    "terminal.ansiRed": "#FB0120",
-    "terminal.ansiWhite": "#E0E0E0",
-    "terminal.ansiYellow": "#FDA331",
-
-    "editorBracketHighlight.foreground1": "#ffffffca",
-    "editorBracketHighlight.foreground2": "#ffffff",
-    "editorBracketHighlight.foreground3": "#ffffff",
-    "editorBracketHighlight.foreground4": "#ffffff"
-  },
-  "window.titleBarStyle": "custom",
-  "editor.fontSize": 15,
-  "terminal.integrated.fontSize": 14,
-  "editor.fontLigatures": true,
-  "python.formatting.provider": "black",
-  "workbench.preferredDarkColorTheme": "Atom One Dark",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true,
-    "editor.tabSize": 4
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "editor.fontFamily": "'Fira Code', 'MesloLGS NF',  'Droid Sans Mono', 'monospace'",
-  "security.workspace.trust.untrustedFiles": "open",
+  "cmake.configureOnOpen": false,
+  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 16,
+  "cmake.automaticReconfigure": false,
+  "cmake.configureOnEdit": false,
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+  "editor.wordWrap": "on",
   "editor.formatOnSave": true,
-  // put this in your settings object
+  "editor.autoClosingBrackets": "always",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "terminal.external.osxExec": "warp.app",
-  "workbench.iconTheme": "vscode-icons",
-  "files.autoSave": "onFocusChange",
-  "editor.wordWrap": "on",
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-    "erb",
-    "lang-cfml",
-    "cfml",
-    "HTML (EEx)",
-    "HTML (Eex)",
-    "plist",
-    "HTML",
-    "HTML5"
-  ],
-  "editor.linkedEditing": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "vsicons.dontShowNewVersionMessage": true,
 
-  // TODO Highlight
+  "black-formatter.args": ["--line-length", "80"],
+  "python.linting.flake8Enabled": false,
+  "workbench.colorTheme": "Nord",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Better comments
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
+  ],
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.allowChords": false,
+  "workbench.preferredDarkColorTheme": "Nord",
+
+  // Language specific config
+  "[python]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+
+
+  // TODO highlight
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
-      "text": "VIDEO",
-      "color": "#333",
-      "backgroundColor": "#3498db"
-    },
-    {
-      "text": "FIXME",
-      "color": "#333",
-      "backgroundColor": "#e67e22"
-    },
-    {
-      "text": "BUG",
-      "color": "#333",
-      "backgroundColor": "#e74c3c"
-    },
-    {
-      "text": "TODO",
-      "color": "#333",
-      "backgroundColor": "#2ecc71"
-    }
-  ],
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "redhat.telemetry.enabled": false,
-  "liveServer.settings.CustomBrowser": "firefox",
-  "editor.insertSpaces": true,
-  "workbench.colorTheme": "Mariana Pro (Cool)",
-  // Quotes and braces
-  "editor.autoClosingOvertype": "never",
-  "settingsSync.ignoredExtensions": [],
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "text": "TODO:",
+      "color": "white",
+      "backgroundColor": "orange",
   },
-  "editor.defaultFormatter": "ms-python.black-formatter"
+  {
+    "text": "BUG:",
+    "color": "white",
+    "backgroundColor": "#e74c3c"
+  },
+  {
+    "text": "FEATURE:",
+    "color": "white",
+    "backgroundColor": "#7393B3"
+  },
+  {
+    "text": "INFO:",
+    "color": "white",
+    "backgroundColor": "green"
+  },
+],
 }
