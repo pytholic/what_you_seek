@@ -609,8 +609,11 @@ git clone --recurse-submodules <URL>
 git pull --recurse-submodules
 git submodule update --recursive
 
+git submodule sync
+git submodule update --init --recursive
+
 ```
-You need to commit submodule chaneghs separately.
+You need to commit submodule changes separately.
 If you do not want to push submodule, then just commit it and only push the main branch.
 
 ## Large files
