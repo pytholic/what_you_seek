@@ -603,7 +603,12 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 git submodule init
 git submodule update 
 or
-git clone --recurse-submodules <url>
+git clone --recurse-submodules <URL>
+
+# Pull submodules after clone
+git pull --recurse-submodules
+git submodule update --recursive
+
 ```
 You need to commit submodule chaneghs separately.
 If you do not want to push submodule, then just commit it and only push the main branch.
