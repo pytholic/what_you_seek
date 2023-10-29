@@ -675,6 +675,8 @@ git push http://example.com/repo.git
 ```
 git reflog  # see previous commits
 git log --graph
+
+jupyter nbconvert main.ipynb --to python # convert .ipynb to .py
 ```
 
 ## Ignore changes
