@@ -147,7 +147,6 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 
 ```
 
-# Install rest of the apps
 
 ---
 
