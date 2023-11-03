@@ -199,7 +199,7 @@ Add `Comic Mono, Hack Nerd Font Mono` to font family.
 
 # Extras
 
-# Neovim
+## Neovim
 Install `Neovim` and `Packer`.
 ```
 echo "alias vim='nvim'" >> ~/.zshrc
@@ -226,7 +226,7 @@ stylua
 typscript-language-server
 ```
 
-# LunarVim
+## LunarVim
 Install and put config inside `~/.confix/lvim`. if it doesn't work then make files and folder one-by-one. It will automatically install support.
 
 add lvim to path
@@ -234,10 +234,10 @@ add lvim to path
 
 Use `:Mason` to install missing servers like clangd, lua_lsp etc.
 
-# Change focus between multiple displays
+## Change focus between multiple displays
 https://medium.com/thevelops-tech-blog/how-to-switch-focus-between-screens-in-macos-21c6f02883a6
 
-# JSON processor
+## JSON processor
 Colorful shell output of json.
 ```
 brew install jq
