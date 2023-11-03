@@ -1,6 +1,41 @@
+# Common
 Install the following.
-* Install homebrew
-* Install Chrome
+* Homebrew
+* Chrome
+* Jupyter
+* VS Code
+* Slack
+* Tree `brew install tree`
+* Htop `brew install htop`
+* Docker Desktop
+* Notion
+* Rectangle window manager
+* Virtualbox (if needed)
+* Git
+```sh
+brew install git
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+git config credential.helper store or use ssh0key method instead
+```
+* Anaconda/Miniconda
+```shell
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+
+conda config --set auto_activate_base false
+```
+Do `brew install md5sha1sum` if got `md5sum: command not found` error.
+
+* lazygit
+Install `delta` -> https://github.com/dandavison/delta
+Copy custom config.
+
+---
 
 # Shell Setup
 
@@ -104,41 +139,6 @@ Add to `~/.zshrc`.
 source ~/.tmux.zsh
 ```
 
-## Neovim
-Install `Neovim` and `Packer`.
-```
-echo "alias vim='nvim'" >> ~/.zshrc
-echo "alias vi='nvim'" >> ~/.zshrc
-echo "alias oldvim='\vim'" >> ~/.zshrc
-```
-Copy files to `.config/nvim`, then do `:PackerSync`.
-
-If language servers don't wotk, install manually with `:Mason`.
-```
-Mason list
-black
-clangd
-cmake-language-server
-eslint-lsp
-flake8
-isort
-jedi-language-server
-lua-language-server
-dockerfile-language-server
-prettier
-pylint
-stylua
-typscript-language-server
-```
-
-## LunarVim
-Install and put config inside `~/.confix/lvim`. if it doesn't work then make files and folder one-by-one. It will automatically install support.
-
-add lvim to path
-`export PATH="$HOME/.local/bin/:$PATH"`
-
-Use `:Mason` to install missing servers like clangd, lua_lsp etc.
-
 ## Fix python issue
 `zsh` recognizes `python3` but not `python`. Do the following:
 ```shell
@@ -148,37 +148,10 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 ```
 
 # Install rest of the apps
-* Tree `brew install tree`
-* Htop `brew install htop`
-* Docker Desktop
-* Notion
-* Rectangle window manager
-* Virtualbox (if needed)
-* Git
-```sh
-brew install git
-git config --global user.name "Your Name"
-git config --global user.email "youremail@yourdomain.com"
-git config credential.helper store or use ssh0key method instead
-```
-* Anaconda/Miniconda
-```shell
-mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-~/miniconda3/bin/conda init bash
-~/miniconda3/bin/conda init zsh
 
-conda config --set auto_activate_base false
-```
-Do `brew install md5sha1sum` if got `md5sum: command not found` error.
+---
 
-* lazygit
-Install `delta` -> https://github.com/dandavison/delta
-Copy custom config.
-
-# VS Code (if needed)
+# VS Code Setup
 * Setup
     * Add to PATH on MacOS
        * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
@@ -205,9 +178,8 @@ Copy custom config.
 * IntelliCode
 * Remote - SSH
 * git history
-* git lens
 * git graph
-* Pylance
+* Ruff
 * Pylint
 * C++/C
 * CMake
@@ -215,27 +187,53 @@ Copy custom config.
 * Docker
 * TODO Highlight
 * TODO tree
-* Path Autocomplete
 * Project Manager
 * Better Comments
-* Code Spell Checker
-* Pythorch Snippets
-```
-# Opening terminal in current folder
-Go to Preferences->Keyboard Shortcuts->Click open in JSON
-Paste:
-{
-  "key": "alt+t",
-  "command": "workbench.action.terminal.newWithCwd",
-  "args": {
-      "cwd": "${fileDirname}"
-  }
-}
-```
+
 ## VSCode fonts
 Size -> 16
 
 Add `Comic Mono, Hack Nerd Font Mono` to font family.
+
+
+---
+
+# Extras
+
+# Neovim
+Install `Neovim` and `Packer`.
+```
+echo "alias vim='nvim'" >> ~/.zshrc
+echo "alias vi='nvim'" >> ~/.zshrc
+echo "alias oldvim='\vim'" >> ~/.zshrc
+```
+Copy files to `.config/nvim`, then do `:PackerSync`.
+
+If language servers don't wotk, install manually with `:Mason`.
+```
+Mason list
+black
+clangd
+cmake-language-server
+eslint-lsp
+flake8
+isort
+jedi-language-server
+lua-language-server
+dockerfile-language-server
+prettier
+pylint
+stylua
+typscript-language-server
+```
+
+# LunarVim
+Install and put config inside `~/.confix/lvim`. if it doesn't work then make files and folder one-by-one. It will automatically install support.
+
+add lvim to path
+`export PATH="$HOME/.local/bin/:$PATH"`
+
+Use `:Mason` to install missing servers like clangd, lua_lsp etc.
 
 # Change focus between multiple displays
 https://medium.com/thevelops-tech-blog/how-to-switch-focus-between-screens-in-macos-21c6f02883a6
@@ -246,8 +244,6 @@ Colorful shell output of json.
 brew install jq
 file.json | jq
 ```
-
-
 
 
 
