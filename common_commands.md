@@ -118,9 +118,9 @@ Using this [config](https://github.com/gpakosz/.tmux).
 
 ## Commands
 ```
-tmux new -s my_session # cerate new session with name
+tmux new-session -s <session-name> # cerate new session with name
 tmux detach
-tmux attach -t <session-name>
+tmux attach-session -t <session-name>
 prefix + - # split vertically
 prefix + _ # split horizontally
 tmus ls # list all sessions
@@ -129,6 +129,7 @@ tmux rename-session <new name>
 tmux rename-window <new name>
 prefix + c # create new pane
 prefix + s # switch session
+prefix + d # detach
 ```
 
 
