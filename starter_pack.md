@@ -184,8 +184,6 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
        * Open the Command Palette via ⌘⇧P and type shell command and select *"Install code command in PATH" command.* 
     * Word Wrap -> On
     * Theme: Nord
-* Extensions
-* Web dev
 * Vspacecode
     * Live server
     * Auto rename tag
@@ -193,8 +191,6 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
     * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * vscode-icons
 * Markdown All in One
-* github themes
-* Jupyter
 * Python
     * python
     * Python Indent
@@ -206,9 +202,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * Remote - SSH
 * git history
 * git graph
-* Ruff
-* Pylint
 * C++/C
+    * C/C++ Extension Pack 
 * CMake
 * Dev containers
 * Docker
