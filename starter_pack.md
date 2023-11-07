@@ -34,7 +34,33 @@ Do `brew install md5sha1sum` if got `md5sum: command not found` error.
 
 * lazygit
 Install `delta` -> https://github.com/dandavison/delta
-Copy custom config.
+Open `~/.gitconfig` and paste:
+```
+core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+```
+
+Then open `~/Library/Application\ Support/lazygit/config.yml` and paste:
+```
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+```
 
 ---
 
