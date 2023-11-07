@@ -12,6 +12,7 @@ Install the following.
 * Rectangle window manager
 * Virtualbox (if needed)
 * Git
+* lazygit
 ```sh
 brew install git
 git config --global user.name "Your Name"
