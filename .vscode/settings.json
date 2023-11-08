@@ -1,26 +1,31 @@
 {
-  "cmake.configureOnOpen": false,
-  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
-  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
   "editor.fontSize": 16,
-  "cmake.automaticReconfigure": false,
-  "cmake.configureOnEdit": false,
-  "C_Cpp.intelliSenseEngine": "default",
-  "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Nord",
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
   "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingComments": "always",
+  "cmake.configureOnOpen": false,
+  "cmake.automaticReconfigure": false,
+  "cmake.configureOnEdit": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
 
-  "black-formatter.args": ["--line-length", "80"],
-  "python.linting.flake8Enabled": false,
-  "workbench.colorTheme": "Nord",
-  "workbench.iconTheme": "material-icon-theme",
+  // * Language specific config
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // Better comments
+  // * Better comments
   "better-comments.tags": [
     {
       "tag": "!",
@@ -31,6 +36,7 @@
       "bold": false,
       "italic": false
     },
+
     {
       "tag": "?",
       "color": "#3498DB",
@@ -76,21 +82,5 @@
       "bold": false,
       "italic": false
     }
-  ],
-  "gitlens.graph.minimap.additionalTypes": [
-    "localBranches",
-    "stashes",
-    "remoteBranches",
-    "tags"
-  ],
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.allowChords": false,
-  "workbench.preferredDarkColorTheme": "Nord",
-
-  // Language specific config
-  "[python]": {
-    "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "editor.lineNumbers": "relative"
+  ]
 }
