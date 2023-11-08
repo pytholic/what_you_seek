@@ -214,11 +214,17 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 
 ## VSCode fonts
 * Size -> 16
-
 * Add `Comic Mono, Hack Nerd Font Mono` to font family.
 * WordWrap On
 * Autoclose bracket
-* default formatter black
+* default python formatter black
+  ```
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+  ```
+* LineNumbers -> relative
+* Auto closing brackers, comments, quotes -> On
 
 
 ---
