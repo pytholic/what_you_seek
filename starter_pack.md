@@ -205,6 +205,9 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * C++/C
     * C/C++ Extension Pack 
 * CMake
+    * CMake
+    * Cmake Tools
+    * Cmake Language Support    
 * Dev containers
 * Docker
 * TODO Highlight
