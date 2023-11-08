@@ -213,9 +213,12 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 * Better Comments
 
 ## VSCode fonts
-Size -> 16
+* Size -> 16
 
-Add `Comic Mono, Hack Nerd Font Mono` to font family.
+* Add `Comic Mono, Hack Nerd Font Mono` to font family.
+* WordWrap On
+* Autoclose bracket
+* default formatter black
 
 
 ---
