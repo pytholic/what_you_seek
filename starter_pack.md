@@ -224,7 +224,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
   }
   ```
 * LineNumbers -> relative
-* Auto closing brackers, comments, quotes -> On
+* Auto closing brackets, comments, quotes -> On
+* DefaultFormatter -> Prettier
 
 
 ---
