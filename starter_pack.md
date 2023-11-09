@@ -13,6 +13,7 @@ Install the following.
 * Virtualbox (if needed)
 * Git
 * lazygit
+* llvm compiler `brew install llvm`
 ```sh
 brew install git
 git config --global user.name "Your Name"
