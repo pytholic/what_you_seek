@@ -73,7 +73,9 @@ docker image prune
 docker search python. # lists some python contaienrs from the hub
 
 docker build .
-docker build -t test . # build with name
+docker build -t test . # build with tag
+
+docker stop $(docker ps -q) # stop all running containers
 
 ```
 
