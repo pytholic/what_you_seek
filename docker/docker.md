@@ -77,6 +77,8 @@ docker build -t test . # build with tag
 
 docker stop $(docker ps -q) # stop all running containers
 
+docker system prune -af 
+
 ```
 
 ## X11
