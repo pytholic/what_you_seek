@@ -192,6 +192,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
     * Prettier formatter -> https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * vscode-icons
 * Markdown All in One
+* Spell check
 * Python
     * python
     * Python Indent
