@@ -24,6 +24,9 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // * Better comments
   "better-comments.tags": [
@@ -82,5 +85,12 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+  "[cmake]": {
+    "editor.defaultFormatter": "josetr.cmake-language-support-vscode"
+  },
+  "window.zoomLevel": -1,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
 }
