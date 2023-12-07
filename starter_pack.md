@@ -16,6 +16,8 @@ Install the following.
 * llvm compiler `brew install llvm`
 ```sh
 brew install git
+
+# Configure user for push and stuff
 git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 
