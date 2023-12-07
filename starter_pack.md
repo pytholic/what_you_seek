@@ -18,7 +18,8 @@ Install the following.
 brew install git
 git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
-git config credential.helper store or use create ssh key
+
+Use personal access token or ssh key to login.
 ```
 * Anaconda/Miniconda
 ```shell
