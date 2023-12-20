@@ -590,6 +590,14 @@ git push origin --delete remoteBranchName
 
 ```
 
+## Remove remote files and folders
+```
+git rm -r --cached <folder name>
+git rm --cached file1 file2
+git commit -m "commit message"
+git push origin main
+```
+
 ## Submodules
 ```shell
 git submodule add	
