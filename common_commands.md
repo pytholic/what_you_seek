@@ -1,3 +1,51 @@
+# Kubectl
+```
+kubectl config get-clusters
+kubectl config get-contexts
+
+kubectl get pods # list all the Pods in your namespace
+kubectl get deployments
+kubectl run hello-world --image <image> # Run image as a container in Kubernetes
+
+kubectl describe pod hello-world
+kubectl delete pod hello-world
+
+kubectl create -f hello-world-create.yaml # create a Pod using the provided configuration file
+
+kubectl expose deployment/hello-world # expose it to the internet
+
+kubectl apply -f deployment.yaml # run image as deployment
+
+kubectl scale deployment hello-world --replicas=3 # scale up deployment
+kubectl scale deployment hello-world --replicas=1 # scale down deployment
+
+kubectl get all
+kubectl get secret
+kubectl get configmap
+
+kubectl logs <pod-name>
+
+# Rollout updates
+kubectl set image deployment/hello-world hello-world=us.icr.io/$MY_NAMESPACE/hello-world:2
+kubectl rollout status deployment/hello-world
+kubectl get deployments -o wide
+kubectl rollout undo deployment/hello-world
+kubectl rollout status deployment/hello-world
+
+# Autoscale
+kubectl autoscale deployment hello-world --cpu-percent=5 --min=1 --max=10
+kubectl get hpa hello-world
+kubectl get hpa hello-world --watch
+kubectl delete deployment hello-world
+kubectl delete service hello-world
+
+# Delete all
+kubectl delete deployments --all
+kubectl delete pods --all
+kubectl delete deployments,services,pods --all --all-namespaces
+kubectl delete deployments,services,pods -l your_label=your_value # label selection
+```
+
 # Mac Shortcuts
 ```
 ctrl + right/left # switch between desktops
