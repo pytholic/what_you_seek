@@ -39,7 +39,7 @@ Do `brew install md5sha1sum` if got `md5sum: command not found` error.
 Install `delta` -> https://github.com/dandavison/delta
 Open `~/.gitconfig` and paste:
 ```
-core]
+[core]
     pager = delta
 
 [interactive]
