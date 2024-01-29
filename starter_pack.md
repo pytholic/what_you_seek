@@ -1,3 +1,5 @@
+*Do shell setup i.e. `oh-my-zsh` before brew and conda, it overwrites `zshrc`.
+
 # Common
 Install the following.
 * Homebrew
