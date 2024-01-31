@@ -13,9 +13,9 @@ Install the following.
 * Notion
 * Rectangle window manager
 * Virtualbox (if needed)
-* Git
-* lazygit
 * llvm compiler `brew install llvm`
+* Git
+* lazygit or git-kraken
 ```sh
 brew install git
 
