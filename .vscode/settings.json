@@ -14,7 +14,7 @@
   "cmake.automaticReconfigure": false,
   "cmake.configureOnEdit": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
