@@ -326,3 +326,11 @@ Colorful shell output of json.
 brew install jq
 file.json | jq
 ```
+
+# Company tools
+* Jira
+* Slack
+  * Enable `banner` notification in mac settings
+  * Add apps
+* Docswave
+* Confluence
