@@ -178,6 +178,8 @@ tmux rename-window <new name>
 prefix + c # create new pane
 prefix + s # switch session
 prefix + d # detach
+prefix + $ # rename session
+prefix + , # rename pane
 ```
 
 
