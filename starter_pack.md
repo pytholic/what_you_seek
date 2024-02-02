@@ -140,7 +140,8 @@ Set font size to 16.
 
 ## Set terminal colors
 
-https://github.com/pytholic/what_you_seek/blob/main/config_files/terminal_colors.itermcolors
+Follow:
+https://draculatheme.com/iterm
 
 - load the preset
 - Set transparency to 20 and blur to 15.
