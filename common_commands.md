@@ -167,6 +167,8 @@ Using this [config](https://github.com/gpakosz/.tmux).
 ## Commands
 ```
 tmux new-session -s <session-name> # cerate new session with name
+prefix : new
+
 tmux detach
 tmux attach-session -t <session-name>
 prefix + - # split vertically
