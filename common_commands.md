@@ -182,6 +182,7 @@ prefix + s # switch session
 prefix + d # detach
 prefix + $ # rename session
 prefix + , # rename pane
+prefix + s # show sessions
 ```
 
 
