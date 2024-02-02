@@ -238,6 +238,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
   - Pylint
   - Black formatter
   - Ruff
+  - isort
+  - interrogate
 - IntelliCode
 - Remote - SSH
 - git history
