@@ -17,7 +17,7 @@ Install the following.
 - Virtualbox (if needed)
 - llvm compiler `brew install llvm`
 - Git
-- lazygit, git-kraken, git lens, git graph
+- lazygit, git-kraken, git lens, git graph, git blame
 
 ```sh
 brew install git
