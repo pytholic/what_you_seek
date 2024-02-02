@@ -240,6 +240,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
   - Ruff
   - isort
   - interrogate
+  - auto doc string
+  - python type hint
 - IntelliCode
 - Remote - SSH
 - git history
