@@ -2,23 +2,26 @@
   "cmake.configureOnOpen": false,
   "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
-  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 15,
+  "editor.fontSize": 15,
   "cmake.automaticReconfigure": false,
   "cmake.configureOnEdit": false,
   "C_Cpp.intelliSenseEngine": "default",
-  "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
   "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
   "editor.autoClosingBrackets": "always",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
-
+  "editor.rulers": [
+    80
+  ],
+  "autoDocstring.docstringFormat": "numpy",
   "black-formatter.args": ["--line-length", "80"],
-  "python.linting.flake8Enabled": false,
-  "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
+  "pylint.args": [
+    "--max-line-length=80",
+    "--disable=E1120,C0116,C0114,C0115",
+  ],
 
   // Better comments
   "better-comments.tags": [
@@ -77,15 +80,6 @@
       "italic": false
     }
   ],
-  "gitlens.graph.minimap.additionalTypes": [
-    "localBranches",
-    "stashes",
-    "remoteBranches",
-    "tags"
-  ],
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.allowChords": false,
-  "workbench.preferredDarkColorTheme": "Nord",
 
   // Language specific config
   "[python]": {
@@ -95,4 +89,50 @@
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
+  "settingsSync.ignoredExtensions": [],
+  "workbench.colorTheme": "Nord",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "gitlens.graph.layout": "editor",
+  "editor.formatOnSave": true
 }
