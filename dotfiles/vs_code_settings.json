@@ -16,13 +16,19 @@
     80
   ],
   "autoDocstring.docstringFormat": "numpy",
-  "black-formatter.args": ["--line-length", "80"],
+  "black-formatter.args": [
+    "--line-length",
+    "80"
+  ],
   "workbench.iconTheme": "material-icon-theme",
   "pylint.args": [
     "--max-line-length=80",
     "--disable=E1120,C0116,C0114,C0115",
   ],
-
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
   // Better comments
   "better-comments.tags": [
     {
@@ -80,11 +86,13 @@
       "italic": false
     }
   ],
-
   // Language specific config
   "[python]": {
     "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
   },
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontWeightBold": "normal",
@@ -95,11 +103,17 @@
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<space>"],
-      "commands": ["vspacecode.space"]
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
     },
     {
-      "before": [","],
+      "before": [
+        ","
+      ],
       "commands": [
         "vspacecode.space",
         {
@@ -111,11 +125,17 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["<space>"],
-      "commands": ["vspacecode.space"]
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
     },
     {
-      "before": [","],
+      "before": [
+        ","
+      ],
       "commands": [
         "vspacecode.space",
         {
@@ -125,12 +145,20 @@
       ]
     },
     {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
     },
     {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
     }
   ],
   "gitlens.graph.layout": "editor",
