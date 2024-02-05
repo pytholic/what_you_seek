@@ -245,7 +245,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - IntelliCode
 - Remote - SSH
 - git history
-- git graph
+- git graph, git lens
 - C++/C
   - C/C++ Extension Pack
 - CMake
