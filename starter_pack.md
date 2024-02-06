@@ -259,6 +259,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Project Manager
 - Better Comments
 - Sync-Rsync
+  - Sync local to remote and vice versa
+  - Automatically switches branches as well
 
 ## VSCode fonts
 
