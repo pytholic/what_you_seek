@@ -1,34 +1,35 @@
 {
-  "editor.fontSize": 16,
-  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
-  "terminal.integrated.fontSize": 16,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Nord",
-  "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
-  "editor.lineNumbers": "relative",
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.autoClosingComments": "always",
   "cmake.configureOnOpen": false,
+  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "editor.fontSize": 15,
   "cmake.automaticReconfigure": false,
   "cmake.configureOnEdit": false,
+  "C_Cpp.intelliSenseEngine": "default",
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "always",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.fontWeight": "normal",
-
-  // * Language specific config
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // * Better comments
+  "editor.rulers": [
+    80
+  ],
+  "autoDocstring.docstringFormat": "numpy",
+  "black-formatter.args": [
+    "--line-length",
+    "80"
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "pylint.args": [
+    "--max-line-length=80",
+    "--disable=E1120,C0116,C0114,C0115",
+  ],
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  // Better comments
   "better-comments.tags": [
     {
       "tag": "!",
@@ -39,7 +40,6 @@
       "bold": false,
       "italic": false
     },
-
     {
       "tag": "?",
       "color": "#3498DB",
@@ -86,11 +86,99 @@
       "italic": false
     }
   ],
-  "[cmake]": {
-    "editor.defaultFormatter": "josetr.cmake-language-support-vscode"
+  // Language specific config
+  "[python]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
   },
-  "window.zoomLevel": -1,
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "settingsSync.ignoredExtensions": [],
+  "workbench.colorTheme": "Nord",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
+    },
+    {
+      "before": [
+        ","
+      ],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
+    },
+    {
+      "before": [
+        ","
+      ],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "gitlens.graph.layout": "editor",
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "sync-rsync.local": "/Users/lunit_haseebraja/Developer/modelops/insight-engine",
+    "sync-rsync.sites": [
+        {
+          "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/repos/insight-engine",
+        },
+    ],
+    "sync-rsync.delete": false,
+    "sync-rsync.include": [
+        ".vscode",
+        ".git"
+    ],
+    "sync-rsync.args": [
+        "--rsh=ssh"
+    ],
+    "rsync.executableShell": "/bin/bash",
+    "sync-rsync.onSave": true,
+    "sync-rsync.delete": true,
 }
