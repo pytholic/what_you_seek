@@ -258,6 +258,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - TODO tree
 - Project Manager
 - Better Comments
+- Sync-Rsync
 
 ## VSCode fonts
 
