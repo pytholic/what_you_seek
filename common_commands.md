@@ -153,6 +153,10 @@ ctrl + cmd + shift + arrow # expand seelction
 
 cmd + b # show/hdie sidebar
 
+cmd + p # search file by name
+ctel + tab # switch files
+
+
 ```
 ---
 
