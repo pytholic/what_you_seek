@@ -59,15 +59,6 @@
       "italic": false
     },
     {
-      "tag": "todo",
-      "color": "#FF8C00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
       "tag": "*",
       "color": "#FAA0A0",
       "strikethrough": false,
@@ -165,20 +156,27 @@
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
   "sync-rsync.local": "/Users/lunit_haseebraja/Developer/modelops/insight-engine",
-    "sync-rsync.sites": [
-        {
-          "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/repos/insight-engine",
-        },
-    ],
-    "sync-rsync.delete": false,
-    "sync-rsync.include": [
-        ".vscode",
-        ".git"
-    ],
-    "sync-rsync.args": [
-        "--rsh=ssh"
-    ],
-    "rsync.executableShell": "/bin/bash",
-    "sync-rsync.onSave": true,
-    "sync-rsync.delete": true,
+  "sync-rsync.sites": [
+    {
+      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/repos/insight-engine",
+    },
+  ],
+  "sync-rsync.delete": false,
+  "sync-rsync.include": [
+    ".vscode",
+    ".git"
+  ],
+  "sync-rsync.args": [
+    "--rsh=ssh"
+  ],
+  "rsync.executableShell": "/bin/bash",
+  "sync-rsync.onSave": true,
+  "sync-rsync.delete": true,
+  "remote.autoForwardPortsSource": "hybrid",
+
+  // TODO Tree
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "transparent",
+    "background": "transparent",
+  },
 }
