@@ -175,8 +175,27 @@
   "remote.autoForwardPortsSource": "hybrid",
 
   // TODO Tree
-  "todo-tree.highlights.defaultHighlight": {
-    "foreground": "transparent",
-    "background": "transparent",
-  },
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "HACK"],
+  "todo-tree.highlights.backgroundColourScheme": ["orange", "#FF8096", "green", "#89CFF0"],
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+        "gutterIcon": true
+    },
+    "FIXME": {
+        "foreground": "white",
+        "iconColour": "yellow",
+        "gutterIcon": true
+    },
+    "BUG": {
+      "icon": "bug",
+      "foreground": "white",
+      "gutterIcon": true
+    },
+    "HACK": {
+      "icon": "checkbox",
+      "foreground": "white",
+      "gutterIcon": true
+    },
+  }
 }
