@@ -77,7 +77,7 @@
       "italic": false
     }
   ],
-  // Language specific config
+  // Language specific config 
   "[python]": {
     "editor.semanticHighlighting.enabled": false,
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -155,10 +155,11 @@
   "gitlens.graph.layout": "editor",
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "sync-rsync.local": "/Users/lunit_haseebraja/Developer/modelops/insight-engine",
   "sync-rsync.sites": [
     {
-      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/repos/insight-engine",
+      "localPath": "/Users/pytholic/Developer/personal/Projects/mlops/mlops-orbit",
+      "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
+      "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
     },
   ],
   "sync-rsync.delete": false,
@@ -166,10 +167,10 @@
     ".vscode",
     ".git"
   ],
-  "sync-rsync.args": [
-    "--rsh=ssh"
-  ],
-  "rsync.executableShell": "/bin/bash",
+  // "sync-rsync.args": [
+  //   "--rsh=ssh"
+  // ],
+  "sync-rsync.executableShell": "/bin/bash",
   "sync-rsync.onSave": true,
   "sync-rsync.delete": true,
   "remote.autoForwardPortsSource": "hybrid",
