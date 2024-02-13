@@ -66,7 +66,7 @@ Do `brew install md5sha1sum` if got `md5sum: command not found` error.
     colorMoved = default
 ```
 
-Then open `~/Library/Application\ Support/lazygit/config.yml` and paste:
+Or open `~/Library/Application\ Support/lazygit/config.yml` and paste:
 
 ```
 git:
