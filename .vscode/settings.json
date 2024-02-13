@@ -27,7 +27,9 @@
   ],
   "isort.args": [
     "--profile",
-    "black"
+    "black",
+    "--filter-files", 
+    "--force-grid-wrap=3"
   ],
   // Better comments
   "better-comments.tags": [
