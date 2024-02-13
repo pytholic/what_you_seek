@@ -162,7 +162,6 @@
       "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
     },
   ],
-  "sync-rsync.delete": false,
   "sync-rsync.include": [
     ".vscode",
     ".git"
