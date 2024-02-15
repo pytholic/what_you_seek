@@ -33,3 +33,5 @@
         sort = -committerdate
 [rerere]
         enabled = true
+[init]
+        defaultBranch = main
