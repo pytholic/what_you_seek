@@ -597,6 +597,7 @@ git status
 git commit -m 'Initial index commit'
 git status
 git push origin main
+git diff # what changed
 
 git pull --allow-unrelated-histories
 
