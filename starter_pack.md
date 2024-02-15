@@ -44,8 +44,8 @@ conda config --set auto_activate_base false
 Do `brew install md5sha1sum` if got `md5sum: command not found` error.
 
 - lazygit
-  Install `delta` -> https://github.com/dandavison/delta
-  Open `~/.gitconfig` and paste configs.
+  - Install `delta` -> https://github.com/dandavison/delta
+  - Add git config from [link](https://github.com/pytholic/what_you_seek/tree/main/git).
 
   Open `~/Library/Application\ Support/lazygit/config.yml` and paste:
 
