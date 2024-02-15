@@ -19,8 +19,7 @@
         name = pytholic
         email = rajahaseeb147@gmail.com
 [credential]
-        helper = stor
-e
+        helper = store
 # Conditional configs
 [includeIf "gitdir:~/Developer/work/"]
     path = ~/.gitconfig-work
