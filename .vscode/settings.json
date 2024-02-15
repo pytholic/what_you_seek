@@ -1,36 +1,53 @@
 {
-  "cmake.configureOnOpen": false,
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.rulers": [80],
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "settingsSync.ignoredExtensions": [],
+  "workbench.colorTheme": "Nord",
+  "editor.formatOnSave": true,
+
+  // Terminal
   "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
-  "editor.fontSize": 15,
+
+  // Notebook
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": true,
+    "notebook.source.organizeImports": true
+  },
+
+  // Language specific config
+  // Python
+  "[python]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    }
+  },
+
+  // C-Cpp-Cmake
+  "cmake.configureOnOpen": false,
   "cmake.automaticReconfigure": false,
   "cmake.configureOnEdit": false,
   "C_Cpp.intelliSenseEngine": "default",
-  "editor.wordWrap": "on",
-  "editor.autoClosingBrackets": "always",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-  "editor.rulers": [
-    80
-  ],
+
+  // Etc
   "autoDocstring.docstringFormat": "numpy",
-  "black-formatter.args": [
-    "--line-length",
-    "80"
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "pylint.args": [
-    "--max-line-length=80",
-    "--disable=E1120,C0116,C0114,C0115",
-  ],
-  "isort.args": [
-    "--profile",
-    "black",
-    "--filter-files", 
-    "--force-grid-wrap=3"
-  ],
+  "black-formatter.args": ["--line-length", "80"],
+  "pylint.args": ["--max-line-length=80", "--disable=E1120,C0116,C0114,C0115"],
+  // "isort.args": ["--profile", "black", "--filter-files", "--force-grid-wrap=3"],
+  "gitlens.graph.layout": "editor",
+
   // Better comments
   "better-comments.tags": [
     {
@@ -79,34 +96,17 @@
       "italic": false
     }
   ],
-  // Language specific config 
-  "[python]": {
-    "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    },
-  },
-  "editor.lineNumbers": "relative",
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.fontWeight": "normal",
-  "settingsSync.ignoredExtensions": [],
-  "workbench.colorTheme": "Nord",
+
+  // VSpaceCode
   "vim.easymotion": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<space>"
-      ],
-      "commands": [
-        "vspacecode.space"
-      ]
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
     },
     {
-      "before": [
-        ","
-      ],
+      "before": [","],
       "commands": [
         "vspacecode.space",
         {
@@ -118,17 +118,11 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<space>"
-      ],
-      "commands": [
-        "vspacecode.space"
-      ]
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
     },
     {
-      "before": [
-        ","
-      ],
+      "before": [","],
       "commands": [
         "vspacecode.space",
         {
@@ -138,56 +132,49 @@
       ]
     },
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     },
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     }
   ],
-  "gitlens.graph.layout": "editor",
-  "editor.formatOnSave": true,
-  "editor.bracketPairColorization.enabled": true,
+
+  // Sync-Rsync
   "sync-rsync.sites": [
     {
-      "localPath": "/Users/pytholic/Developer/personal/Projects/mlops/mlops-orbit",
-      "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
-      "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
-    },
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
+      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    }
   ],
-  "sync-rsync.include": [
-    ".vscode",
-    ".git"
-  ],
+  "sync-rsync.include": [".vscode", ".git"],
   // "sync-rsync.args": [
   //   "--rsh=ssh"
   // ],
   "sync-rsync.executableShell": "/bin/bash",
-  "sync-rsync.onSave": true,
+  // "sync-rsync.onSave": true,
   "sync-rsync.delete": true,
   "remote.autoForwardPortsSource": "hybrid",
 
   // TODO Tree
   "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "HACK"],
-  "todo-tree.highlights.backgroundColourScheme": ["orange", "#FF8096", "green", "#89CFF0"],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "orange",
+    "#FF8096",
+    "green",
+    "#89CFF0"
+  ],
   "todo-tree.highlights.useColourScheme": true,
   "todo-tree.highlights.customHighlight": {
     "TODO": {
-        "gutterIcon": true
+      "gutterIcon": true
     },
     "FIXME": {
-        "foreground": "white",
-        "iconColour": "yellow",
-        "gutterIcon": true
+      "foreground": "white",
+      "iconColour": "yellow",
+      "gutterIcon": true
     },
     "BUG": {
       "icon": "bug",
@@ -198,6 +185,6 @@
       "icon": "checkbox",
       "foreground": "white",
       "gutterIcon": true
-    },
+    }
   }
 }
