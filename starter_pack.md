@@ -227,6 +227,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Remote - SSH
 - git history
 - git graph, git lens
+- gitignore
 - C++/C
   - C/C++ Extension Pack
 - CMake
