@@ -1,0 +1,66 @@
+ARG BASE_TAG
+FROM docker.lunit.io/lunit/insight-engine-base:${BASE_TAG} AS base
+
+LABEL maintainer="pytholic" \
+      version="1.0" \
+      description="Engine inference container."
+
+ARG NEXUS_USERNAME
+ARG NEXUS_PASSWORD
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    zsh \
+    vim \
+    tmux \
+    sudo \
+    wget \
+    git \
+    curl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install required packages
+COPY ./requirements/base.txt ./tmp/base.txt
+COPY ./requirements/check.txt ./tmp/check.txt
+
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir \
+    --extra-index-url https://${NEXUS_USERNAME}:${NEXUS_PASSWORD}@nexus.lunit.io/repository/pypi-all/simple \
+    pip install -r ./tmp/base.txt -r ./tmp/check.txt && \
+    rm ./tmp/base.txt ./tmp/check.txt
+
+# Set user
+ARG USER_ID
+ARG USER_NAME
+ARG USER_HOME
+ARG GROUP_ID
+ARG GROUP_NAME
+ARG GIT_USERNAME
+ARG GIT_EMAIL
+
+# Set locale
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+# Set user
+RUN mkdir -p $(dirname "$USER_HOME") && \
+    groupadd -g $GROUP_ID $GROUP_NAME && \
+    useradd -g $GROUP_ID -u $USER_ID -m -d $USER_HOME $USER_NAME
+RUN echo "$USER_NAME:$USER_NAME" | chpasswd
+RUN echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+WORKDIR $USER_HOME
+USER $USER_NAME:$GROUP_NAME
+
+# Set zsh
+RUN sudo chsh -s $(which zsh) $USER_NAME && \
+    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+RUN sed -i 's/robbyrussell/agnoster/g' .zshrc && \
+    echo "DEFAULT_USER=`whoami`" >> .zshrc && \
+    echo "export PATH=\$PATH:$USER_HOME/.local/bin" >> .zshrcGIT_USERNAME=$${GIT_USERNAME}
+
+# Set git
+RUN git config --global user.email $GIT_EMAIL && \
+    git config --global user.name $GIT_USERNAME
