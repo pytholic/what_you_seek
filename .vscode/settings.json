@@ -28,10 +28,10 @@
   // Python
   "[python]": {
     "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.autopep8",
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
 
@@ -43,9 +43,10 @@
 
   // Etc
   "autoDocstring.docstringFormat": "numpy",
-  "black-formatter.args": ["--line-length", "99"],
+  // "black-formatter.args": ["--line-length", "99"],
   "pylint.args": ["--max-line-length=99", "--disable=E1120,C0116,C0114,C0115"],
-  "isort.args": ["--profile", "black", "--filter-files", "--force-grid-wrap=3"],
+  // "isort.args": ["--profile", "black"],
+
   "gitlens.graph.layout": "editor",
   "ruff.organizeImports": false,
 
@@ -147,6 +148,11 @@
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/haseeb-onboarding-engine-inference",
+      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/haseeb-onboarding-engine-inference",
       "shell": "ssh -i ~/.ssh/id_rsa"
     }
   ],
