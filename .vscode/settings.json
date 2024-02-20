@@ -28,7 +28,7 @@
   // Python
   "[python]": {
     "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
       "source.organizeImports": "explicit"
@@ -43,9 +43,16 @@
 
   // Etc
   "autoDocstring.docstringFormat": "numpy",
-  // "black-formatter.args": ["--line-length", "99"],
+  "black-formatter.args": ["--line-length", "99"],
   "pylint.args": ["--max-line-length=99", "--disable=E1120,C0116,C0114,C0115"],
-  // "isort.args": ["--profile", "black"],
+  "isort.args": [
+    "--profile",
+    "black",
+    "--filter-files",
+    "--force-grid-wrap",
+    "3",
+    "--include-trailing-comma"
+  ],
 
   "gitlens.graph.layout": "editor",
   "ruff.organizeImports": false,
