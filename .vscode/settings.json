@@ -44,7 +44,7 @@
   // Etc
   "autoDocstring.docstringFormat": "numpy",
   "black-formatter.args": ["--line-length", "99"],
-  "pylint.args": ["--max-line-length=80", "--disable=E1120,C0116,C0114,C0115"],
+  "pylint.args": ["--max-line-length=99", "--disable=E1120,C0116,C0114,C0115"],
   "isort.args": ["--profile", "black", "--filter-files", "--force-grid-wrap=3"],
   "gitlens.graph.layout": "editor",
   "ruff.organizeImports": false,
