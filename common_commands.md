@@ -647,6 +647,10 @@ git branch -d localBranchName
 // delete branch remotely
 git push origin --delete remoteBranchName
 
+//Remove initial commit
+git update-ref -d HEAD
+
+
 ```
 
 ## Remove remote files and folders
