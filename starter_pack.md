@@ -243,6 +243,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Sync-Rsync
   - Sync local to remote and vice versa
   - Automatically switches branches as well
+- JSON viewer
 
 ## VSCode fonts
 
