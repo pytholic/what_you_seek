@@ -261,6 +261,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - LineNumbers -> relative
 - Auto closing brackets, comments, quotes -> On
 - DefaultFormatter -> Prettier
+- Pyupgrade (with pre-commit)
 
 ---
 
