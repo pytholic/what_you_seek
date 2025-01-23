@@ -245,6 +245,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
   - Automatically switches branches as well
 - JSON viewer
 - Path Intellisense
+- mypy extension
+- pre-commit
 
 ## VSCode fonts
 
