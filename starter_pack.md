@@ -247,6 +247,7 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Path Intellisense
 - mypy extension
 - pre-commit
+- Data wrangler
 
 ## VSCode fonts
 
