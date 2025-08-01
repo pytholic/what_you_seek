@@ -215,11 +215,9 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Python
   - python
   - Python Indent
-  - Pylance
-  - Pylint
+  - Pyright
   - Black formatter
   - Ruff
-  - isort
   - interrogate
   - auto doc string
   - python type hint
@@ -245,9 +243,10 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
   - Automatically switches branches as well
 - JSON viewer
 - Path Intellisense
-- mypy extension
+- mypy extension or pyright
 - pre-commit
 - Data wrangler
+- Periscope (just like telescope)
 
 ## VSCode fonts
 
