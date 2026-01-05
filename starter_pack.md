@@ -18,6 +18,7 @@ Install the following.
 - llvm compiler `brew install llvm`
 - Git
   - lazygit, git-kraken, git lens, git graph, git blame, github actions
+- eza
 
 ```sh
 brew install git
