@@ -84,51 +84,8 @@ Go to `Settings>Profile>Keys>Key mappins>Preset` and set it to "Natural Text Edi
 
 iTerm2 -> Preferences -> Profiles. Under `Terminal` tab, you will see `Notifications` header. Toggle the `Silence bell` option
 
-## Install oh my zsh
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-## Install powerlevel10k
-
-```
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-```
-
-Now that it's installed, open the "~/.zshrc" file with your preferred editor and change the value of "ZSH_THEME" as shown below:
-
-```
-ZSH_THEME="powerlevel10k/powerlevel10k"
-```
-
-Also download `Meslo` fonts from p10k repo (must to make it look better).
-
-Add to vscode `settings.json`:
-
-```
-"terminal.integrated.fontFamily": "MesloLGS NF"
-```
-
-## Download nerd and comic code fonts
-
-https://dtinth.github.io/comic-mono-font/
-https://github.com/ryanoasis/nerd-fonts
-
-Primary font -> Comic Code
-Non-ASCII -> Nerd font
-
-Set font size to 16.
-
-## Set terminal colors
-
-Follow:
-https://draculatheme.com/iterm
-
-- load the preset
-- Set transparency to 20 and blur to 15.
-
-We can also use `Gogh Themes`.
+## Install Starship
+Install [starship](https://starship.rs/) prompt which is fast. Use nerd fonts and tokyo theme.
 
 ## Install zsh plugins
 
