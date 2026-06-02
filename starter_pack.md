@@ -206,6 +206,11 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 - Data wrangler
 - Periscope (just like telescope)
 
+## Zed IDE
+- TOML extension
+- Catpuccin blur theme
+- Comments Highlighter
+
 ## VSCode fonts
 
 - Size -> 16
