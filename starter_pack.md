@@ -208,7 +208,8 @@ echo "alias python=/usr/bin/python3" >> ~/.zshrc
 
 ## Zed IDE
 - TOML extension
-- Catpuccin blur theme
+- Catpuccin theme
+- Zed agent, claude code, cursor
 - Comments Highlighter
 
 ## VSCode fonts
